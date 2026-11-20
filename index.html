@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MiniWheels : pit bikes, Shop &amp; Park à une heure de Paris</title>
+<meta name="description" content="Le Shop et l&#39;atelier au Mesnil-Simon (28), le Park de pit bike à Longnes (78) : location dès 6 ans, initiation offerte, stages avec Sébastien Guillaume.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://miniwheels-maquette.vercel.app/">
+<style>:root{--fond:#f2f2ee;--texte:#101211;--voile-fond:#101211;--ouverture-fond:#101211;--menu-fond:#101211}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/archivo-italique.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MiniWheels">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="MiniWheels : pit bikes, Shop &amp; Park à une heure de Paris">
+<meta property="og:description" content="Le Shop et l&#39;atelier au Mesnil-Simon (28), le Park de pit bike à Longnes (78) : location dès 6 ans, initiation offerte, stages avec Sébastien Guillaume.">
+<meta property="og:url" content="https://miniwheels-maquette.vercel.app/">
+<meta property="og:image" content="https://miniwheels-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un jeune pilote saute une bosse du Park MiniWheels">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MotorcycleDealer","name":"MiniWheels Shop & atelier","telephone":"+33237500905","address":{"@type":"PostalAddress","streetAddress":"21 route de Mantes","postalCode":"28260","addressLocality":"Le Mesnil-Simon","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"12:30"}],"founder":{"@type":"Person","name":"Sébastien Guillaume"}},{"@type":"SportsActivityLocation","name":"MiniWheels Park","telephone":"+33237640488","address":{"@type":"PostalAddress","streetAddress":"D11, route de Versailles","postalCode":"78980","addressLocality":"Longnes","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"14:00","closes":"18:00"}]}]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="glisse" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-rond-240.webp" alt="" width="72" height="72"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-rond-240.webp" alt="" width="120" height="120" data-ouverture-objet>
+  <div class="grille-depart" data-effet="grille-depart"><span class="grille-barre" style="--i:0"><b></b></span><span class="grille-barre" style="--i:1"><b></b></span><span class="grille-barre" style="--i:2"><b></b></span><span class="grille-barre" style="--i:3"><b></b></span><span class="grille-barre" style="--i:4"><b></b></span><span class="grille-barre" style="--i:5"><b></b></span><span class="grille-barre" style="--i:6"><b></b></span><span class="grille-barre" style="--i:7"><b></b></span></div>
+  <p class="ouverture-ligne">Shop &amp; Park</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-rond-240.webp" alt="" width="44" height="44"><span>MiniWheels</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/park" data-libelle="Le Park">Le Park</a></li><li><a href="/shop" data-libelle="Le Shop">Le Shop</a></li><li><a href="/sebastien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/park#reserver" data-libelle="Le Park">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/park" class="menu-lien" data-libelle="Le Park">Le Park</a></li><li style="--i:2"><a href="/shop" class="menu-lien" data-libelle="Le Shop">Le Shop</a></li><li style="--i:3"><a href="/sebastien" class="menu-lien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-actions"><a href="/park#reserver" class="bouton" data-libelle="Le Park">Réserver une session</a><a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park</a><a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop</a></p>
+</div>
+<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."}},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
+<main id="contenu" tabindex="-1" data-page="accueil">
+<section class="hero" id="debut" data-tete>
+  <figure class="media hero-media" data-fx="parallaxe" data-fx-force="8" data-boucle-css style="--cadrage:50% 40%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="hero-contenu conteneur">
+    <p class="surtitre hero-surtitre masque-ecran-tres-bas">Shop &amp; Park by Séb Guillaume</p>
+    <h1 class="hero-titre"><span class="ligne-masque"><span class="h-ligne">Du premier tour</span></span><span class="ligne-masque"><span class="h-ligne">au <em>podium</em></span></span></h1>
+    <p class="hero-texte h-suite masque-ecran-bas">Pit bikes, quads et motos au Shop du Mesnil-Simon, trois pistes au Park de Longnes : on roule dès 6 ans, à une heure de Paris.</p>
+    <p class="hero-actions h-suite">
+      <a href="/park#reserver" class="bouton" data-libelle="Le Park" data-action-principale data-survol="magnetique">Réserver une session</a>
+      <a href="/shop#catalogue" class="bouton bouton--clair" data-libelle="Le Shop">Voir les motos</a>
+    </p>
+  </div>
+  <a class="badge-park" href="/park#ouverture" data-libelle="Le Park" data-iris-centre="disque" data-info-cle data-boucle-css>
+    <span class="badge-titre">Le Park</span>
+    <strong class="badge-jour" data-prochain-jour>samedi</strong>
+    <span class="badge-plage">14 h-18 h</span>
+    <span class="badge-compte" data-compte-court aria-hidden="true"></span>
+  </a>
+</section>
+<section class="trois clair" id="trois-en-un">
+  <div class="conteneur trois-tete">
+    <h2 class="titre " data-anime="lignes">Trois en un, <em>depuis 2014</em></h2>
+    <p class="intro" data-anime>Un terrain pour rouler, un magasin pour s&#39;équiper, un atelier pour réparer : Séb a réuni ce qui manquait aux pilotes de la région.</p>
+  </div>
+  <ul class="conteneur trois-grille" data-anime="cascade">
+    <li class="trois-carte">
+      <a href="/park" data-libelle="Le Park">
+        <figure class="media trois-media" data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/accueil-park-784.webp" srcset="/assets/images/accueil-park-480.webp 480w, /assets/images/accueil-park-640.webp 640w, /assets/images/accueil-park-784.webp 784w" sizes="(max-width: 760px) 90vw, 33vw" alt="Deux jeunes pilotes casqués en pleine poussière sur la piste du Park" width="784" height="1176" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="trois-texte"><span class="trois-lieu">Longnes (78)</span><strong>Le Park</strong><span>Trois pistes homologuées FFM, location dès 6 ans</span></span>
+      </a>
+    </li><li class="trois-carte">
+      <a href="/shop#catalogue" data-libelle="Le Shop">
+        <figure class="media trois-media" data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/accueil-shop-784.webp" srcset="/assets/images/accueil-shop-480.webp 480w, /assets/images/accueil-shop-640.webp 640w, /assets/images/accueil-shop-784.webp 784w" sizes="(max-width: 760px) 90vw, 33vw" alt="Rangées de pit bikes neuves dans le Shop" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="trois-texte"><span class="trois-lieu">Le Mesnil-Simon (28)</span><strong>Le Shop</strong><span>Pit bikes, électriques, quads, équipement</span></span>
+      </a>
+    </li><li class="trois-carte">
+      <a href="/shop#atelier" data-libelle="Le Shop">
+        <figure class="media trois-media" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/atelier-detail-784.webp" srcset="/assets/images/grok/atelier-detail-480.webp 480w, /assets/images/grok/atelier-detail-640.webp 640w, /assets/images/grok/atelier-detail-784.webp 784w" sizes="(max-width: 760px) 90vw, 33vw" alt="Gros plan sur la chaîne et le pignon d&#39;une pit bike en entretien" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="trois-texte"><span class="trois-lieu">Au Shop</span><strong>L&#39;atelier</strong><span>Réparation et entretien, toutes marques</span></span>
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="samedi sombre" id="samedi">
+  <div class="conteneur samedi-grille">
+    <div class="samedi-texte">
+      <p class="surtitre" data-anime>Le Park, ce samedi</p>
+      <h2 class="titre titre--xl" data-anime="lignes">Prochaine ouverture</h2>
+      <p class="samedi-quand" data-anime><strong data-prochain-long>samedi</strong> · 14 h-18 h</p>
+      <div class="compte" data-effet="compte-session" aria-label="Départ dans">
+        <span class="compte-libelle">Départ dans</span>
+        <span class="compte-cases" data-compte>
+          <span class="compte-case"><b data-c="j">0</b><i>j</i></span><span class="compte-case"><b data-c="h">00</b><i>h</i></span><span class="compte-case"><b data-c="m">00</b><i>min</i></span><span class="compte-case"><b data-c="s" data-effet="compte-session">00</b><i>s</i></span>
+        </span>
+      </div>
+      <p class="petit" data-anime>Selon l&#39;état de la piste et la météo, confirmé le vendredi soir sur Facebook.</p>
+    </div>
+    <figure class="media samedi-media" data-fx="parallaxe" data-fx-force="10" style="--cadrage:35% 50%;aspect-ratio:4 / 5">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-samedi-mobile-640.webp 640w, /assets/images/accueil-samedi-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 45vw">
+    <img src="/assets/images/accueil-samedi-1280.webp" srcset="/assets/images/accueil-samedi-640.webp 640w, /assets/images/accueil-samedi-1280.webp 1280w, /assets/images/accueil-samedi-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 45vw" alt="Départ dans la poussière dorée du samedi après-midi" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+  <ul class="conteneur tuiles" data-anime="cascade">
+    <li class="tuile"><strong data-prix>15 €</strong><span>les 10 min</span><em>Pit bike enfant, dès 6 ans</em></li>
+    <li class="tuile"><strong data-prix>20 €</strong><span>les 15 min</span><em>Pit bike ado et adulte</em></li>
+    <li class="tuile"><strong data-prix>10 €</strong><span>l&#39;entrée</span><em>Avec ta moto (licencié FFM)</em></li>
+    <li class="tuile tuile--verte"><strong>Offerte</strong><span>&nbsp;</span><em>L&#39;initiation, à demander en réservant</em></li>
+  </ul>
+  <div class="conteneur samedi-bas" data-anime>
+    <p>Moto, équipement (sauf bottes), assurance et briefing compris.</p>
+    <a href="/park#reserver" class="bouton" data-libelle="Le Park" data-survol="magnetique">Réserver une session</a>
+  </div>
+</section>
+<section class="etapes clair2" id="premiere-fois">
+  <div class="conteneur etapes-tete">
+    <h2 class="titre " data-anime="lignes">Ta première session <em>en 5 étapes</em></h2>
+    <p class="intro" data-anime>Pas de licence, pas de moto : l&#39;initiation est offerte avec la location. Il suffit de la demander en réservant.</p>
+  </div>
+  <div class="etapes-defile" tabindex="0" role="region" aria-label="Les cinq étapes d&#39;une première session, défilement horizontal">
+    <div class="conteneur etapes-grille" data-anime="cascade">
+      <article class="etape" id="etape-1">
+        <figure class="media etape-media" data-grok data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/equipement-800.webp" srcset="/assets/images/grok/equipement-480.webp 480w, /assets/images/grok/equipement-640.webp 640w, /assets/images/grok/equipement-800.webp 800w" sizes="(max-width: 760px) 74vw, 20vw" alt="L&#39;équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières" width="800" height="1000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div class="etape-texte"><span class="etape-n">01</span><h3>Je m&#39;équipe</h3><p>Casque, gants, pare-pierre, genouillères et coudières sont prêtés. Venez en chaussures montantes, pantalon et manches longues.</p></div>
+      </article><article class="etape" id="etape-2">
+        <figure class="media etape-media" data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/etape-briefing-800.webp" srcset="/assets/images/etape-briefing-480.webp 480w, /assets/images/etape-briefing-640.webp 640w, /assets/images/etape-briefing-800.webp 800w" sizes="(max-width: 760px) 74vw, 20vw" alt="Séb explique la trajectoire à un jeune pilote casqué avant sa session" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="etape-texte"><span class="etape-n">02</span><h3>Briefing</h3><p>Arrivez 15 minutes avant. Corine fait remplir la décharge, puis Séb explique la moto et les règles de la piste.</p></div>
+      </article><article class="etape" id="etape-3">
+        <figure class="media etape-media" data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/etape-cest-parti-800.webp" srcset="/assets/images/etape-cest-parti-480.webp 480w, /assets/images/etape-cest-parti-640.webp 640w, /assets/images/etape-cest-parti-800.webp 800w" sizes="(max-width: 760px) 74vw, 20vw" alt="Deux enfants casqués roulent côte à côte sur la piste éducative" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="etape-texte"><span class="etape-n">03</span><h3>C&#39;est parti !</h3><p>Premiers tours sur l&#39;anneau extérieur de la piste éducative, plat et sans difficulté.</p></div>
+      </article><article class="etape" id="etape-4">
+        <figure class="media etape-media" data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/etape-accompagne-800.webp" srcset="/assets/images/etape-accompagne-480.webp 480w, /assets/images/etape-accompagne-640.webp 640w, /assets/images/etape-accompagne-800.webp 800w" sizes="(max-width: 760px) 74vw, 20vw" alt="Un encadrant court à côté d&#39;un jeune pilote pour ses premiers mètres" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="etape-texte"><span class="etape-n">04</span><h3>Bien accompagné</h3><p>Pour une première session, Séb, diplômé d&#39;État, encadre les débutants pendant la location.</p></div>
+      </article><article class="etape" id="etape-5">
+        <figure class="media etape-media" data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/etape-autonome-800.webp" srcset="/assets/images/etape-autonome-480.webp 480w, /assets/images/etape-autonome-640.webp 640w, /assets/images/etape-autonome-800.webp 800w" sizes="(max-width: 760px) 74vw, 20vw" alt="Un jeune pilote enchaîne seul les bosses de la piste" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="etape-texte"><span class="etape-n">05</span><h3>Je suis vite autonome</h3><p>Une fois à l&#39;aise, le tracé intérieur : bosses, vagues et virages serrés.</p></div>
+      </article>
+    </div>
+  </div>
+  <p class="conteneur etapes-action" data-anime><a href="/park#initiation" class="bouton bouton--sombre" data-libelle="Le Park">Tout savoir sur l&#39;initiation</a></p>
+</section>
+<section class="pistes clair" id="pistes">
+  <div class="conteneur pistes-grille">
+    <div class="pistes-texte">
+      <h2 class="titre " data-anime="lignes">Trois pistes, <em>tous les niveaux</em></h2>
+      <p class="intro" data-anime>Tracées par des pros, entretenues toute l&#39;année et homologuées FFM.</p>
+      <div class="pistes-onglets" role="tablist" aria-label="Trois pistes," data-anime="cascade">
+        <button type="button" role="tab" class="piste-onglet" id="onglet-kids" aria-controls="panneau-kids" aria-selected="true" data-piste="kids"><strong>Kids Track</strong><span>Débutants et plus jeunes</span></button><button type="button" role="tab" class="piste-onglet" id="onglet-sx" aria-controls="panneau-sx" aria-selected="false" data-piste="sx"><strong>SX Track</strong><span>Pilotes qui aiment sauter</span></button><button type="button" role="tab" class="piste-onglet" id="onglet-mx" aria-controls="panneau-mx" aria-selected="false" data-piste="mx"><strong>MX Track</strong><span>Pilotes qui cherchent la vitesse</span></button>
+      </div>
+      <p class="petit" data-anime>Et de temps en temps, la piste MX devient une piste de flat track pour les amateurs de glisse.</p>
+      <a href="/park#pistes" class="bouton bouton--sombre" data-libelle="Le Park">Découvrir le Park</a>
+    </div>
+    <div class="pistes-scene" data-effet="trace-pistes">
+      <div class="piste-panneau" role="tabpanel" id="panneau-kids" aria-labelledby="onglet-kids">
+        <figure class="media piste-media" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/piste-kids-960.webp" srcset="/assets/images/piste-kids-480.webp 480w, /assets/images/piste-kids-640.webp 640w, /assets/images/piste-kids-960.webp 960w" sizes="(max-width: 760px) 100vw, 55vw" alt="Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste" width="960" height="640" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="piste-carte">
+          <svg class="piste-trace" viewBox="0 100 420 110" role="img" aria-label="Profil schématique de la piste, vue de côté : Kids Track"><path d="M10 190 L120 190 C140 190 150 176 170 176 S200 190 220 190 C238 190 246 172 266 172 S294 190 312 190 L410 190" pathLength="1"/></svg>
+          <p><strong>Piste éducative</strong> On commence sur l&#39;anneau extérieur, plat et sans difficulté. Une fois à l&#39;aise, le tracé intérieur ajoute bosses, vagues et virages serrés.</p>
+        </div>
+      </div><div class="piste-panneau" role="tabpanel" id="panneau-sx" aria-labelledby="onglet-sx" hidden>
+        <figure class="media piste-media" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/piste-sx-960.webp" srcset="/assets/images/piste-sx-480.webp 480w, /assets/images/piste-sx-640.webp 640w, /assets/images/piste-sx-960.webp 960w" sizes="(max-width: 760px) 100vw, 55vw" alt="La piste SX vue d&#39;en haut : virages serrés et sauts enchaînés dans la poussière" width="960" height="640" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="piste-carte">
+          <svg class="piste-trace" viewBox="0 100 420 110" role="img" aria-label="Profil schématique de la piste, vue de côté : SX Track"><path d="M10 190 L40 190 L78 120 L96 190 L120 190 L158 120 L176 190 L200 190 L238 120 L256 190 L280 190 L318 120 L336 190 L410 190" pathLength="1"/></svg>
+          <p><strong>Piste SX</strong> Lignes droites réduites, plus de virages et des sauts qui s&#39;enchaînent : la piste pour travailler le rythme.</p>
+        </div>
+      </div><div class="piste-panneau" role="tabpanel" id="panneau-mx" aria-labelledby="onglet-mx" hidden>
+        <figure class="media piste-media" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
+  <picture>
+    <img src="/assets/images/piste-mx-960.webp" srcset="/assets/images/piste-mx-480.webp 480w, /assets/images/piste-mx-640.webp 640w, /assets/images/piste-mx-960.webp 960w" sizes="(max-width: 760px) 100vw, 55vw" alt="Un pilote décolle sur une bosse, ciel bleu derrière" width="960" height="640" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="piste-carte">
+          <svg class="piste-trace" viewBox="0 100 420 110" role="img" aria-label="Profil schématique de la piste, vue de côté : MX Track"><path d="M10 190 L170 190 C190 190 200 150 222 150 C244 150 246 190 268 190 L410 190" pathLength="1"/></svg>
+          <p><strong>Piste MX</strong> De longues lignes droites pour prendre de la vitesse. De temps en temps, elle devient une piste de flat track pour les amateurs de glisse.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="shop-teaser clair" id="shop">
+  <div class="conteneur shop-grille">
+    <div class="shop-texte">
+      <h2 class="titre titre--xl" data-anime="lignes">Pit bikes <span class="surligne">dès 999 €</span></h2>
+      <p class="intro" data-anime>YCF, Kuberg, Sherco, quads et SSV : neufs ou d&#39;occasion, pour les enfants comme pour les grands. Paiement en 4 fois sans frais.</p>
+      <ul class="familles" data-anime="cascade">
+        <li><a href="/shop?famille=pit-bike#catalogue" class="famille" data-libelle="Le Shop"><strong>Pit bikes</strong><span>18 modèles</span><b data-prix>dès 999 €</b></a></li><li><a href="/shop?famille=draisienne#catalogue" class="famille" data-libelle="Le Shop"><strong>Draisiennes</strong><span>3 modèles</span><b data-prix>dès 399 €</b></a></li><li><a href="/shop?famille=flat-track#catalogue" class="famille" data-libelle="Le Shop"><strong>Flat track</strong><span>2 modèles</span><b data-prix>dès 2 299 €</b></a></li><li><a href="/shop?famille=electrique#catalogue" class="famille" data-libelle="Le Shop"><strong>Électriques</strong><span>8 modèles</span><b data-prix>dès 1 499 €</b></a></li><li><a href="/shop?famille=enduro#catalogue" class="famille" data-libelle="Le Shop"><strong>Sherco</strong><span>15 modèles</span><b data-prix>dès 3 499 €</b></a></li><li><a href="/shop?famille=quad#catalogue" class="famille" data-libelle="Le Shop"><strong>Quads</strong><span>15 modèles</span><b data-prix>dès 499 €</b></a></li><li><a href="/shop?famille=ssv#catalogue" class="famille" data-libelle="Le Shop"><strong>SSV</strong><span>4 modèles</span><b data-prix>dès 7 990 €</b></a></li>
+      </ul>
+      <a href="/shop#catalogue" class="bouton bouton--sombre" data-libelle="Le Shop">Voir les 65 véhicules</a>
+    </div>
+    <figure class="media shop-media" data-fx="parallaxe" data-fx-force="12" style="--cadrage:40% 50%;aspect-ratio:4 / 5">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/gamme-pilot-mobile-640.webp 640w, /assets/images/gamme-pilot-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 46vw">
+    <img src="/assets/images/gamme-pilot-1280.webp" srcset="/assets/images/gamme-pilot-640.webp 640w, /assets/images/gamme-pilot-1280.webp 1280w, /assets/images/gamme-pilot-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 46vw" alt="Deux pilotes YCF en plein saut dans un sous-bois" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+  <div class="marques" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel>
+    <p data-fx-rangee><span>YCF</span> <span>Sherco</span> <span>Kuberg</span> <span>Hytrack</span> <span>Fox</span> <span>Scott</span> <span>Fasthouse</span> <span>Thor</span> <span>Motul</span> <span>Gaerne</span> <span>Pirelli</span> <span>Kenny</span> <span>YCF</span> <span>Sherco</span> <span>Kuberg</span> <span>Hytrack</span> <span>Fox</span> <span>Scott</span> <span>Fasthouse</span> <span>Thor</span> <span>Motul</span> <span>Gaerne</span> <span>Pirelli</span> <span>Kenny</span> </p>
+  </div>
+</section>
+<section class="seb sombre" id="seb">
+  <div class="conteneur seb-grille">
+    <figure class="media seb-media" data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/seb-portrait-784.webp" srcset="/assets/images/seb-portrait-480.webp 480w, /assets/images/seb-portrait-640.webp 640w, /assets/images/seb-portrait-784.webp 784w" sizes="(max-width: 760px) 100vw, 40vw" alt="Portrait de Sébastien Guillaume, fondateur de MiniWheels" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="seb-texte">
+      <p class="surtitre" data-anime>Sébastien Guillaume</p>
+      <h2 class="titre titre--xl" data-anime="lignes">Quinze ans <em>au plus haut niveau</em></h2>
+      <p data-anime>Ancien pilote international d&#39;enduro, diplômé d&#39;État, Séb a choisi de transmettre : au Park, au Shop et dans les stages de la Seb&#39;One Academy.</p>
+      <ul class="palmares" data-anime="cascade">
+        <li><strong class="palmares-n" data-compteur="4">4</strong><span>fois champion du monde d&#39;enduro <em>par équipe</em></span></li><li><strong class="palmares-n" data-compteur="2">2</strong><span>fois vice-champion du monde d&#39;enduro</span></li><li><strong class="palmares-n" data-compteur="1">1</strong><span>titre de champion d&#39;Europe d&#39;enduro</span></li><li><strong class="palmares-n" data-compteur="3">3</strong><span>fois champion de France d&#39;enduro</span></li>
+      </ul>
+      <blockquote class="citation" data-anime><p>« MiniWheels et la Seb&#39;One Academy me permettent de transmettre mon expérience. »</p></blockquote>
+      <a href="/sebastien" class="bouton" data-libelle="Séb &amp; Academy">Son parcours et les stages</a>
+    </div>
+  </div>
+</section>
+<section class="photos clair" id="photos">
+  <div class="conteneur photos-tete">
+    <h2 class="titre " data-anime="lignes">Les photos, <em>c&#39;est cadeau</em></h2>
+    <p class="intro" data-anime>Coco photographie chaque après-midi de roulage et les albums sont en ligne le dimanche matin. Depuis septembre 2018, 238 séances ont été mises en images.</p>
+  </div>
+  <div class="pellicule">
+    <ul class="pellicule-rangee" data-sens="1" data-effet="pellicule"><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-1-960.webp" srcset="/assets/images/samedi-1-480.webp 480w, /assets/images/samedi-1-640.webp 640w, /assets/images/samedi-1-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Saut d&#39;un jeune pilote au-dessus de la bosse" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-2-960.webp" srcset="/assets/images/samedi-2-480.webp 480w, /assets/images/samedi-2-640.webp 640w, /assets/images/samedi-2-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Deux pilotes en l&#39;air côte à côte" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-3-960.webp" srcset="/assets/images/samedi-3-480.webp 480w, /assets/images/samedi-3-640.webp 640w, /assets/images/samedi-3-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Saut à contre-jour au coucher du soleil" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-4-960.webp" srcset="/assets/images/samedi-4-480.webp 480w, /assets/images/samedi-4-640.webp 640w, /assets/images/samedi-4-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Virage serré dans la terre ocre" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-5-960.webp" srcset="/assets/images/samedi-5-480.webp 480w, /assets/images/samedi-5-640.webp 640w, /assets/images/samedi-5-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Pilote qui arrive face à l&#39;objectif dans la poussière" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li></ul>
+    <ul class="pellicule-rangee" data-sens="-1" data-effet="pellicule"><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-6-960.webp" srcset="/assets/images/samedi-6-480.webp 480w, /assets/images/samedi-6-640.webp 640w, /assets/images/samedi-6-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Pilote casqué sur sa pit bike sous un ciel bleu" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-8-960.webp" srcset="/assets/images/samedi-8-480.webp 480w, /assets/images/samedi-8-640.webp 640w, /assets/images/samedi-8-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Deux pilotes en vol dans la lumière d&#39;automne" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-9-960.webp" srcset="/assets/images/samedi-9-480.webp 480w, /assets/images/samedi-9-640.webp 640w, /assets/images/samedi-9-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Le peloton du samedi dans les virages de la piste SX" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li><li><figure class="media " style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+  <picture>
+    <img src="/assets/images/samedi-10-960.webp" srcset="/assets/images/samedi-10-480.webp 480w, /assets/images/samedi-10-640.webp 640w, /assets/images/samedi-10-960.webp 960w" sizes="(max-width: 760px) 70vw, 30vw" alt="Un parent encourage le saut de son enfant" width="960" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure></li></ul>
+  </div>
+  <p class="conteneur photos-action" data-anime><a class="bouton bouton--sombre" href="https://www.facebook.com/MiniWheels.Bike" target="_blank" rel="noopener">Voir les albums sur Facebook</a></p>
+</section>
+<section class="fin sombre" id="fin">
+  <figure class="media fin-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-appel-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/accueil-appel-1280.webp" srcset="/assets/images/accueil-appel-640.webp 640w, /assets/images/accueil-appel-1280.webp 1280w, /assets/images/accueil-appel-1920.webp 1920w" sizes="100vw" alt="Un pilote lève le bras dans la poussière du Park" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="conteneur fin-contenu">
+    <h2 class="titre titre--xl" data-anime="lignes">On se voit <em>samedi ?</em></h2>
+    <p class="fin-texte" data-anime>Réservez votre location par téléphone, ou passez au Shop du mardi au samedi.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/park#reserver" class="bouton" data-libelle="Le Park" data-survol="magnetique">Réserver une session</a>
+      <a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park · 02 37 64 04 88</a>
+      <a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop · 02 37 50 09 05</a>
+    </p>
+  </div>
+  <div class="damier" aria-hidden="true"></div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <a class="pied-logo" href="/" data-libelle="Accueil"><img src="/assets/images/logo-rond-240.webp" alt="" width="72" height="72"><span>MiniWheels</span></a>
+    <p class="pied-accroche">Deux adresses, à une heure de Paris</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div class="pied-lieu">
+      <p class="pied-titre">Le Shop &amp; l&#39;atelier</p>
+      <p>21 route de Mantes, 28260 Le Mesnil-Simon<br><a href="tel:+33237500905">02 37 50 09 05</a></p>
+      <p class="pied-horaires">Mardi au vendredi : 9 h 30-12 h 30 · 14 h-19 h<br>Samedi : 9 h 30-12 h 30<br>Dimanche et lundi : fermé<br></p>
+    </div>
+    <div class="pied-lieu">
+      <p class="pied-titre">Le Park</p>
+      <p>D11, route de Versailles, 78980 Longnes<br><a href="tel:+33237640488">02 37 64 04 88</a></p>
+      <p class="pied-horaires">Samedi, toute l&#39;année : 14 h-18 h<br>Accueil et snack : dès 13 h<br></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/park" data-libelle="Le Park">Le Park</a></li><li><a href="/shop" data-libelle="Le Shop">Le Shop</a></li><li><a href="/sebastien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Suivre MiniWheels</p>
+      <ul>
+        <li><a href="https://www.facebook.com/MiniWheels.Bike" target="_blank" rel="noopener" aria-label="Facebook (nouvel onglet)">Facebook</a></li>
+        <li><a href="https://www.instagram.com/miniwheels.bike/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales et politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires et réservations simulés, rien n&#39;est envoyé.</p><p>© 2014-2026 MiniWheels</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33237640488">Appeler</a>
+  <a class="bouton" href="/park#reserver" data-libelle="Le Park">Réserver</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "siteActuel": "www.miniwheels.bike",
+  "pagesTypes": [
+    "/",
+    "/park",
+    "/shop",
+    "/sebastien",
+    "/contact"
+  ],
+  "effets": [
+    "grille-depart",
+    "compte-session",
+    "trace-pistes",
+    "pellicule",
+    "calcul-session",
+    "catalogue-tri",
+    "balises",
+    "etiquette",
+    "seb-geant",
+    "frise"
+  ],
+  "grille": {
+    "dispenses": {
+      "manipuler": "v11 : objet à manipuler non obligatoire ; calculateur de session et catalogue filtrable à la place",
+      "fil": "v11 : pas de fil imposé ; palette et damier tiennent le site",
+      "typo": "v11 : conseil seulement",
+      "scene": "v11 : conseil seulement",
+      "retour": "v11 : conseil seulement",
+      "voile": "glisse voulue : voile noir à bords en damier, le drapeau de course"
+    }
+  }
+}

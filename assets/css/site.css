@@ -1,0 +1,534 @@
+/* MiniWheels · direction « Paddock » : blanc plaque, noir pneu, un seul vert (celui du logo).
+   Titres Archivo très condensée, noire, italique ; texte Figtree. Le socle (socle.css) donne les règles communes. */
+@font-face { font-family: 'Archivo'; src: url('/assets/fonts/archivo-italique.woff2') format('woff2'); font-weight: 100 900; font-stretch: 62% 125%; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Figtree'; src: url('/assets/fonts/figtree.woff2') format('woff2'); font-weight: 300 900; font-display: swap; }
+@font-face { font-family: 'Archivo secours'; src: local('Arial Narrow'), local('Arial'); size-adjust: 78%; ascent-override: 92%; font-style: italic; }
+@font-face { font-family: 'Figtree secours'; src: local('Arial'); size-adjust: 101%; ascent-override: 95%; }
+
+:root {
+  --police-titres: 'Archivo', 'Archivo secours', 'Arial Narrow', sans-serif;
+  --police-texte: 'Figtree', 'Figtree secours', system-ui, sans-serif;
+  --noir: #101211;
+  --blanc: #f2f2ee;
+  --clair2: #e4e4de;
+  --vert: #00e400;
+  --accent: #00e400;
+  --gris: #4a4f4c;
+  --rayon: 14px;
+  --largeur: 1320px;
+}
+
+body { font-size: clamp(1rem, .97rem + .18vw, 1.1rem); }
+::selection { background: var(--vert); color: var(--noir); }
+
+/* Titres : plaque de course. Le mot mis en valeur est vert sur fond sombre, surligné en vert sur fond clair. */
+h1, h2, h3, .titre { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; letter-spacing: 0; line-height: .94; }
+h3 { font-stretch: 75%; line-height: 1; }
+.titre { font-size: clamp(2.5rem, min(6.4vw, 10vh), 5.6rem); margin: 0 0 .32em; }
+.titre--xl { font-size: clamp(2.9rem, min(8.4vw, 12vh), 7.6rem); }
+.titre em, .surligne { font-style: italic; }
+.sombre .titre em { color: var(--vert); }
+:is(.clair, .clair2) .titre em, .surligne {
+  background: linear-gradient(transparent 56%, var(--vert) 56%, var(--vert) 90%, transparent 90%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone; padding-inline: .06em;
+}
+.surtitre { font-weight: 700; font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 .9em; display: flex; align-items: center; gap: .7em; }
+.surtitre::before { content: ''; width: 28px; height: 4px; background: var(--vert); transform: skewX(-20deg); flex: none; }
+.intro { font-size: clamp(1.06rem, 1rem + .3vw, 1.3rem); max-width: 36em; }
+.petit { font-size: .95rem; color: var(--texte-doux); }
+.sombre .petit { color: #c9ccc8; }
+
+/* Thèmes de section. */
+.clair { background: var(--blanc); color: var(--noir); }
+.clair2 { background: var(--clair2); color: var(--noir); }
+.sombre { background: var(--noir); color: var(--blanc); }
+.clair, .clair2, .sombre { padding-block: clamp(60px, 9vw, 124px); position: relative; }
+.clair + .clair, .clair2 + .clair2, .sombre + .sombre { padding-top: clamp(24px, 4vw, 56px); }
+
+/* Boutons. */
+.bouton { background: var(--vert); color: var(--noir); font-weight: 700; letter-spacing: .01em; transition: background-color .2s, box-shadow .2s; }
+.bouton:hover { background: #3bff3b; }
+.bouton--contour { background: transparent; color: inherit; box-shadow: inset 0 0 0 2px currentColor; }
+.bouton--contour:hover { background: transparent; box-shadow: inset 0 0 0 2px var(--vert); }
+.bouton--clair { background: var(--blanc); color: var(--noir); }
+.bouton--clair:hover { background: #fff; }
+.bouton--sombre { background: var(--noir); color: var(--blanc); }
+.bouton--sombre:hover { background: #2a2e2c; }
+
+/* En-tête. */
+[data-entete] { background: var(--blanc); border-bottom-color: #d6d6cf; }
+.entete-logo { gap: .55em; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; text-transform: uppercase; font-size: 1.35rem; letter-spacing: .01em; }
+.entete-logo img { width: 44px; height: 44px; border-radius: 50%; }
+[data-nav] a { font-weight: 600; }
+[data-nav] a[aria-current] { text-decoration-color: var(--vert); text-decoration-thickness: 4px; }
+[data-menu] { color: var(--blanc); }
+[data-menu] .menu-lien { font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2.2rem, 9vw, 3.6rem); }
+[data-menu] .menu-lien[aria-current] { color: var(--vert); }
+.menu-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+html.menu-ouvert [data-entete] { background: var(--noir); color: var(--blanc); border-bottom-color: #2a2e2c; }
+html.menu-ouvert [data-menu-bouton] { background: var(--vert); color: var(--noir); }
+
+/* Intro « grille de départ » : la grille se dresse, tombe en avant, le badge roule jusqu'à la page. */
+.ouverture-panneau { gap: clamp(18px, 4vh, 36px); padding: var(--gouttiere); color: var(--blanc); }
+.ouverture-logo { width: clamp(92px, 12vw, 120px); height: auto; aspect-ratio: 1; border-radius: 50%; }
+.grille-depart { display: flex; gap: clamp(4px, 1vw, 12px); perspective: 700px; perspective-origin: 50% 0; }
+.grille-barre { display: block; width: clamp(28px, 8vw, 92px); height: clamp(64px, 14vh, 124px); transform-origin: 50% 100%; transform: scaleY(0); }
+.grille-barre b {
+  display: block; width: 100%; height: 100%; border-radius: 5px 5px 2px 2px; border-top: 5px solid var(--vert);
+  background: repeating-linear-gradient(to bottom, #d9dad5 0 9px, #8c908c 9px 12px);
+}
+.ouverture-ligne { margin: 0; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; font-size: clamp(1.2rem, 3vw, 1.8rem); letter-spacing: .12em; text-transform: uppercase; }
+@media (max-height: 500px) { .grille-barre { height: 22vh; } .ouverture-logo { width: 72px; } }
+
+/* Voile de transition : noir, bords en damier, badge et nom de la page. */
+[data-voile]::before, [data-voile]::after {
+  content: ''; position: absolute; left: 0; right: 0; height: 22px;
+  background: repeating-conic-gradient(var(--noir) 0 25%, var(--blanc) 0 50%) 0 0 / 22px 22px;
+}
+[data-voile]::before { bottom: 100%; }
+[data-voile]::after { top: 100%; }
+.voile-contenu img { width: 72px; height: 72px; border-radius: 50%; }
+[data-voile-libelle] { font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2.2rem, 7vw, 4.4rem); color: var(--blanc); }
+
+/* Images. */
+.media { border-radius: var(--rayon); background: #cfd0ca; }
+.mention-ia { font-size: 13px; }
+.sombre .media { background: #1d201e; }
+
+/* ACCUEIL · Ouverture plein cadre. */
+.hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: flex-end; background-color: var(--noir); color: #fff; overflow: hidden;
+  padding: calc(var(--entete-h) + 24px) 0 calc(var(--barres-h) + clamp(28px, 7vh, 80px)); }
+.hero-media { position: absolute; inset: 0; border-radius: 0; animation: respire 16s ease-in-out infinite alternate; }
+@keyframes respire { from { transform: scale(1); } to { transform: scale(1.07); } }
+@keyframes tourne { to { transform: rotate(360deg); } }
+.hero-media::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(16, 18, 17, .9) 0%, rgba(16, 18, 17, .55) 34%, rgba(16, 18, 17, 0) 62%), linear-gradient(to right, rgba(16, 18, 17, .5), rgba(16, 18, 17, 0) 55%); }
+.hero-contenu { position: relative; z-index: 2; }
+.hero-surtitre, .page-404 .surtitre { color: #fff; justify-self: start; display: inline-flex; padding: 5px 12px 5px 8px; border-radius: 999px; background: rgba(16, 18, 17, .82); }
+.hero-titre { font-size: clamp(3.3rem, min(11vw, 15.5vh), 10.5rem); margin: 0 0 .22em; color: #fff; }
+.hero-titre em { color: var(--vert); }
+.ligne-masque { display: block; clip-path: inset(-.4em -.6em -.16em -.6em); }
+.h-ligne { display: block; }
+.hero-texte { max-width: 33em; font-size: clamp(1.06rem, 1rem + .35vw, 1.3rem); color: #eceee9; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; }
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .h-ligne { transform: translate3d(0, 118%, 0); }
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .h-suite { opacity: 0; transform: translate3d(0, 18px, 0); }
+.badge-park {
+  position: absolute; z-index: 3; right: var(--gouttiere); bottom: calc(var(--barres-h) + clamp(28px, 7vh, 80px));
+  width: clamp(138px, 13vw, 184px); aspect-ratio: 1; border-radius: 50%; display: grid; place-content: center; justify-items: center; gap: 2px;
+  background: var(--noir); color: #fff; box-shadow: 0 0 0 4px var(--vert), 0 18px 40px rgba(0, 0, 0, .35); text-decoration: none; text-align: center;
+  transition: transform .3s var(--courbe);
+}
+.badge-park:hover { transform: rotate(-6deg) scale(1.04); }
+.badge-park::before { content: ''; position: absolute; inset: -14px; border-radius: 50%; border: 2px dashed rgba(0, 228, 0, .75); animation: tourne 18s linear infinite; pointer-events: none; }
+.badge-titre { font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--vert); }
+.badge-jour { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(1.3rem, 2vw, 1.9rem); line-height: 1; white-space: nowrap; }
+.badge-plage { font-weight: 700; font-size: .95rem; }
+.badge-compte { font-size: .85rem; font-variant-numeric: tabular-nums; color: #c9ccc8; min-height: 1.3em; white-space: nowrap; }
+
+/* Trois en un. */
+.trois-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: 24px 64px; align-items: end; margin-bottom: clamp(28px, 4vw, 52px); }
+.trois-tete .titre { margin: 0; }
+.trois-grille { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
+.trois-carte a { position: relative; display: block; color: #fff; text-decoration: none; border-radius: var(--rayon); overflow: hidden; }
+.trois-media { border-radius: var(--rayon); }
+.trois-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(16, 18, 17, .88), rgba(16, 18, 17, 0) 58%); pointer-events: none; }
+.trois-texte { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; display: grid; gap: 4px; padding: clamp(16px, 2vw, 26px); background: linear-gradient(to top, rgba(16, 18, 17, .6), transparent); }
+.trois-texte strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2.2rem, 3.6vw, 3.4rem); line-height: .95; }
+.trois-lieu { justify-self: start; padding: 3px 10px; border-radius: 999px; background: var(--noir); font-size: .85rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--vert); }
+.trois-carte a:hover strong { color: var(--vert); }
+.trois-media .mention-ia, .etape-media .mention-ia, .atelier-plein .mention-ia { top: 8px; bottom: auto; }
+
+/* Le Park ce samedi. */
+.samedi-grille { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.samedi-quand { font-size: clamp(1.3rem, 1.1rem + 1vw, 2rem); margin-bottom: .8em; }
+.samedi-quand strong { color: var(--vert); text-transform: capitalize; }
+.compte { display: grid; gap: 10px; margin: 0 0 22px; }
+.compte-libelle { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: .9rem; color: #c9ccc8; }
+.compte-cases { display: flex; flex-wrap: wrap; gap: 10px; }
+.compte-case { display: grid; justify-items: center; min-width: 4.6rem; padding: 10px 12px 8px; border-radius: 12px; background: #1d201e; box-shadow: inset 0 0 0 1px #2f3431; }
+.compte-case b { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1; font-variant-numeric: tabular-nums; min-width: 2ch; text-align: center; color: var(--vert); }
+.compte-case i { font-style: normal; font-size: .85rem; color: #c9ccc8; }
+.samedi-media { border-radius: var(--rayon); }
+.tuiles { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(10px, 1.6vw, 18px); margin-top: clamp(36px, 5vw, 64px); }
+.tuile { display: grid; align-content: start; gap: 4px; padding: clamp(18px, 2vw, 26px); border-radius: var(--rayon); box-shadow: inset 0 0 0 1px #343936; }
+.tuile strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(2.8rem, 4.4vw, 4.2rem); line-height: .95; color: var(--vert); white-space: nowrap; }
+.tuile span { font-weight: 700; }
+.tuile em { font-style: normal; color: #c9ccc8; font-size: .95rem; }
+.tuile--verte { background: var(--vert); color: var(--noir); box-shadow: none; }
+.tuile--verte strong, .tuile--verte em { color: var(--noir); }
+.samedi-bas { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; margin-top: 28px; }
+.samedi-bas p { margin: 0; color: #c9ccc8; }
+
+/* Première fois : cinq étapes en grille (ordinateur), rangée au doigt (téléphone). */
+.etapes-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 8px 48px; align-items: end; margin-bottom: clamp(24px, 3.4vw, 44px); }
+.etapes-tete .titre { margin: 0; }
+.etapes-tete .intro { margin: 0; }
+.etapes-grille { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.4vw, 18px); }
+.etape { display: flex; flex-direction: column; background: var(--blanc); border-radius: var(--rayon); overflow: hidden; }
+.etape-media { border-radius: 0; }
+.etape-texte { padding: 14px 16px 18px; display: grid; gap: 6px; }
+.etape-n { justify-self: start; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: 2.2rem; line-height: .9; color: var(--noir); background: var(--vert); padding: 2px 8px 0; border-radius: 6px; }
+.etape h3 { margin: 0; font-size: clamp(1.35rem, 1.6vw, 1.7rem); }
+.etape p { margin: 0; font-size: .95rem; line-height: 1.45; }
+.etapes-action { margin-top: clamp(24px, 3vw, 40px); }
+/* Les trois pistes. */
+.pistes-grille { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.pistes-onglets { display: grid; margin: 8px 0 18px; border-bottom: 1px solid #c6c7c0; }
+.piste-onglet { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: 16px; text-align: left; min-height: 64px; padding: 12px 14px; border: 0; border-top: 1px solid #c6c7c0; background: none; color: var(--noir); transition: background-color .25s, color .25s; }
+.piste-onglet strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: 1.9rem; line-height: 1; }
+.piste-onglet span { color: var(--gris); }
+.piste-onglet[aria-selected="true"] { background: var(--noir); color: var(--blanc); box-shadow: inset 6px 0 0 var(--vert); }
+.piste-onglet[aria-selected="true"] span { color: #c9ccc8; }
+.pistes-scene { position: relative; display: grid; }
+.piste-panneau { grid-area: 1 / 1; position: relative; }
+.piste-carte { position: absolute; left: clamp(10px, 2vw, 22px); bottom: clamp(10px, 2vw, 22px); width: min(330px, 70%); padding: 14px 16px; border-radius: 12px; background: var(--noir); color: var(--blanc); }
+.piste-carte p { margin: 0; font-size: .92rem; line-height: 1.45; }
+.piste-carte strong { color: var(--vert); }
+.piste-trace { width: 100%; height: auto; margin-bottom: 8px; }
+.piste-trace path { fill: none; stroke: var(--vert); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+
+/* Le Shop. */
+.shop-grille { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.familles { list-style: none; padding: 0; margin: 8px 0 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.famille { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 0 12px; min-height: 56px; padding: 10px 2px; border-top: 1px solid #c6c7c0; text-decoration: none; }
+.famille strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; text-transform: uppercase; font-size: 1.3rem; }
+.famille span { grid-row: 2; font-size: .88rem; color: var(--gris); }
+.famille b { grid-row: span 2; align-self: center; font-weight: 700; white-space: nowrap; }
+.famille:hover strong { text-decoration: underline; text-decoration-color: var(--vert); text-decoration-thickness: 4px; }
+.marques { margin-top: clamp(48px, 7vw, 96px); padding-block: 8px; border-block: 2px solid var(--noir); }
+.marques p { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(3rem, 9vw, 8rem); line-height: 1.02; color: var(--noir); }
+.marques span { padding-inline: .28em; }
+.marques span:nth-child(odd) { color: #6e736f; }
+
+/* Séb. */
+.seb-grille { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
+.palmares { list-style: none; padding: 0; margin: 28px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; }
+.palmares li { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding-top: 14px; border-top: 1px solid #343936; }
+.palmares-n { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(3.4rem, 5vw, 4.8rem); line-height: .9; color: var(--vert); min-width: 1ch; font-variant-numeric: tabular-nums; }
+.palmares em { color: #c9ccc8; font-style: normal; }
+.citation { margin: 0 0 28px; padding-left: 18px; border-left: 4px solid var(--vert); font-size: clamp(1.1rem, 1rem + .4vw, 1.35rem); font-style: italic; }
+.citation p { margin: 0; }
+
+/* Les photos. */
+.photos-tete { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); gap: 16px 64px; align-items: end; margin-bottom: clamp(28px, 4vw, 52px); }
+.photos-tete .titre { margin: 0; }
+.pellicule { display: grid; gap: clamp(10px, 1.4vw, 18px); overflow: hidden; }
+.pellicule-rangee { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(10px, 1.4vw, 18px); width: max-content; }
+.pellicule-rangee li { width: clamp(250px, 30vw, 460px); flex: none; }
+.pellicule-rangee[data-sens="-1"] { margin-left: clamp(-160px, -10vw, -60px); }
+html:not(.js) .pellicule-rangee, html.secours .pellicule-rangee { width: auto; overflow-x: auto; margin-left: 0; padding-inline: var(--gouttiere); }
+.photos-action { margin-top: clamp(28px, 4vw, 48px); }
+
+/* Appel final (toutes les pages). */
+.fin { position: relative; overflow: hidden; min-height: min(92svh, 860px); display: flex; align-items: flex-end; padding-bottom: calc(clamp(64px, 9vw, 120px) + 24px); background-color: var(--noir); }
+.fin-media { position: absolute; inset: 0; border-radius: 0; }
+.fin-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(16, 18, 17, .95) 8%, rgba(16, 18, 17, .55) 52%, rgba(16, 18, 17, .25)); pointer-events: none; }
+.fin-contenu { position: relative; z-index: 2; color: #fff; }
+.fin-contenu .titre em { color: var(--vert); background: none; }
+.fin-texte { max-width: 34em; font-size: clamp(1.06rem, 1rem + .35vw, 1.3rem); color: #eceee9; }
+.fin-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; }
+.fin-actions .bouton--contour { color: #fff; }
+.damier { position: absolute; left: 0; right: 0; bottom: 0; height: 24px; z-index: 2; background: repeating-conic-gradient(var(--noir) 0 25%, var(--blanc) 0 50%) 0 0 / 24px 24px; }
+.fin--sans-photo { min-height: 0; padding-top: clamp(80px, 11vw, 150px); }
+
+/* Pied de page. */
+.pied { background: var(--noir); color: var(--blanc); border-top: 0; padding-top: clamp(48px, 7vw, 88px); }
+.pied a { color: var(--blanc); }
+.pied-tete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 36px; }
+.pied-logo { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2.4rem, 5vw, 3.6rem); }
+.pied-logo img { width: 72px; height: 72px; border-radius: 50%; }
+.pied-accroche { margin: 0; color: #c9ccc8; font-size: 1.1rem; }
+.pied-titre { font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .9rem; color: var(--vert); margin-bottom: .6em; }
+.pied-horaires { color: #c9ccc8; font-size: .95rem; }
+.pied-bas { color: #aeb2ad; border-top: 1px solid #2a2e2c; padding-top: 20px; }
+[data-barre-fixe] { background: var(--noir); border-top-color: #2a2e2c; }
+[data-barre-fixe] .bouton--contour { color: var(--blanc); }
+
+/* PAGES INTÉRIEURES · ouvertures, chacune sa composition. */
+.page-park-tete { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); min-height: 100svh; background: var(--blanc); }
+.park-tete-texte { align-self: end; padding: calc(var(--entete-h) + 28px) var(--gouttiere) calc(var(--barres-h) + clamp(28px, 6vh, 64px)); }
+.park-tete-texte .titre { font-size: clamp(3rem, min(7.4vw, 13vh), 7.8rem); }
+.park-tete-media { position: relative; margin-top: var(--entete-h); }
+.park-tete-media .media { position: absolute; inset: 0; border-radius: 0; clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%); }
+.balises { position: absolute; left: 0; right: 0; bottom: 0; height: 26px; z-index: 2; background: repeating-linear-gradient(90deg, #e3262b 0 46px, #f6f6f2 46px 92px); transform-origin: 0 50%; }
+.statut { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 16px 8px 12px; border-radius: 999px; background: var(--noir); color: var(--blanc); font-weight: 700; }
+.statut::before { content: ''; width: 12px; height: 12px; border-radius: 50%; background: var(--vert); box-shadow: 0 0 0 4px rgba(0, 228, 0, .25); flex: none; }
+.statut--clair { background: #fff; color: var(--noir); box-shadow: inset 0 0 0 1px #c6c7c0; }
+.tete-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 18px; }
+.tete-chiffres { font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: .9rem; margin: 0 0 12px; }
+
+.page-shop-tete { padding: calc(var(--entete-h) + clamp(24px, 5vh, 56px)) 0 0; background: var(--blanc); overflow: hidden; }
+.shop-tete-haut { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 32px; align-items: end; }
+.shop-tete-haut .titre { font-size: clamp(3.4rem, min(11vw, 17vh), 11rem); margin: 0; }
+.etiquette { display: grid; place-content: center; justify-items: center; width: clamp(130px, 14vw, 190px); aspect-ratio: 1; border-radius: 50%; background: var(--vert); color: var(--noir); text-align: center; transform: rotate(-12deg); margin-bottom: 12px; }
+.etiquette small { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; line-height: 1.3; }
+.etiquette { gap: 6px; }
+.etiquette strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(3rem, 4.4vw, 4.2rem); line-height: 1.15; white-space: nowrap; }
+.shop-tete-bas { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 32px; align-items: center; margin: 18px auto 24px; }
+.shop-tete-bas p { margin: 0; max-width: 40em; }
+.shop-bandeau { height: clamp(260px, 46svh, 560px); border-radius: 0; }
+
+.page-seb-tete { position: relative; min-height: 100svh; background: var(--noir); color: var(--blanc); overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; padding: calc(var(--entete-h) + 24px) var(--gouttiere) calc(var(--barres-h) + clamp(28px, 6vh, 64px)); gap: 24px clamp(24px, 4vw, 64px); }
+.seb-geant { position: absolute; left: 0; right: 0; top: 50%; margin: 0; overflow: hidden; display: flex; justify-content: center; gap: .04em; transform: translateY(-58%); font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(14rem, 44vw, 40rem); line-height: .8; color: #1f2320; pointer-events: none; text-transform: uppercase; }
+.seb-geant span { display: block; }
+.seb-tete-media { position: relative; z-index: 1; align-self: end; height: min(calc(100svh - var(--entete-h) - 96px), 820px); }
+.seb-tete-media .media { position: absolute; inset: 0; filter: grayscale(1); }
+.seb-tete-texte { position: relative; z-index: 2; max-width: 34em; }
+.seb-tete-texte .titre { font-size: clamp(4rem, min(14vw, 22vh), 12rem); color: var(--vert); margin: 0 0 .1em; }
+
+.page-contact-tete { padding: calc(var(--entete-h) + clamp(28px, 6vh, 64px)) 0 clamp(48px, 7vw, 96px); background: var(--blanc); }
+.page-contact-tete .titre { font-size: clamp(2.8rem, min(6.6vw, 10.5vh), 6.4rem); }
+.lieux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2.4vw, 32px); margin-top: clamp(24px, 4vw, 48px); }
+.lieu { display: grid; grid-template-rows: auto 1fr; background: #fff; border-radius: var(--rayon); overflow: hidden; box-shadow: 0 1px 0 #d6d6cf; }
+.lieu-media { border-radius: 0; }
+.lieu-corps { padding: clamp(18px, 2.4vw, 30px); display: grid; gap: 12px; align-content: start; }
+.lieu-corps h2 { font-size: clamp(2rem, 3.6vw, 3rem); margin: 0; }
+.lieu-corps p { margin: 0; }
+.lieu-horaires { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; font-size: .95rem; }
+.lieu-horaires dt { font-weight: 700; }
+.lieu-horaires dd { margin: 0; color: var(--gris); }
+.lieu-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Blocs des pages intérieures. */
+.bloc-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.bloc-grille--inverse > :first-child { order: 2; }
+.liste-coches { list-style: none; padding: 0; margin: 0 0 18px; display: grid; gap: 8px; }
+.liste-coches li { display: flex; gap: 10px; align-items: baseline; }
+.liste-coches li::before { content: ''; flex: none; width: 14px; height: 8px; border-left: 3px solid currentColor; border-bottom: 3px solid currentColor; transform: rotate(-45deg) translateY(-3px); }
+.sombre .liste-coches li::before { color: var(--vert); }
+.horaires-cartes { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 20px); margin-top: 24px; }
+.horaire { padding: 20px; border-radius: var(--rayon); background: #1d201e; box-shadow: inset 0 0 0 1px #2f3431; }
+.horaire strong { display: block; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1; color: var(--vert); margin-top: 4px; }
+.pistes-liste { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.piste-fiche { background: #fff; border-radius: var(--rayon); overflow: hidden; display: grid; grid-template-rows: auto auto 1fr; }
+.piste-fiche .media { border-radius: 0; }
+.piste-fiche-corps { padding: 18px 20px 22px; }
+.piste-fiche h3 { font-size: 2rem; margin: 0 0 4px; }
+.piste-fiche .pour { font-weight: 700; margin-bottom: 8px; }
+.piste-fiche svg { width: 100%; height: auto; background: var(--noir); }
+.piste-fiche svg path { fill: none; stroke: var(--vert); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Calculateur de location. */
+.calc { background: #fff; color: var(--noir); border-radius: var(--rayon); padding: clamp(18px, 2.6vw, 32px); display: grid; gap: 18px; position: sticky; top: calc(var(--entete-h) + 16px); }
+.calc h3 { font-size: 2rem; margin: 0; }
+.calc .petit { color: var(--gris); }
+.calc-ligne { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: center; padding-top: 14px; border-top: 1px solid #d6d6cf; }
+.calc-ligne small { grid-column: 1; color: var(--gris); }
+.pas { display: inline-flex; align-items: center; gap: 6px; grid-row: span 2; }
+.pas button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--noir); color: var(--blanc); font-size: 1.4rem; line-height: 1; }
+.pas output { min-width: 2ch; text-align: center; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; font-size: 1.8rem; font-variant-numeric: tabular-nums; }
+.calc-case { display: flex; gap: 10px; align-items: center; min-height: 44px; }
+.calc-case input { width: 22px; height: 22px; accent-color: var(--noir); }
+.calc-total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 18px; border-radius: 12px; background: var(--noir); color: var(--blanc); }
+.calc-total strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(2.6rem, 4vw, 3.6rem); line-height: 1; color: var(--vert); font-variant-numeric: tabular-nums; min-width: 4.2ch; text-align: right; white-space: nowrap; }
+.calc-total span { color: #c9ccc8; font-size: .95rem; }
+.creneaux { display: flex; flex-wrap: wrap; gap: 8px; border: 0; padding: 0; margin: 0; }
+.creneaux legend { font-weight: 700; margin-bottom: 8px; padding: 0; }
+.creneaux label { position: relative; }
+.creneaux input { position: absolute; opacity: 0; inset: 0; }
+.creneaux span { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 64px; padding: 0 12px; border-radius: 999px; box-shadow: inset 0 0 0 2px var(--noir); font-weight: 700; font-variant-numeric: tabular-nums; cursor: pointer; }
+.creneaux input:checked + span { background: var(--noir); color: var(--vert); }
+.creneaux input:focus-visible + span { outline: 3px solid var(--noir); outline-offset: 3px; }
+.calc-message { margin: 0; padding: 12px 14px; border-radius: 10px; background: #e8fbe8; font-size: .95rem; }
+.formule { display: grid; gap: 4px; padding: 18px 20px; border-radius: var(--rayon); box-shadow: inset 0 0 0 1px #343936; }
+.formule strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(2.6rem, 4vw, 3.6rem); line-height: 1; color: var(--vert); }
+.formules { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 18px 0; }
+.cartes-fid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.carte-fid { padding: 20px; border-radius: var(--rayon); background: var(--vert); color: var(--noir); }
+.carte-fid h3 { margin: 0 0 6px; font-size: 1.9rem; }
+.carte-fid p { margin: 0; }
+.equipement-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.equipement-liste { display: grid; gap: 14px; }
+.equipement-liste div { padding: 18px 20px; border-radius: var(--rayon); background: #fff; }
+.equipement-liste h3 { font-size: 1.6rem; margin: 0 0 4px; }
+.equipement-liste p { margin: 0; }
+.equipement-liste .interdit { background: var(--noir); color: var(--blanc); }
+.equipement-liste .interdit h3 { color: #ff6b6b; }
+.equipe { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.equipe li { display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; }
+.equipe .media { border-radius: 50%; width: 96px; aspect-ratio: 1; }
+.equipe h3 { font-size: 1.8rem; margin: 0; }
+.equipe p { margin: 0; font-size: .95rem; color: #c9ccc8; }
+.snack { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 20px; align-items: center; margin-top: 36px; padding-top: 28px; border-top: 1px solid #343936; }
+.snack p { margin: 0 0 .5em; }
+.faq-liste { max-width: 900px; }
+.faq-item { border-top: 1px solid #c6c7c0; }
+.faq-item summary { min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 1.1rem; cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-size: 2rem; line-height: 1; transition: transform .3s var(--courbe); }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin: 0 0 18px; max-width: 44em; }
+
+/* Catalogue. */
+.filtres { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.filtre { min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; background: #fff; box-shadow: inset 0 0 0 2px var(--noir); font-weight: 700; color: var(--noir); transition: background-color .2s, color .2s; }
+.filtre[aria-pressed="true"] { background: var(--noir); color: var(--vert); }
+.filtres-bas { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+.filtres-bas select { min-height: 44px; padding: 0 12px; border-radius: 999px; border: 2px solid var(--noir); background: #fff; font-weight: 600; }
+.filtres-bas label { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; }
+.resultats { font-weight: 700; }
+.grille-vehicules { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 14px; }
+.vehicule { position: relative; display: grid; grid-template-rows: auto 1fr; background: #fff; border-radius: var(--rayon); overflow: hidden; box-shadow: 0 1px 0 #d6d6cf; }
+.vehicule-plaque { position: relative; display: grid; place-items: center; aspect-ratio: 3 / 2; background: var(--noir); color: var(--blanc); overflow: hidden; }
+.vehicule-plaque .media { position: absolute; inset: 0; border-radius: 0; background: #fff; }
+.vehicule-plaque .media img { object-fit: contain; padding: 6%; }
+.vehicule-plaque span { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2.2rem, 3.2vw, 3rem); max-width: 100%; overflow-wrap: anywhere; line-height: .9; text-align: center; padding: 0 12px; }
+.vehicule-plaque small { position: absolute; left: 12px; top: 10px; font-weight: 700; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--vert); }
+.vehicule-corps { padding: 14px 16px 16px; display: grid; gap: 6px; align-content: start; }
+.vehicule h3 { font-family: var(--police-texte); font-style: normal; font-weight: 800; font-stretch: 100%; text-transform: none; font-size: 1.05rem; line-height: 1.25; margin: 0; }
+.vehicule-infos { font-size: .88rem; color: var(--gris); margin: 0; }
+.vehicule-prix { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 75%; font-size: 1.7rem; line-height: 1; margin: 4px 0 0; white-space: nowrap; }
+.vehicule-badge { position: absolute; right: 10px; top: 10px; z-index: 2; padding: 3px 10px; border-radius: 999px; background: var(--vert); color: var(--noir); font-weight: 700; font-size: .85rem; }
+.vehicule a { font-weight: 700; font-size: .92rem; }
+.vehicule a { display: inline-flex; align-items: center; min-height: 44px; }
+.aucun { padding: 24px; border-radius: var(--rayon); background: #fff; }
+.payer { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; margin-top: 32px; padding: 22px 26px; border-radius: var(--rayon); background: var(--vert); color: var(--noir); }
+.payer strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(3rem, 6vw, 5rem); line-height: .9; }
+.payer h3 { margin: 0 0 4px; font-size: 1.8rem; }
+.payer p { margin: 0; }
+.atelier-plein { position: relative; min-height: min(90svh, 820px); display: flex; align-items: center; background-color: var(--noir); color: #fff; overflow: hidden; }
+.atelier-plein > .media { position: absolute; inset: 0; border-radius: 0; }
+.atelier-plein > .media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(16, 18, 17, .9) 0%, rgba(16, 18, 17, .55) 45%, rgba(16, 18, 17, 0) 75%); pointer-events: none; }
+.atelier-texte { position: relative; z-index: 2; max-width: 34em; }
+.atelier-liste { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0 0 24px; }
+.atelier-liste li { padding: 6px 14px; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5); font-weight: 600; }
+
+/* Séb : palmarès, frise, archives, Academy. */
+.palmares--grand { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.frise { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); position: relative; }
+.frise li { padding-top: 28px; position: relative; }
+.frise li::before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--vert); box-shadow: 0 0 0 5px var(--noir); }
+.frise-trait { position: absolute; left: 0; right: 0; top: 8px; height: 3px; background: #343936; transform-origin: 0 50%; }
+.frise strong { display: block; font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1; margin-bottom: 8px; }
+.archives { padding: 0 var(--gouttiere); margin: 0; display: flex; gap: clamp(10px, 1.4vw, 18px); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; }
+.archive { flex: 0 0 clamp(220px, 24vw, 340px); scroll-snap-align: start; }
+.archives .media { filter: grayscale(.25) contrast(1.05); }
+.academy-fiches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+.academy-fiches div { padding: 16px 18px; border-radius: var(--rayon); background: #fff; }
+.academy-fiches h3 { font-size: 1.5rem; margin: 0 0 4px; }
+.academy-fiches p { margin: 0; font-size: .95rem; }
+.academy-prix { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 18px; }
+.academy-prix div { display: grid; padding: 14px 20px; border-radius: var(--rayon); background: var(--noir); color: var(--blanc); }
+.academy-prix strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: clamp(2.6rem, 4vw, 3.6rem); line-height: 1; color: var(--vert); }
+.academy-badge { width: clamp(110px, 12vw, 150px); border-radius: 50%; }
+
+/* Contact. */
+.formulaire-grille { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+.champ input, .champ select, .champ textarea { background: #fff; width: 100%; min-width: 0; max-width: 100%; }
+.champ { min-width: 0; }
+.champs-deux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.reseaux { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+
+/* 404. */
+.page-404 { position: relative; min-height: 100svh; display: flex; align-items: flex-end; background-color: var(--noir); color: #fff; overflow: hidden; padding: calc(var(--entete-h) + 24px) 0 calc(var(--barres-h) + clamp(28px, 7vh, 80px)); }
+.page-404 > .media { position: absolute; inset: 0; border-radius: 0; }
+.page-404 > .media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(16, 18, 17, .95) 0%, rgba(16, 18, 17, .8) 48%, rgba(16, 18, 17, .35) 82%); pointer-events: none; }
+.page-404 .conteneur { position: relative; z-index: 2; }
+.page-404 .titre em { color: var(--vert); }
+
+/* Écrans bas (portable 1366×768) et téléphone à l'horizontale. */
+@media (max-height: 820px) and (min-width: 761px) {
+  .hero-titre { font-size: clamp(3rem, min(9.4vw, 14vh), 8rem); }
+  .badge-park { width: 140px; }
+  .park-tete-texte .titre, .seb-tete-texte .titre { font-size: clamp(3rem, 12vh, 6.4rem); }
+  .shop-tete-haut .titre { font-size: clamp(3rem, 14vh, 7.6rem); }
+  .shop-bandeau { height: 38svh; }
+}
+@media (max-height: 500px) {
+  .hero { padding-bottom: calc(var(--barres-h) + 14px); }
+  .hero-titre { font-size: clamp(2.4rem, 17vh, 4.4rem); }
+  .badge-park { width: 108px; bottom: calc(var(--barres-h) + 12px); }
+  .badge-jour { font-size: 1.1rem; }
+  .badge-compte { display: none; }
+  .park-tete-texte .titre, .seb-tete-texte .titre, .page-contact-tete .titre { font-size: clamp(2.2rem, 15vh, 3.8rem); }
+  .shop-tete-haut .titre { font-size: clamp(2.4rem, 16vh, 4.4rem); }
+  .etiquette { width: 100px; }
+  .etiquette strong { font-size: 1.8rem; }
+  .page-park-tete, .page-seb-tete { min-height: 0; }
+}
+
+/* Tablette et téléphone. */
+@media (max-width: 1000px) {
+  .etapes-grille { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tuiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .palmares--grand { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .equipe { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .clair, .clair2, .sombre { padding-block: clamp(52px, 13vw, 80px); }
+  .badge-park { top: calc(var(--entete-h) + 14px); bottom: auto; width: 116px; }
+  .badge-jour { font-size: 1.15rem; }
+  .hero-actions .bouton { flex: 1 1 auto; }
+  .trois-tete, .samedi-grille, .pistes-grille, .shop-grille, .seb-grille, .photos-tete, .etapes-tete, .bloc-grille, .equipement-grille, .formulaire-grille, .lieux { grid-template-columns: minmax(0, 1fr); }
+  .bloc-grille--inverse > :first-child { order: 0; }
+  .bloc-grille > .media, .shop-grille > .media, .samedi-grille > .media, .equipement-grille > .media { order: 2; }
+  .trois-grille { grid-template-columns: minmax(0, 1fr); }
+  .trois-media { aspect-ratio: 4 / 3 !important; }
+  .samedi-media { aspect-ratio: 4 / 3 !important; }
+  .shop-media { aspect-ratio: 4 / 3 !important; }
+  .seb-media { aspect-ratio: 1 !important; }
+  .compte-case { min-width: 3.9rem; }
+  .familles { grid-template-columns: minmax(0, 1fr); }
+  .palmares { grid-template-columns: minmax(0, 1fr); }
+  .etapes-defile { overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .etapes-grille { display: flex; width: max-content; padding-inline: var(--gouttiere); margin: 0; }
+  .etape { flex: 0 0 74vw; scroll-snap-align: start; }
+  .etape-media { aspect-ratio: 4 / 3 !important; }
+  .hero-media::after { background: linear-gradient(to top, rgba(16, 18, 17, .94) 0%, rgba(16, 18, 17, .82) 48%, rgba(16, 18, 17, .35) 72%, rgba(16, 18, 17, .1) 100%); }
+  .piste-carte { position: relative; left: auto; bottom: auto; width: auto; margin-top: -24px; margin-inline: 10px; }
+  .pellicule-rangee li { width: 68vw; }
+  .page-park-tete { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .park-tete-texte { padding-bottom: 28px; }
+  .park-tete-media { margin-top: 0; height: 46svh; order: 2; }
+  .park-tete-media .media { clip-path: none; }
+  .shop-tete-bas { grid-template-columns: minmax(0, 1fr); }
+  .shop-tete-haut { grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
+  .shop-tete-haut .titre { font-size: clamp(2.6rem, 13vw, 4rem); }
+  .etiquette { width: 96px; margin-bottom: 4px; }
+  .etiquette strong { font-size: 2.2rem; }
+  .etiquette small { font-size: .75rem; letter-spacing: .04em; }
+  .etiquette { gap: 2px; }
+  .grille-vehicules { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .vehicule-corps { padding: 10px 10px 12px; }
+  .vehicule h3 { font-size: .95rem; }
+  .vehicule-prix { font-size: 1.4rem; }
+  .vehicule-plaque span { font-size: 1.7rem; }
+  .page-seb-tete { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .seb-tete-media { order: 2; min-height: 0; aspect-ratio: 4 / 5; }
+  .seb-geant { top: calc(var(--entete-h) + 8px); transform: none; font-size: 46vw; }
+  .horaires-cartes, .pistes-liste, .frise, .academy-fiches, .formules, .cartes-fid, .champs-deux { grid-template-columns: minmax(0, 1fr); }
+  .payer { grid-template-columns: minmax(0, 1fr); }
+  .snack { grid-template-columns: minmax(0, 1fr); }
+  .calc { position: static; }
+  .fin { min-height: 0; padding-top: 42svh; }
+  .atelier-plein { align-items: flex-end; padding-top: 38svh; }
+  .atelier-plein > .media::after { background: linear-gradient(to top, rgba(16, 18, 17, .95) 30%, rgba(16, 18, 17, .2) 80%); }
+}
+@media (max-width: 420px) {
+  .compte-case { min-width: 3.4rem; padding-inline: 8px; }
+}
+
+/* États de départ des mouvements d'ouverture (posés avant le premier affichage : rien ne clignote sous le voile). */
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .etiquette { transform: scale(0) rotate(-60deg); }
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .balises { transform: scaleX(0); }
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .seb-geant span { opacity: 0; }
+/* Sans JavaScript, l'en-tête reste dans le flux : les ouvertures plein écran retirent sa hauteur. */
+html:not(.js) :is(.hero, .page-404, .page-park-tete, .page-seb-tete) { min-height: calc(100svh - 120px); }
+html:not(.js) .seb-tete-media { height: min(calc(100svh - 260px), 760px); }
+@media (max-width: 1000px) { .familles { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) {
+  .vehicule-plaque small { display: none; }
+  .page-404 > .media::after { background: linear-gradient(to top, rgba(16, 18, 17, .94) 0%, rgba(16, 18, 17, .82) 50%, rgba(16, 18, 17, .35) 78%, rgba(16, 18, 17, .1)); }
+  .seb-tete-media { height: auto; aspect-ratio: 4 / 5; }
+}
+@media (max-width: 760px) and (max-height: 640px) { .park-tete-texte .intro, .park-tete-texte .tete-chiffres { display: none; } }
+@media (max-height: 500px) { .seb-tete-texte .intro { display: none; } .seb-tete-media { height: 72svh; } .page-contact-tete .intro { display: none; } }
+
+/* Figures plein cadre sous un texte clair : fond sombre (lu par l'accessibilité à la place de la photo). */
+.hero-media, .fin-media, .page-404 > .media, .atelier-plein > .media { background: var(--noir); }
+@media (max-width: 760px) {
+  .vehicule { grid-template-rows: auto auto 1fr; }
+  .vehicule-badge { position: static; justify-self: start; margin: 8px 10px 0; }
+}
+@media (max-width: 760px) and (max-height: 640px) { .page-contact-tete .intro, .shop-tete-bas > p:first-child { display: none; } }

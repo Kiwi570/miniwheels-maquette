@@ -1,0 +1,12 @@
+… fichiers
+  fait en 0 s
+… mesures
+  20/55
+  42/55
+  fait en 85 s
+… mesures:balayage
+  fait en 22 s
+
+Échecs : 1 · À regarder : 3 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/ --seulement=fichiers,mesures
+Rapport : /home/claude/miniwheels-maquette/_audit/rapport/rapport.md (passe 20261120-163351-standard-cible-partiel)

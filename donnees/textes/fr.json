@@ -1,0 +1,405 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Réserver",
+    "appeler": "Appeler",
+    "appelerShop": "Appeler le Shop",
+    "appelerPark": "Appeler le Park",
+    "sommaire": "Sommaire",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de démonstration : formulaires et réservations simulés, rien n'est envoyé.",
+    "mentions": "Mentions légales et politique de confidentialité : à compléter",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Shop & Park",
+    "introNom": "MiniWheels",
+    "lieuxTitre": "Deux adresses, à une heure de Paris",
+    "suivre": "Suivre MiniWheels",
+    "statutCharge": "Horaires du jour",
+    "reseauFacebook": "Facebook (nouvel onglet)",
+    "reseauInstagram": "Instagram (nouvel onglet)",
+    "itineraire": "Itinéraire",
+    "faites": "Faites glisser"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "MiniWheels : pit bikes, Shop & Park à une heure de Paris",
+      "description": "Le Shop et l'atelier au Mesnil-Simon (28), le Park de pit bike à Longnes (78) : location dès 6 ans, initiation offerte, stages avec Sébastien Guillaume.",
+      "nav": "Accueil",
+      "partageAlt": "Un jeune pilote saute une bosse du Park MiniWheels",
+      "accroche": "Du premier tour au podium"
+    },
+    "park": {
+      "titre": "Le Park : terrain de pit bike à Longnes (78) · MiniWheels",
+      "description": "Trois pistes homologuées FFM, location de pit bike dès 6 ans (15 € les 10 min), initiation offerte, photos gratuites. Ouvert le samedi de 14 h à 18 h.",
+      "nav": "Le Park",
+      "partageAlt": "Le Park MiniWheels vu d'en haut, à Longnes",
+      "accroche": "Trois pistes, le samedi"
+    },
+    "shop": {
+      "titre": "Le Shop & l'atelier : pit bikes, quads et motos au Mesnil-Simon · MiniWheels",
+      "description": "Pit bikes YCF dès 999 €, motos électriques Kuberg, Sherco, quads et SSV, équipement et pièces. Atelier toutes marques. Paiement en 4 fois sans frais.",
+      "nav": "Le Shop",
+      "partageAlt": "L'intérieur du Shop MiniWheels et ses rangées de pit bikes",
+      "accroche": "Pit bikes dès 999 €"
+    },
+    "sebastien": {
+      "titre": "Sébastien Guillaume et la Seb'One Academy · MiniWheels",
+      "description": "Quatre fois champion du monde d'enduro par équipe, diplômé d'État : Séb transmet son expérience dans les stages de la Seb'One Academy.",
+      "nav": "Séb & Academy",
+      "partageAlt": "Portrait de Sébastien Guillaume",
+      "accroche": "Quinze ans au plus haut niveau"
+    },
+    "contact": {
+      "titre": "Contact et accès : Shop et Park · MiniWheels",
+      "description": "Le Shop au 21 route de Mantes, Le Mesnil-Simon. Le Park sur la D11 à Longnes. Horaires, téléphones, itinéraires et formulaire.",
+      "nav": "Contact",
+      "partageAlt": "La façade du Shop MiniWheels",
+      "accroche": "Deux adresses, un numéro par lieu"
+    },
+    "404": {
+      "titre": "Sortie de piste · MiniWheels",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Sortie de piste",
+      "accroche": "Sortie de piste"
+    }
+  },
+  "statut": {
+    "ouvert": "Ouvert jusqu'à {h}",
+    "ouvreAuj": "Ouvre aujourd'hui à {h}",
+    "ouvreDemain": "Ouvre demain à {h}",
+    "ouvreJour": "Ouvre {jour} à {h}",
+    "parkOuvert": "Le Park roule jusqu'à {h}",
+    "parkProchain": "Prochaine ouverture : {jour} · {plage}",
+    "dans": "dans"
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Shop & Park by Séb Guillaume",
+      "titre1": "Du premier tour",
+      "titre2a": "au",
+      "titre2b": "podium",
+      "texte": "Pit bikes, quads et motos au Shop du Mesnil-Simon, trois pistes au Park de Longnes : on roule dès 6 ans, à une heure de Paris.",
+      "action": "Réserver une session",
+      "action2": "Voir les motos",
+      "badgeTitre": "Le Park",
+      "badgeJour": "samedi",
+      "badgePlage": "14 h-18 h"
+    },
+    "trois": {
+      "titre1": "Trois en un,",
+      "titre2": "depuis 2014",
+      "texte": "Un terrain pour rouler, un magasin pour s'équiper, un atelier pour réparer : Séb a réuni ce qui manquait aux pilotes de la région.",
+      "park": "Le Park",
+      "parkLieu": "Longnes (78)",
+      "parkTexte": "Trois pistes homologuées FFM, location dès 6 ans",
+      "shop": "Le Shop",
+      "shopLieu": "Le Mesnil-Simon (28)",
+      "shopTexte": "Pit bikes, électriques, quads, équipement",
+      "atelier": "L'atelier",
+      "atelierLieu": "Au Shop",
+      "atelierTexte": "Réparation et entretien, toutes marques"
+    },
+    "samedi": {
+      "surtitre": "Le Park, ce samedi",
+      "titre": "Prochaine ouverture",
+      "dans": "Départ dans",
+      "meteo": "Selon l'état de la piste et la météo, confirmé le vendredi soir sur Facebook.",
+      "tuile1": "les 10 min",
+      "tuile1b": "Pit bike enfant, dès 6 ans",
+      "tuile2": "les 15 min",
+      "tuile2b": "Pit bike ado et adulte",
+      "tuile3": "l'entrée",
+      "tuile3b": "Avec ta moto (licencié FFM)",
+      "tuile4": "Offerte",
+      "tuile4b": "L'initiation, à demander en réservant",
+      "inclus": "Moto, équipement (sauf bottes), assurance et briefing compris.",
+      "action": "Réserver une session",
+      "photo": "Départ dans la poussière dorée du samedi après-midi"
+    },
+    "etapes": {
+      "titre1": "Ta première session",
+      "titre2": "en 5 étapes",
+      "texte": "Pas de licence, pas de moto : l'initiation est offerte avec la location. Il suffit de la demander en réservant.",
+      "region": "Les cinq étapes d'une première session, défilement horizontal",
+      "action": "Tout savoir sur l'initiation"
+    },
+    "pistes": {
+      "titre1": "Trois pistes,",
+      "titre2": "tous les niveaux",
+      "texte": "Tracées par des pros, entretenues toute l'année et homologuées FFM.",
+      "flat": "Et de temps en temps, la piste MX devient une piste de flat track pour les amateurs de glisse.",
+      "action": "Découvrir le Park",
+      "schema": "Profil schématique de la piste, vue de côté"
+    },
+    "shop": {
+      "titre1": "Pit bikes",
+      "titre2": "dès",
+      "texte": "YCF, Kuberg, Sherco, quads et SSV : neufs ou d'occasion, pour les enfants comme pour les grands. Paiement en 4 fois sans frais.",
+      "modeles": "{n} modèles",
+      "des": "dès",
+      "action": "Voir les {n} véhicules",
+      "marques": "Équipement et pièces"
+    },
+    "seb": {
+      "surtitre": "Sébastien Guillaume",
+      "titre1": "Quinze ans",
+      "titre2": "au plus haut niveau",
+      "texte": "Ancien pilote international d'enduro, diplômé d'État, Séb a choisi de transmettre : au Park, au Shop et dans les stages de la Seb'One Academy.",
+      "citation": "MiniWheels et la Seb'One Academy me permettent de transmettre mon expérience.",
+      "action": "Son parcours et les stages"
+    },
+    "photos": {
+      "titre1": "Les photos,",
+      "titre2": "c'est cadeau",
+      "texte": "Coco photographie chaque après-midi de roulage et les albums sont en ligne le dimanche matin. Depuis septembre 2018, 238 séances ont été mises en images.",
+      "action": "Voir les albums sur Facebook"
+    },
+    "fin": {
+      "titre1": "On se voit",
+      "titre2": "samedi ?",
+      "texte": "Réservez votre location par téléphone, ou passez au Shop du mardi au samedi.",
+      "action": "Réserver une session",
+      "photo": "Un pilote lève le bras dans la poussière du Park"
+    }
+  },
+  "park": {
+    "tete": {
+      "surtitre": "Le Park · Longnes (78)",
+      "titre1": "Trois pistes,",
+      "titre2": "le samedi",
+      "texte": "Un terrain privé réservé aux pit bikes, pour apprendre et progresser en toute sécurité : dès 6 ans, tous niveaux, avec ou sans licence, avec ou sans moto.",
+      "action": "Réserver une session",
+      "chiffres": "3 pistes · dès 6 ans · homologué FFM"
+    },
+    "ouverture": {
+      "titre": "Quand rouler ?",
+      "texte": "Le Park ouvre toute l'année le samedi après-midi. Accueil et snack dès 13 h, location de 14 h 30 à 18 h sur réservation.",
+      "facebook": "Confirmation le vendredi soir sur Facebook"
+    },
+    "pistes": {
+      "titre1": "Les pistes",
+      "texte": "Trois tracés pour progresser à son rythme, du premier tour au saut maîtrisé."
+    },
+    "location": {
+      "surtitre": "Rouler avec nos motos",
+      "titre1": "Location",
+      "titre2": "et initiation",
+      "texte": "Toutes nos pit bikes sont des YCF. L'équipe vous conseille la moto adaptée à l'âge et au niveau.",
+      "inclus": "Compris",
+      "apporter": "À apporter : chaussures montantes, pantalon, haut à manches longues.",
+      "calcTitre": "Calculez votre session",
+      "pilotes": "Pilotes",
+      "sessions": "Sessions",
+      "moins": "Retirer une",
+      "plus": "Ajouter une",
+      "initiation": "Initiation offerte (première session encadrée par Séb)",
+      "total": "Total",
+      "duree": "de roulage",
+      "creneau": "Créneau souhaité samedi",
+      "reserver": "Demander ce créneau",
+      "simule": "Réservation simulée : rien n'est envoyé. Pour réserver, appelez le Park au 02 37 64 04 88.",
+      "confirme": "Demande prête (simulation) : {n} session(s), {total}, samedi à {h}. Appelez le 02 37 64 04 88 pour confirmer.",
+      "minutes": "{n} min",
+      "parSession": "{prix} € la session de {duree} min"
+    },
+    "moto": {
+      "titre1": "Avec ta moto",
+      "titre2": "sans réserver",
+      "texte": "Accès sans réservation, avec sa propre pit bike, dès 6 ans révolus. Le Park est un terrain privé, pas un club : il ne délivre pas de licence.",
+      "parEntree": "l'entrée",
+      "pass": "Pass'Park",
+      "passTexte": "12 entrées pour le prix de 10. Carte nominative, délivrée à l'accueil, pour les accès piste (hors location et événements).",
+      "fid": "Fid'Park",
+      "fidTexte": "Carte de fidélité gratuite : la 11e entrée est offerte. Valable un an, en carte ou dans l'application FidMe."
+    },
+    "equipement": {
+      "titre1": "L'équipement",
+      "prete": "Prêté avec la location",
+      "preteListe": "Casque · gants · pare-pierre · genouillères · coudières",
+      "apporter": "À apporter",
+      "apporterListe": "Chaussures montantes · pantalon · haut à manches longues",
+      "interdit": "Interdit sur la piste",
+      "interditListe": "Shorts · t-shirts à manches courtes",
+      "mineurs": "Mineurs : un adulte, représentant légal, signe la décharge et reste présent pendant les sessions."
+    },
+    "equipe": {
+      "titre1": "L'équipe",
+      "titre2": "du samedi",
+      "seb": "Séb",
+      "sebRole": "Responsable du site, Brevet d'État : il encadre les enfants et les débutants.",
+      "coco": "Coco",
+      "cocoRole": "Corine vous accueille, et photographie l'après-midi.",
+      "chouchou": "Chouchou",
+      "chouchouRole": "Richard tient le snack dès 13 h : crêpes, viennoiseries, café.",
+      "snack": "Certains samedis, le snack partenaire sert crêpes salées et sucrées, viennoiseries, boissons fraîches et café.",
+      "photos": "Photos offertes : chaque séance est photographiée, albums en ligne le dimanche matin."
+    },
+    "faq": {
+      "titre": "Questions fréquentes"
+    },
+    "fin": {
+      "titre1": "Prêt pour",
+      "titre2": "samedi ?",
+      "texte": "La location se réserve par téléphone : les plannings se remplissent vite.",
+      "photo": "Départ groupé dans la poussière, les parents au bord de la piste"
+    }
+  },
+  "shop": {
+    "tete": {
+      "surtitre": "Le Shop · Le Mesnil-Simon (28)",
+      "titre1": "Pit bikes",
+      "titre2": "dès",
+      "texte": "Véhicules neufs et d'occasion, thermiques et électriques, 2 et 4 roues, pour enfants et adultes. Équipement pilote, pièces et accessoires.",
+      "action": "Voir le catalogue",
+      "action2": "L'atelier",
+      "vehicules": "véhicules"
+    },
+    "catalogue": {
+      "titre1": "Le catalogue",
+      "titre2": "du Shop",
+      "texte": "Prix TTC affichés en magasin. Disponibilité, fiche technique et conseil de taille : au Shop ou par téléphone.",
+      "tout": "Tout",
+      "energie": "Énergie",
+      "thermique": "Thermique",
+      "electrique": "Électrique",
+      "tri": "Trier",
+      "triPrix": "Prix croissant",
+      "triPrixDesc": "Prix décroissant",
+      "triNom": "Nom",
+      "resultats": "{n} véhicules",
+      "aucun": "Aucun véhicule ne correspond : essayez une autre famille.",
+      "demander": "Demander ce modèle",
+      "filtres": "Familles"
+    },
+    "payer": {
+      "titre": "Paiement en 4 fois sans frais",
+      "texte": "Conditions en magasin. Tickets Kadéos acceptés (Horizon, Infini et Séléct). Occasions aussi sur la boutique Le Bon Coin de MiniWheels."
+    },
+    "atelier": {
+      "surtitre": "L'atelier",
+      "titre1": "Toutes marques,",
+      "titre2": "tous modèles",
+      "texte": "Réparation et entretien assurés par Séb : moto cross, enduro, dirt bike, quad, scooter et moto de route.",
+      "action": "Prendre rendez-vous"
+    },
+    "venir": {
+      "titre1": "Venir",
+      "titre2": "au Shop",
+      "texte": "21 route de Mantes, 28260 Le Mesnil-Simon. La carte cadeau MiniWheels est valable au Shop et au Park."
+    },
+    "fin": {
+      "titre1": "Un conseil",
+      "titre2": "avant d'acheter ?",
+      "texte": "Séb vous aide à choisir la moto adaptée à l'âge, à la taille et au niveau du pilote."
+    }
+  },
+  "seb": {
+    "tete": {
+      "surtitre": "Sébastien Guillaume",
+      "titre": "Séb",
+      "texte": "La moto tout terrain, plus qu'un métier : une passion. Après quinze ans de carrière en enduro au plus haut niveau, Séb a choisi de transmettre.",
+      "action": "Les stages de l'Academy",
+      "info": "Stages de 2 h 30 · 45 € · 8 pilotes au plus"
+    },
+    "palmares": {
+      "titre1": "Le palmarès",
+      "titre2": "d'un champion",
+      "texte": "Quinze ans de carrière, quinze ans de presse."
+    },
+    "frise": {
+      "titre1": "De la course",
+      "titre2": "à la transmission",
+      "a1": "Avril 2014",
+      "t1": "Le Shop et l'atelier ouvrent au Mesnil-Simon : YCF, Sherco, quads, électriques, pièces et équipement.",
+      "a2": "Juillet 2014",
+      "t2": "Le Park ouvre à Longnes : la région manquait d'un terrain adapté, légal et sécurisé pour rouler en famille.",
+      "a3": "Septembre 2018",
+      "t3": "La Seb'One Academy naît : accompagner la progression des pilotes."
+    },
+    "archives": {
+      "titre1": "Les années",
+      "titre2": "course",
+      "texte": "Photos d'archives de la carrière de Séb.",
+      "region": "Archives de course, défilement horizontal"
+    },
+    "academy": {
+      "surtitre": "Seb'One Academy",
+      "titre1": "Stages",
+      "titre2": "pour progresser",
+      "texte": "Vitesse de passage en virage, sauts, freinage et franchissement : pour gagner en vitesse et en assurance, de 6 à 99 ans.",
+      "format": "Format",
+      "formatTexte": "2 h 30, un mercredi sur deux, de 14 h à 16 h 30, selon la météo. 8 pilotes au plus.",
+      "niveau": "Niveau",
+      "niveauTexte": "Intermédiaire ou découverte de la compétition, pas débutant. Le pilote démarre, s'arrête et relève sa moto seul, et roule régulièrement.",
+      "moto": "Moto",
+      "motoTexte": "La sienne : pit bike thermique 4 temps en parfait état. Aucune mécanique sur place.",
+      "equipement": "Équipement",
+      "equipementTexte": "Obligatoire : casque, pare-pierre, gants, pantalon, maillot à manches longues, chaussures montantes. Conseillé : bottes, coudières, genouillères.",
+      "licence": "Licence",
+      "licenceTexte": "Licenciés FFM, ou non licenciés avec une assurance Responsabilité civile circuit fermé.",
+      "prix1": "le stage",
+      "prix2": "la carte Pack'Stages, 10 stages",
+      "dates": "Les dates de la saison sont données par téléphone : réservation obligatoire.",
+      "action": "Réserver un stage",
+      "photo": "Groupe de pilotes en stage dans les virages"
+    },
+    "fin": {
+      "titre1": "Rouler",
+      "titre2": "avec Séb",
+      "texte": "Initiation pour les débutants au Park, stages pour progresser : appelez Séb au Shop."
+    }
+  },
+  "contact": {
+    "tete": {
+      "surtitre": "Contact",
+      "titre1": "Deux adresses,",
+      "titre2": "un numéro par lieu",
+      "texte": "Le Shop et l'atelier au Mesnil-Simon (28), le Park à Longnes (78) : deux adresses à une heure de Paris, un numéro pour chacune."
+    },
+    "shop": {
+      "titre": "Le Shop & l'atelier",
+      "qui": "Sébastien",
+      "texte": "Vente, atelier, stages, cartes cadeaux."
+    },
+    "park": {
+      "titre": "Le Park",
+      "qui": "Corine",
+      "texte": "Réservation de la location, accès à la piste."
+    },
+    "formulaire": {
+      "titre1": "Nous écrire",
+      "texte": "Pour une question qui peut attendre. Pour réserver une location, le téléphone reste le plus rapide.",
+      "nom": "Nom",
+      "email": "E-mail",
+      "tel": "Téléphone (facultatif)",
+      "sujet": "Sujet",
+      "sujetPark": "Le Park (accès, location)",
+      "sujetShop": "Le Shop (véhicule, équipement)",
+      "sujetAtelier": "L'atelier (réparation, entretien)",
+      "sujetStage": "Un stage Seb'One Academy",
+      "sujetCadeau": "Une carte cadeau",
+      "message": "Message",
+      "envoyer": "Envoyer",
+      "donnees": "Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter."
+    },
+    "reseaux": {
+      "titre": "Suivre le Park",
+      "texte": "L'ouverture du samedi est confirmée chaque vendredi soir sur Facebook. Albums photo le dimanche matin."
+    }
+  },
+  "introuvable": {
+    "surtitre": "Erreur 404",
+    "titre1": "Sortie",
+    "titre2": "de piste",
+    "texte": "Cette page n'existe pas ou plus. On remonte en selle ?",
+    "retour": "Revenir à l'accueil",
+    "park": "Voir le Park"
+  }
+}

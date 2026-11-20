@@ -1,0 +1,7 @@
+[
+  { "titre": "Je m'équipe", "texte": "Casque, gants, pare-pierre, genouillères et coudières sont prêtés. Venez en chaussures montantes, pantalon et manches longues.", "image": "equipement", "grok": true },
+  { "titre": "Briefing", "texte": "Arrivez 15 minutes avant. Corine fait remplir la décharge, puis Séb explique la moto et les règles de la piste.", "image": "etape-briefing" },
+  { "titre": "C'est parti !", "texte": "Premiers tours sur l'anneau extérieur de la piste éducative, plat et sans difficulté.", "image": "etape-cest-parti" },
+  { "titre": "Bien accompagné", "texte": "Pour une première session, Séb, diplômé d'État, encadre les débutants pendant la location.", "image": "etape-accompagne" },
+  { "titre": "Je suis vite autonome", "texte": "Une fois à l'aise, le tracé intérieur : bosses, vagues et virages serrés.", "image": "etape-autonome" }
+]

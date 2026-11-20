@@ -1,0 +1,16 @@
+{
+ "id": "20261120-163351-standard-cible-partiel",
+ "date": "2026-11-20T16:35:39.404Z",
+ "niveau": "standard",
+ "pages": "/,/404,/contact,/shop,/sebastien",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 1,
+ "aRegarder": 3,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

@@ -1,0 +1,12 @@
+{
+  "location": [
+    { "id": "enfant", "nom": "Pit bike enfant", "moto": "YCF 50 cc", "public": "dès 6 ans révolus", "prix": 15, "duree": 10 },
+    { "id": "ado", "nom": "Pit bike ado et adulte", "moto": "YCF 88, 125, 150 cc ou Bigy", "public": "ados et adultes", "prix": 20, "duree": 15 }
+  ],
+  "inclus": ["Le briefing", "La moto", "L'équipement pilote (sauf les bottes)", "L'assurance", "L'accès à la piste"],
+  "acces": [
+    { "nom": "Licencié FFM", "prix": 10, "detail": "Licence et pièce d'identité à présenter à l'accueil." },
+    { "nom": "Non licencié ou UFOLEP", "prix": 15, "detail": "Attestation d'assurance Responsabilité civile circuit fermé en cours de validité." }
+  ],
+  "creneaux": ["14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30"]
+}

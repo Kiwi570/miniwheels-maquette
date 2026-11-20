@@ -1,0 +1,186 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "accueil-ouverture-1280.webp",
+      "poids": 90983,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 626
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "fr",
+      "fichier": "assets/partage/contact-fr.jpg",
+      "gabarit": "droite",
+      "image": "shop-facade-784.webp",
+      "poids": 87094,
+      "sujet": {
+        "x": 600,
+        "y": 43,
+        "l": 600,
+        "h": 312
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "park",
+      "langue": "fr",
+      "fichier": "assets/partage/park-fr.jpg",
+      "gabarit": "droite",
+      "image": "park-ouverture-1280.webp",
+      "poids": 93667,
+      "sujet": {
+        "x": 628,
+        "y": 28,
+        "l": 543,
+        "h": 455
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "sebastien",
+      "langue": "fr",
+      "fichier": "assets/partage/sebastien-fr.jpg",
+      "gabarit": "droite",
+      "image": "seb-portrait-784.webp",
+      "poids": 37940,
+      "sujet": {
+        "x": 648,
+        "y": 0,
+        "l": 508,
+        "h": 526
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 40,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "shop",
+      "langue": "fr",
+      "fichier": "assets/partage/shop-fr.jpg",
+      "gabarit": "droite",
+      "image": "shop-ouverture-1280.webp",
+      "poids": 118003,
+      "sujet": {
+        "x": 600,
+        "y": 303,
+        "l": 600,
+        "h": 326
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

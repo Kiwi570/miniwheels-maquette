@@ -1,0 +1,71 @@
+{
+  "client": "MiniWheels",
+  "activite": "auto-moto",
+  "direction": "Paddock",
+  "date": "2026-11-20T15:32:30.543Z",
+  "images": [
+    {
+      "nom": "atelier-ouverture",
+      "fichier": "atelier-ouverture.png",
+      "page": "shop",
+      "emplacement": "Shop, section Atelier (grand bandeau) (ordinateur)",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "indispensable",
+      "gabarit": "section-fond",
+      "pieges": [
+        "mains en trop",
+        "véhicules"
+      ],
+      "consigne": "Wide view inside a small rural motorbike repair workshop with a single bay, nothing like a big dealership: a children's off-road pit bike with plain white plastics and no graphics stands on a red paddock stand on the right of the frame, every part bolted in its correct place; a pegboard wall of hand tools and a red rolling tool chest behind; exactly two hands of one mechanic in black nitrile gloves, cropped at the forearms, tighten the rear axle nut with a wrench; dusty concrete floor; afternoon daylight entering through an open roller door on the left. Landscape composition, aspect ratio 3:2, generous empty space on the left third of the frame for a title. Photorealistic, cinematic product-photography lighting, energetic, sunny, family-friendly motocross Saturday mood, palette of off-white, carbon black and a single touch of bright green, clear afternoon daylight with crisp shadows, tactile dusty orange-brown dirt, raw concrete, matte black plastic, brushed steel, set in a small family-run pit bike track and its workshop in the French countryside on a dry autumn afternoon, low raking side light, shallow depth of field, full-frame camera look, crisp micro-texture, clean composition with generous negative space. No license plate, no badge, no logo on any part, no recognizable car or motorbike model, no racing number, no part assembled incorrectly, nothing floating or held loose by hand. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "atelier-ouverture",
+      "fichier": "atelier-ouverture-mobile.png",
+      "page": "shop",
+      "emplacement": "Shop, section Atelier (grand bandeau) (téléphone)",
+      "role": "section-fond",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "indispensable",
+      "gabarit": "section-fond",
+      "pieges": [
+        "mains en trop",
+        "véhicules"
+      ],
+      "consigne": "Wide view inside a small rural motorbike repair workshop with a single bay, nothing like a big dealership: a children's off-road pit bike with plain white plastics and no graphics stands on a red paddock stand on the right of the frame, every part bolted in its correct place; a pegboard wall of hand tools and a red rolling tool chest behind; exactly two hands of one mechanic in black nitrile gloves, cropped at the forearms, tighten the rear axle nut with a wrench; dusty concrete floor; afternoon daylight entering through an open roller door on the left. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Photorealistic, cinematic product-photography lighting, energetic, sunny, family-friendly motocross Saturday mood, palette of off-white, carbon black and a single touch of bright green, clear afternoon daylight with crisp shadows, tactile dusty orange-brown dirt, raw concrete, matte black plastic, brushed steel, set in a small family-run pit bike track and its workshop in the French countryside on a dry autumn afternoon, low raking side light, shallow depth of field, full-frame camera look, crisp micro-texture, clean composition with generous negative space. No license plate, no badge, no logo on any part, no recognizable car or motorbike model, no racing number, no part assembled incorrectly, nothing floating or held loose by hand. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "atelier-detail",
+      "fichier": "atelier-detail.png",
+      "page": "shop",
+      "emplacement": "Shop, carte Atelier, et accueil carte Atelier",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "véhicules",
+        "mécanismes"
+      ],
+      "consigne": "Macro view of the rear sprocket and drive chain of a small off-road pit bike resting on a paddock stand, every part bolted in its correct place, chain freshly cleaned and oiled with a few drops shining, no hands in the frame, a chain brush lying on the concrete floor below, warm side light from a workshop door. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Photorealistic, cinematic product-photography lighting, energetic, sunny, family-friendly motocross Saturday mood, palette of off-white, carbon black and a single touch of bright green, clear afternoon daylight with crisp shadows, tactile dusty orange-brown dirt, raw concrete, matte black plastic, brushed steel, set in a small family-run pit bike track and its workshop in the French countryside on a dry autumn afternoon, low raking side light, shallow depth of field, full-frame camera look, crisp micro-texture, clean composition with generous negative space. No license plate, no badge, no logo on any part, no recognizable car or motorbike model, no racing number, no part assembled incorrectly, nothing floating or held loose by hand. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. The assembly shown complete and mechanically accurate, every part mounted exactly as on a real working machine, nothing floating or held loose by hand; or the parts lying still on the bench, not assembled. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "equipement",
+      "fichier": "equipement.png",
+      "page": "park",
+      "emplacement": "Park, section Équipement, et accueil étape « Je m'équipe »",
+      "role": "vignette",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "conseillée",
+      "gabarit": "texture",
+      "pieges": [
+        "enfants"
+      ],
+      "consigne": "A neat flat lay seen from directly above on raw concrete: a children's off-road helmet in plain white, goggles, a pair of gloves, a chest protector, knee guards and elbow guards, all plain without any brand or logo, arranged with even spacing. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Photorealistic, cinematic product-photography lighting, energetic, sunny, family-friendly motocross Saturday mood, palette of off-white, carbon black and a single touch of bright green, clear afternoon daylight with crisp shadows, tactile dusty orange-brown dirt, raw concrete, matte black plastic, brushed steel, set in a small family-run pit bike track and its workshop in the French countryside on a dry autumn afternoon, low raking side light, shallow depth of field, full-frame camera look, crisp micro-texture, clean composition with generous negative space. No license plate, no badge, no logo on any part, no recognizable car or motorbike model, no racing number, no part assembled incorrectly, nothing floating or held loose by hand. Only a child's hands drawing at a table, no face, no body. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

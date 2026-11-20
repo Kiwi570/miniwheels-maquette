@@ -1,0 +1,567 @@
+{
+ "source": "miniwheels.bike, pages des véhicules, relevé du 20 novembre 2026. Prix TTC affichés par le site.",
+ "familles": [
+  {
+   "id": "pit-bike",
+   "nom": "Pit bikes YCF",
+   "court": "Pit bikes",
+   "marque": "YCF",
+   "energie": "thermique"
+  },
+  {
+   "id": "draisienne",
+   "nom": "Draisiennes électriques Mini YCF",
+   "court": "Draisiennes",
+   "marque": "YCF",
+   "energie": "électrique"
+  },
+  {
+   "id": "flat-track",
+   "nom": "Flat track YCF Sunday",
+   "court": "Flat track",
+   "marque": "YCF Sunday",
+   "energie": "thermique"
+  },
+  {
+   "id": "electrique",
+   "nom": "Motos électriques Kuberg",
+   "court": "Électriques",
+   "marque": "Kuberg",
+   "energie": "électrique"
+  },
+  {
+   "id": "enduro",
+   "nom": "Motos Sherco",
+   "court": "Sherco",
+   "marque": "Sherco",
+   "energie": "thermique"
+  },
+  {
+   "id": "quad",
+   "nom": "Quads",
+   "court": "Quads",
+   "marque": "",
+   "energie": ""
+  },
+  {
+   "id": "ssv",
+   "nom": "SSV",
+   "court": "SSV",
+   "marque": "",
+   "energie": ""
+  }
+ ],
+ "vehicules": [
+  {
+   "nom": "Mini YCF 12\"",
+   "famille": "draisienne",
+   "prix": 399,
+   "badge": "Autorisé au Park",
+   "id": "mini-ycf-12",
+   "image": "v-mini-ycf-12"
+  },
+  {
+   "nom": "Mini YCF 12\" édition limitée",
+   "famille": "draisienne",
+   "prix": 429,
+   "id": "mini-ycf-12-edition-limitee",
+   "image": "v-mini-ycf-12-edition-limitee"
+  },
+  {
+   "nom": "Mini YCF 16\"",
+   "famille": "draisienne",
+   "prix": 499,
+   "badge": "Autorisé au Park",
+   "id": "mini-ycf-16",
+   "image": "v-mini-ycf-16"
+  },
+  {
+   "nom": "YCF 50A",
+   "famille": "pit-bike",
+   "gamme": "Kids",
+   "cc": 50,
+   "prix": 1299,
+   "id": "ycf-50a",
+   "image": "v-ycf-50a"
+  },
+  {
+   "nom": "YCF W50",
+   "famille": "pit-bike",
+   "gamme": "Kids",
+   "cc": 50,
+   "prix": 1699,
+   "badge": "Nouveauté",
+   "id": "ycf-w50",
+   "image": "v-ycf-w50"
+  },
+  {
+   "nom": "YCF Lite 88 S",
+   "famille": "pit-bike",
+   "gamme": "Lite",
+   "cc": 88,
+   "prix": 999,
+   "id": "ycf-lite-88-s",
+   "image": "v-ycf-lite-88-s"
+  },
+  {
+   "nom": "YCF Lite 125",
+   "famille": "pit-bike",
+   "gamme": "Lite",
+   "cc": 125,
+   "prix": 999,
+   "id": "ycf-lite-125"
+  },
+  {
+   "nom": "YCF Lite 150",
+   "famille": "pit-bike",
+   "gamme": "Lite",
+   "cc": 150,
+   "prix": 1399,
+   "id": "ycf-lite-150",
+   "image": "v-ycf-lite-150"
+  },
+  {
+   "nom": "YCF Lite 150 L",
+   "famille": "pit-bike",
+   "gamme": "Lite",
+   "cc": 150,
+   "prix": 1499,
+   "id": "ycf-lite-150-l",
+   "image": "v-ycf-lite-150-l"
+  },
+  {
+   "nom": "YCF Start 88 SE",
+   "famille": "pit-bike",
+   "gamme": "Start",
+   "cc": 88,
+   "prix": 1599,
+   "id": "ycf-start-88-se",
+   "image": "v-ycf-start-88-se"
+  },
+  {
+   "nom": "YCF Start W88",
+   "famille": "pit-bike",
+   "gamme": "Start",
+   "cc": 88,
+   "prix": 2299,
+   "id": "ycf-start-w88",
+   "image": "v-ycf-start-w88"
+  },
+  {
+   "nom": "YCF Start 125 SE",
+   "famille": "pit-bike",
+   "gamme": "Start",
+   "cc": 125,
+   "prix": 1699,
+   "id": "ycf-start-125-se",
+   "image": "v-ycf-start-125-se"
+  },
+  {
+   "nom": "YCF Pilot 150",
+   "famille": "pit-bike",
+   "gamme": "Pilot",
+   "cc": 150,
+   "prix": 1899,
+   "id": "ycf-pilot-150",
+   "image": "v-ycf-pilot-150"
+  },
+  {
+   "nom": "YCF Factory 150 SP2",
+   "famille": "pit-bike",
+   "gamme": "Factory",
+   "cc": 150,
+   "prix": 2499,
+   "id": "ycf-factory-150-sp2",
+   "image": "v-ycf-factory-150-sp2"
+  },
+  {
+   "nom": "YCF Factory 190 SP3",
+   "famille": "pit-bike",
+   "gamme": "Factory",
+   "cc": 190,
+   "prix": 3499,
+   "id": "ycf-factory-190-sp3",
+   "image": "v-ycf-factory-190-sp3"
+  },
+  {
+   "nom": "YCF Bigy 150",
+   "famille": "pit-bike",
+   "gamme": "Bigy",
+   "cc": 150,
+   "prix": 2199,
+   "id": "ycf-bigy-150",
+   "image": "v-ycf-bigy-150"
+  },
+  {
+   "nom": "YCF Bigy 150 Factory",
+   "famille": "pit-bike",
+   "gamme": "Bigy",
+   "cc": 150,
+   "prix": 2599,
+   "id": "ycf-bigy-150-factory",
+   "image": "v-ycf-bigy-150-factory"
+  },
+  {
+   "nom": "YCF Bigy 190 Daytona Factory XL",
+   "famille": "pit-bike",
+   "gamme": "Bigy",
+   "cc": 190,
+   "prix": 3699,
+   "id": "ycf-bigy-190-daytona-factory-xl",
+   "image": "v-ycf-bigy-190-daytona-factory-xl"
+  },
+  {
+   "nom": "YCF SM 125",
+   "famille": "pit-bike",
+   "gamme": "SM (supermotard)",
+   "cc": 125,
+   "prix": 1999,
+   "id": "ycf-sm-125",
+   "image": "v-ycf-sm-125"
+  },
+  {
+   "nom": "YCF SM 155",
+   "famille": "pit-bike",
+   "gamme": "SM (supermotard)",
+   "cc": 155,
+   "prix": 2299,
+   "id": "ycf-sm-155",
+   "image": "v-ycf-sm-155"
+  },
+  {
+   "nom": "YCF SM 190",
+   "famille": "pit-bike",
+   "gamme": "SM (supermotard)",
+   "cc": 190,
+   "prix": 3399,
+   "id": "ycf-sm-190",
+   "image": "v-ycf-sm-190"
+  },
+  {
+   "nom": "YCF Sunday S147",
+   "famille": "flat-track",
+   "prix": 2299,
+   "badge": "Nouveauté",
+   "id": "ycf-sunday-s147"
+  },
+  {
+   "nom": "YCF Sunday S187",
+   "famille": "flat-track",
+   "prix": 3299,
+   "badge": "Nouveauté",
+   "id": "ycf-sunday-s187"
+  },
+  {
+   "nom": "Kuberg Young Rider Start",
+   "famille": "electrique",
+   "gamme": "Young Rider",
+   "prix": 1499,
+   "id": "kuberg-young-rider-start"
+  },
+  {
+   "nom": "Kuberg Young Rider Trial E",
+   "famille": "electrique",
+   "gamme": "Young Rider",
+   "prix": 1739,
+   "id": "kuberg-young-rider-trial-e"
+  },
+  {
+   "nom": "Kuberg Young Rider Hero Edition Trial",
+   "famille": "electrique",
+   "gamme": "Young Rider Hero Edition",
+   "prix": 1899,
+   "id": "kuberg-young-rider-hero-edition-trial"
+  },
+  {
+   "nom": "Kuberg Young Rider Cross",
+   "famille": "electrique",
+   "gamme": "Young Rider",
+   "prix": 1899,
+   "id": "kuberg-young-rider-cross"
+  },
+  {
+   "nom": "Kuberg Young Rider Hero Edition Cross",
+   "famille": "electrique",
+   "gamme": "Young Rider Hero Edition",
+   "prix": 1999,
+   "id": "kuberg-young-rider-hero-edition-cross"
+  },
+  {
+   "nom": "Kuberg Racing Cross X-Force Pro 50",
+   "famille": "electrique",
+   "gamme": "K Racing",
+   "prix": 4539,
+   "id": "kuberg-racing-cross-x-force-pro-50"
+  },
+  {
+   "nom": "Kuberg Challenger",
+   "famille": "electrique",
+   "gamme": "Challenger",
+   "prix": 4899,
+   "id": "kuberg-challenger"
+  },
+  {
+   "nom": "Kuberg Freerider",
+   "famille": "electrique",
+   "gamme": "Freerider",
+   "prix": 5399,
+   "id": "kuberg-freerider"
+  },
+  {
+   "nom": "Sherco 50 SM-R Factory",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3499,
+   "id": "sherco-50-sm-r-factory"
+  },
+  {
+   "nom": "Sherco 50 SM-R Silver",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3499,
+   "id": "sherco-50-sm-r-silver"
+  },
+  {
+   "nom": "Sherco 50 SM-R Blackmoon",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3499,
+   "id": "sherco-50-sm-r-blackmoon",
+   "image": "v-sherco-50-sm-r-blackmoon"
+  },
+  {
+   "nom": "Sherco 50 SE-R Factory",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3699,
+   "id": "sherco-50-se-r-factory"
+  },
+  {
+   "nom": "Sherco 50 SM-RS Factory",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3999,
+   "id": "sherco-50-sm-rs-factory",
+   "image": "v-sherco-50-sm-rs-factory"
+  },
+  {
+   "nom": "Sherco 50 SM-RS Silver",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3999,
+   "id": "sherco-50-sm-rs-silver",
+   "image": "v-sherco-50-sm-rs-silver"
+  },
+  {
+   "nom": "Sherco 50 SM-RS Blackmoon",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3999,
+   "id": "sherco-50-sm-rs-blackmoon",
+   "image": "v-sherco-50-sm-rs-blackmoon"
+  },
+  {
+   "nom": "Sherco 50 SE-RS Factory",
+   "famille": "enduro",
+   "cc": 50,
+   "prix": 3999,
+   "id": "sherco-50-se-rs-factory",
+   "image": "v-sherco-50-se-rs-factory"
+  },
+  {
+   "nom": "Sherco 125 SE Factory",
+   "famille": "enduro",
+   "cc": 125,
+   "prix": 9099,
+   "id": "sherco-125-se-factory"
+  },
+  {
+   "nom": "Sherco 250 SE Factory",
+   "famille": "enduro",
+   "cc": 250,
+   "prix": 10299,
+   "id": "sherco-250-se-factory"
+  },
+  {
+   "nom": "Sherco 300 SE Factory",
+   "famille": "enduro",
+   "cc": 300,
+   "prix": 10399,
+   "id": "sherco-300-se-factory"
+  },
+  {
+   "nom": "Sherco 250 SE-F Factory",
+   "famille": "enduro",
+   "cc": 250,
+   "prix": 11899,
+   "id": "sherco-250-se-f-factory"
+  },
+  {
+   "nom": "Sherco 300 SE-F Factory",
+   "famille": "enduro",
+   "cc": 300,
+   "prix": 12099,
+   "id": "sherco-300-se-f-factory"
+  },
+  {
+   "nom": "Sherco 450 SE-F Factory",
+   "famille": "enduro",
+   "cc": 450,
+   "prix": 12199,
+   "id": "sherco-450-se-f-factory"
+  },
+  {
+   "nom": "Sherco 500 SE-F Factory",
+   "famille": "enduro",
+   "cc": 500,
+   "prix": 12399,
+   "id": "sherco-500-se-f-factory",
+   "image": "v-sherco-500-se-f-factory"
+  },
+  {
+   "nom": "KIX K-800",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 699,
+   "id": "kix-k-800",
+   "image": "v-kix-k-800"
+  },
+  {
+   "nom": "Pocket Quad Flip 49",
+   "famille": "quad",
+   "prix": 499,
+   "id": "pocket-quad-flip-49",
+   "image": "v-pocket-quad-flip-49"
+  },
+  {
+   "nom": "Pocket Quad Flip 800W",
+   "famille": "quad",
+   "prix": 699,
+   "id": "pocket-quad-flip-800w"
+  },
+  {
+   "nom": "Typhoon 110",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 899,
+   "id": "typhoon-110"
+  },
+  {
+   "nom": "Typhoon 125",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1149,
+   "id": "typhoon-125"
+  },
+  {
+   "nom": "HY 50 SX",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 999,
+   "id": "hy-50-sx"
+  },
+  {
+   "nom": "HY 50S Girly",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 999,
+   "id": "hy-50s-girly"
+  },
+  {
+   "nom": "HY 80 SX",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1290,
+   "id": "hy-80-sx"
+  },
+  {
+   "nom": "HY 80S Girly",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1290,
+   "id": "hy-80s-girly"
+  },
+  {
+   "nom": "HY 80 XLX",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1490,
+   "id": "hy-80-xlx"
+  },
+  {
+   "nom": "HY 110 ST",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1790,
+   "id": "hy-110-st"
+  },
+  {
+   "nom": "HY 125 SX",
+   "famille": "quad",
+   "public": "Enfant",
+   "prix": 1790,
+   "id": "hy-125-sx"
+  },
+  {
+   "nom": "HY 150 SX",
+   "famille": "quad",
+   "public": "Enfant et adulte",
+   "prix": 1690,
+   "id": "hy-150-sx"
+  },
+  {
+   "nom": "A500 IX",
+   "famille": "quad",
+   "public": "Adulte",
+   "prix": 4990,
+   "id": "a500-ix"
+  },
+  {
+   "nom": "S750 Crossover",
+   "famille": "quad",
+   "public": "Adulte",
+   "prix": 7890,
+   "id": "s750-crossover"
+  },
+  {
+   "nom": "Jobber 500",
+   "famille": "ssv",
+   "prix": 7990,
+   "id": "jobber-500"
+  },
+  {
+   "nom": "Jobber Maxx 750",
+   "famille": "ssv",
+   "prix": 10990,
+   "id": "jobber-maxx-750"
+  },
+  {
+   "nom": "Jobber Maxx 800",
+   "famille": "ssv",
+   "prix": 11999,
+   "id": "jobber-maxx-800"
+  },
+  {
+   "nom": "Jobber DMaxx Full Options",
+   "famille": "ssv",
+   "prix": 13999,
+   "id": "jobber-dmaxx-full-options"
+  }
+ ],
+ "marques": [
+  "YCF",
+  "Sherco",
+  "Kuberg",
+  "Hytrack",
+  "Masai",
+  "Fox",
+  "Scott",
+  "Fasthouse",
+  "Thor",
+  "Motul",
+  "Gaerne",
+  "Pirelli",
+  "Kenny",
+  "EVS"
+ ]
+}

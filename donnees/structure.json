@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "MotorcycleDealer", "name": "MiniWheels Shop & atelier", "telephone": "+33237500905",
+      "address": { "@type": "PostalAddress", "streetAddress": "21 route de Mantes", "postalCode": "28260", "addressLocality": "Le Mesnil-Simon", "addressCountry": "FR" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "12:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "14:00", "closes": "19:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "12:30" } ],
+      "founder": { "@type": "Person", "name": "Sébastien Guillaume" } },
+    { "@type": "SportsActivityLocation", "name": "MiniWheels Park", "telephone": "+33237640488",
+      "address": { "@type": "PostalAddress", "streetAddress": "D11, route de Versailles", "postalCode": "78980", "addressLocality": "Longnes", "addressCountry": "FR" },
+      "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "14:00", "closes": "18:00" } ] }
+  ]
+}

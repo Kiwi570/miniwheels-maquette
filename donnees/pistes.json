@@ -1,0 +1,30 @@
+[
+ {
+  "id": "kids",
+  "nom": "Kids Track",
+  "court": "Piste éducative",
+  "pour": "Débutants et plus jeunes",
+  "texte": "On commence sur l'anneau extérieur, plat et sans difficulté. Une fois à l'aise, le tracé intérieur ajoute bosses, vagues et virages serrés.",
+  "image": "piste-kids",
+  "trace": "M10 190 L120 190 C140 190 150 176 170 176 S200 190 220 190 C238 190 246 172 266 172 S294 190 312 190 L410 190",
+  "citation": "Les débutants d'aujourd'hui sont les pilotes de demain !"
+ },
+ {
+  "id": "sx",
+  "nom": "SX Track",
+  "court": "Piste SX",
+  "pour": "Pilotes qui aiment sauter",
+  "texte": "Lignes droites réduites, plus de virages et des sauts qui s'enchaînent : la piste pour travailler le rythme.",
+  "image": "piste-sx",
+  "trace": "M10 190 L40 190 L78 120 L96 190 L120 190 L158 120 L176 190 L200 190 L238 120 L256 190 L280 190 L318 120 L336 190 L410 190"
+ },
+ {
+  "id": "mx",
+  "nom": "MX Track",
+  "court": "Piste MX",
+  "pour": "Pilotes qui cherchent la vitesse",
+  "texte": "De longues lignes droites pour prendre de la vitesse. De temps en temps, elle devient une piste de flat track pour les amateurs de glisse.",
+  "image": "piste-mx",
+  "trace": "M10 190 L170 190 C190 190 200 150 222 150 C244 150 246 190 268 190 L410 190"
+ }
+]

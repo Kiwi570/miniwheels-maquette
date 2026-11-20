@@ -1,0 +1,255 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "auto-moto"
+ ],
+ "metier": "pit bike moto magasin atelier circuit",
+ "besoin": [],
+ "ton": [
+  "énergique"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "miniwheels-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "laure-polin-maquette",
+   "client": "sculptrice (ardoise taillée, bronze, pneu recyclé), atelier à Bagnolet, vente d'œuvres",
+   "metier": "sculptrice",
+   "pourquoi": "Sculptrice : sombre et minimal, œuvres en grand, Cormorant Garamond.",
+   "proche": [
+    "même métier"
+   ],
+   "lumiere": "sombre",
+   "note_maquette": 90,
+   "en_ligne": "https://laure-polin-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "laure-polin-maquette/hero",
+     "note_section": 5,
+     "titre": "Œuvres recomposées en poussière d'ardoise",
+     "capture": "medias/laure-polin-maquette/hero-p1440.jpg",
+     "video": "medias/laure-polin-maquette/hero-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/hero.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "laure-polin-maquette/manifeste",
+     "note_section": 4,
+     "titre": "Manifeste au portrait collant",
+     "capture": "medias/laure-polin-maquette/manifeste-p1440.jpg",
+     "video": "medias/laure-polin-maquette/manifeste-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/manifeste.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app"
+    },
+    {
+     "page": "oeuvre",
+     "role": "ouverture",
+     "id": "laure-polin-maquette/oeuvre-fiche-entree",
+     "note_section": 3,
+     "titre": "Entrée de la fiche d'œuvre",
+     "capture": "medias/laure-polin-maquette/oeuvre-fiche-entree-p1440.jpg",
+     "video": null,
+     "fiche": "sections/laure-polin-maquette/oeuvre-fiche-entree.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app/oeuvre"
+    },
+    {
+     "page": "salle",
+     "role": "galerie",
+     "id": "laure-polin-maquette/salle-salle-zone",
+     "note_section": 4,
+     "titre": "Salle horizontale à l'échelle",
+     "capture": "medias/laure-polin-maquette/salle-salle-zone-p1440.jpg",
+     "video": "medias/laure-polin-maquette/salle-salle-zone-p720.mp4",
+     "fiche": "sections/laure-polin-maquette/salle-salle-zone.json",
+     "en_ligne": "https://laure-polin-maquette.vercel.app/salle"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "efficience-triathlon-maquette",
+   "client": "coach de triathlon, tests d'effort lactate et stages",
+   "metier": "coach de triathlon",
+   "pourquoi": "Coach de triathlon : bleu nuit et orange, capitales, chiffres de course.",
+   "proche": [
+    "activité proche",
+    "ambiance énergique"
+   ],
+   "lumiere": "sombre",
+   "note_maquette": 88,
+   "en_ligne": "https://efficience-triathlon-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "efficience-triathlon-maquette/top",
+     "note_section": 4,
+     "titre": "Héros vidéo sous ondes",
+     "capture": "medias/efficience-triathlon-maquette/top-p1440.jpg",
+     "video": "medias/efficience-triathlon-maquette/top-p720.mp4",
+     "fiche": "sections/efficience-triathlon-maquette/top.json",
+     "en_ligne": "https://efficience-triathlon-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "outil-interactif",
+     "id": "efficience-triathlon-maquette/science",
+     "note_section": 5,
+     "titre": "Courbe interactive à curseur",
+     "capture": "medias/efficience-triathlon-maquette/science-p1440.jpg",
+     "video": "medias/efficience-triathlon-maquette/science-p720.mp4",
+     "fiche": "sections/efficience-triathlon-maquette/science.json",
+     "en_ligne": "https://efficience-triathlon-maquette.vercel.app"
+    },
+    {
+     "page": "stage-triathlon-montagne",
+     "role": "ouverture",
+     "id": "efficience-triathlon-maquette/stage-triathlon-montagne-top",
+     "note_section": 4,
+     "titre": "Héros à profil d'altitude",
+     "capture": "medias/efficience-triathlon-maquette/stage-triathlon-montagne-top-p1440.jpg",
+     "video": "medias/efficience-triathlon-maquette/stage-triathlon-montagne-top-p720.mp4",
+     "fiche": "sections/efficience-triathlon-maquette/stage-triathlon-montagne-top.json",
+     "en_ligne": "https://efficience-triathlon-maquette.vercel.app/stage-triathlon-montagne"
+    },
+    {
+     "page": "test-effort",
+     "role": "étapes",
+     "id": "efficience-triathlon-maquette/test-effort-protocole",
+     "note_section": 4,
+     "titre": "Protocole épinglé palier par palier",
+     "capture": "medias/efficience-triathlon-maquette/test-effort-protocole-p1440.jpg",
+     "video": "medias/efficience-triathlon-maquette/test-effort-protocole-p720.mp4",
+     "fiche": "sections/efficience-triathlon-maquette/test-effort-protocole.json",
+     "en_ligne": "https://efficience-triathlon-maquette.vercel.app/test-effort"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "chateau-haut-piquat-maquette",
+   "client": "château viticole en Lussac Saint-Émilion : vins, boutique en ligne, visites et événements, site bilingue",
+   "metier": "château viticole, vigneron",
+   "pourquoi": "Château viticole : calcaire et argile, Fraunces, bouteilles sur blocs de pierre, coupe géologique, boutique filtrable.",
+   "proche": [
+    "activité proche"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 86,
+   "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "chateau-haut-piquat-maquette/hero",
+     "note_section": 4,
+     "titre": "Château Haut-Piquat",
+     "capture": "medias/chateau-haut-piquat-maquette/hero-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/hero-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/hero.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "chateau-haut-piquat-maquette/terroir",
+     "note_section": 5,
+     "titre": "Sous la vigne, le calcaireBeneath the vines, limestone",
+     "capture": "medias/chateau-haut-piquat-maquette/terroir-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/terroir-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/terroir.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app"
+    },
+    {
+     "page": "oenotourisme",
+     "role": "ouverture",
+     "id": "chateau-haut-piquat-maquette/oenotourisme-ohero",
+     "note_section": 5,
+     "titre": "Passer l’archeThrough the arch",
+     "capture": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/oenotourisme-ohero-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/oenotourisme-ohero.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app/oenotourisme"
+    },
+    {
+     "page": "vins",
+     "role": "produits",
+     "id": "chateau-haut-piquat-maquette/vins-cave",
+     "note_section": 5,
+     "titre": "Le tour de la caveA tour of the cellar",
+     "capture": "medias/chateau-haut-piquat-maquette/vins-cave-p1440.jpg",
+     "video": "medias/chateau-haut-piquat-maquette/vins-cave-p720.mp4",
+     "fiche": "sections/chateau-haut-piquat-maquette/vins-cave.json",
+     "en_ligne": "https://chateau-haut-piquat-maquette.vercel.app/vins"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "lemoy-premium-maquette",
+   "client": "pâtisserie, chocolaterie, boulangerie et traiteur rue François de Curel à Metz, commande en ligne et retrait en boutique",
+   "metier": "pâtissier chocolatier",
+   "pourquoi": "Pâtisserie à Metz : cacao, crème et or, superbes photos de produits, vitrine claire et utile, commande en ligne.",
+   "proche": [
+    "activité proche"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 84,
+   "en_ligne": "https://lemoy-premium-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "lemoy-premium-maquette/heros",
+     "note_section": 3,
+     "titre": "Les grands classiques, revisités.",
+     "capture": "medias/lemoy-premium-maquette/heros-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/heros.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "produits",
+     "id": "lemoy-premium-maquette/vitrine",
+     "note_section": 4,
+     "titre": "Sous les cloches, ce matin",
+     "capture": "medias/lemoy-premium-maquette/vitrine-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/vitrine.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app"
+    },
+    {
+     "page": "boulangerie",
+     "role": "ouverture",
+     "id": "lemoy-premium-maquette/boulangerie-tete",
+     "note_section": 3,
+     "titre": "Pains au levain, viennoiseries pur beurre",
+     "capture": "medias/lemoy-premium-maquette/boulangerie-tete-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/boulangerie-tete.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app/boulangerie"
+    },
+    {
+     "page": "carte-cadeau",
+     "role": "outil-interactif",
+     "id": "lemoy-premium-maquette/carte-cadeau-cc-titre",
+     "note_section": 4,
+     "titre": "Votre carte",
+     "capture": "medias/lemoy-premium-maquette/carte-cadeau-cc-titre-p1440.jpg",
+     "video": null,
+     "fiche": "sections/lemoy-premium-maquette/carte-cadeau-cc-titre.json",
+     "en_ligne": "https://lemoy-premium-maquette.vercel.app/carte-cadeau"
+    }
+   ]
+  }
+ ]
+}

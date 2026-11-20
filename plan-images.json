@@ -1,0 +1,653 @@
+[
+ {
+  "source": "recu/nous-contacter-28.jpg",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "MiniWheels, Shop & Park by Séb Guillaume"
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-60.jpg",
+  "nom": "accueil-ouverture",
+  "role": "ouverture",
+  "alt": "Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "bas",
+  "cadrage": [
+   42,
+   40
+  ],
+  "page": "accueil"
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-29.jpg",
+  "nom": "accueil-park",
+  "role": "carte-service",
+  "alt": "Deux jeunes pilotes casqués en pleine poussière sur la piste du Park",
+  "beaute": 4,
+  "cadrage": [
+   66,
+   47
+  ]
+ },
+ {
+  "source": "recu/nous-contacter-2.jpg",
+  "nom": "accueil-shop",
+  "role": "carte-service",
+  "alt": "Rangées de pit bikes neuves dans le Shop",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   38,
+   68
+  ]
+ },
+ {
+  "source": "recu/points-forts-nouveautes.jpg",
+  "nom": "shop-facade",
+  "role": "carte-service",
+  "alt": "La façade du Shop MiniWheels au Mesnil-Simon : réparation toutes marques, vente neuf et occasion",
+  "beaute": 4,
+  "ratio": "3:2",
+  "cadrage": [
+   50,
+   50
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-63.jpg",
+  "nom": "accueil-samedi",
+  "role": "section-fond",
+  "alt": "Départ dans la poussière dorée du samedi après-midi, les pilotes s'élancent dans le virage",
+  "beaute": 5,
+  "mobile": true,
+  "zone_texte": "droite",
+  "cadrage": [
+   42,
+   40
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
+  "nom": "etape-briefing",
+  "role": "vignette",
+  "alt": "Séb explique la trajectoire à un jeune pilote casqué avant sa session",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   45,
+   47
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-33.jpg",
+  "nom": "etape-cest-parti",
+  "role": "vignette",
+  "alt": "Deux enfants casqués roulent côte à côte sur la piste éducative",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   45,
+   47
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-45.jpg",
+  "nom": "etape-accompagne",
+  "role": "vignette",
+  "alt": "Un encadrant court à côté d'un jeune pilote pour ses premiers mètres",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   52
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-46.jpg",
+  "nom": "etape-autonome",
+  "role": "vignette",
+  "alt": "Un jeune pilote enchaîne seul les bosses de la piste",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   47
+  ]
+ },
+ {
+  "source": "recu/piste-educative-3.jpg",
+  "nom": "piste-kids",
+  "role": "galerie",
+  "alt": "Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste",
+  "beaute": 4,
+  "ratio": "3:2"
+ },
+ {
+  "source": "recu/piste-sx-2.png",
+  "nom": "piste-sx",
+  "role": "galerie",
+  "alt": "La piste SX vue d'en haut : virages serrés et sauts enchaînés dans la poussière",
+  "beaute": 4,
+  "ratio": "3:2"
+ },
+ {
+  "source": "recu/piste-sx-4.jpg",
+  "nom": "piste-mx",
+  "role": "galerie",
+  "alt": "Un pilote décolle sur une bosse, ciel bleu derrière",
+  "beaute": 4,
+  "ratio": "3:2",
+  "cadrage": [
+   48,
+   48
+  ]
+ },
+ {
+  "source": "recu/piste-flat-track-4.jpg",
+  "nom": "piste-flat",
+  "role": "galerie",
+  "alt": "Glisse en flat track, la roue arrière soulève la terre",
+  "beaute": 4,
+  "ratio": "3:2"
+ },
+ {
+  "source": "recu/modeles-ycf-pilot.jpg",
+  "nom": "gamme-pilot",
+  "role": "section-fond",
+  "alt": "Deux pilotes YCF en plein saut dans un sous-bois",
+  "beaute": 5,
+  "ratio": "3:2",
+  "mobile": true,
+  "cadrage": [
+   45,
+   45
+  ]
+ },
+ {
+  "source": "recu/modeles-bigy.jpg",
+  "nom": "gamme-bigy",
+  "role": "galerie",
+  "alt": "Pilote YCF Bigy en appui dans la terre",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   55,
+   45
+  ]
+ },
+ {
+  "source": "recu/modeles-sm.jpg",
+  "nom": "gamme-sm",
+  "role": "galerie",
+  "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   42,
+   55
+  ]
+ },
+ {
+  "source": "recu/modeles-ycf-50-cc.jpg",
+  "nom": "gamme-kids",
+  "role": "galerie",
+  "alt": "Jeune pilote sur une YCF 50 cc rouge, casque et maillot colorés",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "source": "recu/modeles-pit-bikes.jpg",
+  "nom": "gamme-parent",
+  "role": "galerie",
+  "alt": "Un papa règle la moto de son enfant casqué avant de rouler",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "source": "recu/magasin.png",
+  "nom": "seb-portrait",
+  "role": "portrait",
+  "alt": "Portrait de Sébastien Guillaume, fondateur de MiniWheels",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   30,
+   40
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-26.jpg",
+  "nom": "samedi-1",
+  "role": "galerie",
+  "alt": "Saut d'un jeune pilote au-dessus de la bosse",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   44,
+   38
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-30.jpg",
+  "nom": "samedi-2",
+  "role": "galerie",
+  "alt": "Deux pilotes en l'air côte à côte",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   54,
+   60
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-50.jpg",
+  "nom": "samedi-3",
+  "role": "galerie",
+  "alt": "Saut à contre-jour au coucher du soleil",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   47,
+   37
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-51.jpg",
+  "nom": "samedi-4",
+  "role": "galerie",
+  "alt": "Virage serré dans la terre ocre",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   54,
+   56
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-59.jpg",
+  "nom": "samedi-5",
+  "role": "galerie",
+  "alt": "Pilote qui arrive face à l'objectif dans la poussière",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   42,
+   37
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-64.jpg",
+  "nom": "samedi-6",
+  "role": "galerie",
+  "alt": "Pilote casqué sur sa pit bike sous un ciel bleu",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   48,
+   49
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-14.jpg",
+  "nom": "samedi-8",
+  "role": "galerie",
+  "alt": "Deux pilotes en vol dans la lumière d'automne",
+  "beaute": 4,
+  "ratio": "4:3",
+  "cadrage": [
+   45,
+   40
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
+  "nom": "samedi-9",
+  "role": "galerie",
+  "alt": "Le peloton du samedi dans les virages de la piste SX",
+  "beaute": 3,
+  "ratio": "4:3",
+  "cadrage": [
+   48,
+   48
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-2.jpg",
+  "nom": "samedi-10",
+  "role": "galerie",
+  "alt": "Un parent encourage le saut de son enfant",
+  "beaute": 3,
+  "ratio": "4:3",
+  "cadrage": [
+   82,
+   63
+  ]
+ },
+ {
+  "source": "recu/piste-flat-track-2.jpg",
+  "nom": "accueil-appel",
+  "role": "section-fond",
+  "alt": "Un pilote lève le bras dans la poussière du Park",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "droite"
+ },
+ {
+  "source": "recu/piste-educative-2.png",
+  "nom": "park-ouverture",
+  "role": "ouverture",
+  "alt": "Le Park vu d'en haut : les trois pistes bordées de balises rouges et blanches, à Longnes",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "gauche",
+  "page": "park",
+  "cadrage": [
+   50,
+   45
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-65.jpg",
+  "nom": "park-location",
+  "role": "vignette",
+  "alt": "Jeune pilote casqué, lunettes relevées, prêt pour sa session",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   45,
+   47
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-13.jpg",
+  "nom": "park-avec-ta-moto",
+  "role": "vignette",
+  "alt": "Un parent et son enfant casqué préparent la moto au paddock",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   35,
+   47
+  ]
+ },
+ {
+  "source": "recu/nous-contacter-29.png",
+  "nom": "equipe-seb",
+  "role": "portrait",
+  "alt": "Séb, responsable du Park, Brevet d'État",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/nous-contacter-5.png",
+  "nom": "equipe-coco",
+  "role": "portrait",
+  "alt": "Coco, à l'accueil et derrière l'appareil photo",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/coco.png",
+  "nom": "equipe-chouchou",
+  "role": "portrait",
+  "alt": "Chouchou, au snack dès 13 h",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/terrain-entretenu.png",
+  "nom": "park-snack",
+  "role": "vignette",
+  "alt": "Le camion à crêpes du snack partenaire",
+  "beaute": 3,
+  "ratio": "4:3"
+ },
+ {
+  "source": "recu/piste-flat-track-5.jpg",
+  "nom": "park-appel",
+  "role": "section-fond",
+  "alt": "Départ groupé dans la poussière, les parents au bord de la piste",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "gauche"
+ },
+ {
+  "source": "recu/nous-contacter-2.jpg",
+  "nom": "shop-ouverture",
+  "role": "ouverture",
+  "alt": "L'intérieur du Shop : des rangées de pit bikes neuves sous les bannières YCF et Sherco",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "gauche",
+  "cadrage": [
+   50,
+   60
+  ],
+  "page": "shop"
+ },
+ {
+  "source": "recu/modeles-ycf-lite.jpg",
+  "nom": "gamme-lite",
+  "role": "galerie",
+  "alt": "YCF Lite dans une pente de terre",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   42,
+   50
+  ]
+ },
+ {
+  "source": "recu/modeles-ycf-start.jpg",
+  "nom": "gamme-start",
+  "role": "galerie",
+  "alt": "Pilote YCF Start en action",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   43,
+   35
+  ]
+ },
+ {
+  "source": "recu/sherco-500-se-f-3.jpg",
+  "nom": "gamme-sherco",
+  "role": "galerie",
+  "alt": "Sherco d'enduro qui projette le sable dans un virage",
+  "beaute": 4,
+  "ratio": "4:5",
+  "cadrage": [
+   22,
+   47
+  ]
+ },
+ {
+  "source": "recu/sebastien-guillaume-26.jpg",
+  "nom": "archive-1",
+  "role": "galerie",
+  "alt": "Séb en course d'enduro, en appui dans un virage d'herbe",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-19.jpg",
+  "nom": "archive-2",
+  "role": "galerie",
+  "alt": "Séb en tenue de course, au départ d'une spéciale",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-31.jpg",
+  "nom": "archive-3",
+  "role": "galerie",
+  "alt": "Séb en action sur une moto jaune numéro 107",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-27.jpg",
+  "nom": "archive-4",
+  "role": "galerie",
+  "alt": "Séb sur le podium, bouquet en main",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-30.jpg",
+  "nom": "archive-5",
+  "role": "galerie",
+  "alt": "Séb avec l'équipe de France au milieu des pilotes",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-22.jpg",
+  "nom": "archive-6",
+  "role": "galerie",
+  "alt": "Séb en maillot France, sur sa moto numéro 24",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-24.jpg",
+  "nom": "archive-7",
+  "role": "galerie",
+  "alt": "Séb au travail sur sa moto au paddock",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/sebastien-guillaume-17.jpg",
+  "nom": "academy-badge",
+  "role": "vignette",
+  "alt": "Badge de la Seb'One Academy, école de pilotage pit bike",
+  "beaute": 3,
+  "ratio": "1:1"
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-52.jpg",
+  "nom": "academy-seb",
+  "role": "vignette",
+  "alt": "Séb avec un pilote de l'Academy au bord de la piste",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   55,
+   47
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
+  "nom": "academy-stage",
+  "role": "section-fond",
+  "alt": "Groupe de pilotes en stage dans les virages",
+  "beaute": 4,
+  "ratio": "3:2",
+  "mobile": true,
+  "zone_texte": "gauche",
+  "page": "sebastien",
+  "cadrage": [
+   48,
+   48
+  ]
+ },
+ {
+  "source": "recu/piste-educative.jpg",
+  "nom": "contact-park",
+  "role": "carte-service",
+  "alt": "L'entrée de la piste éducative du Park, balises rouges et blanches",
+  "beaute": 3,
+  "ratio": "4:5",
+  "cadrage": [
+   45,
+   55
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-24.jpg",
+  "nom": "page-404",
+  "role": "404",
+  "alt": "Un pilote s'envole au-dessus de la piste, la campagne au loin",
+  "beaute": 4,
+  "page": "404",
+  "cadrage": [
+   55,
+   44
+  ]
+ },
+ {
+  "source": "recu/grok/atelier-ouverture.png",
+  "nom": "atelier-ouverture",
+  "role": "section-fond",
+  "alt": "Une pit bike sur son lève-moto rouge dans un petit atelier, outils au mur",
+  "beaute": 4,
+  "page": "shop",
+  "emplacement": "Shop, section Atelier (grand bandeau)",
+  "priorite": "indispensable",
+  "mobile": true,
+  "source_mobile": "recu/grok/atelier-ouverture-mobile.png",
+  "zone_texte": "gauche",
+  "consigne_scene": "Wide view inside a small rural motorbike repair workshop with a single bay, nothing like a big dealership: a children's off-road pit bike with plain white plastics and no graphics stands on a red paddock stand on the right of the frame, every part bolted in its correct place; a pegboard wall of hand tools and a red rolling tool chest behind; exactly two hands of one mechanic in black nitrile gloves, cropped at the forearms, tighten the rear axle nut with a wrench; dusty concrete floor; afternoon daylight entering through an open roller door on the left"
+ },
+ {
+  "source": "recu/grok/atelier-detail.png",
+  "nom": "atelier-detail",
+  "role": "carte-service",
+  "alt": "Gros plan sur la chaîne et le pignon d'une pit bike en entretien",
+  "beaute": 4,
+  "page": "shop",
+  "emplacement": "Shop, carte Atelier, et accueil carte Atelier",
+  "priorite": "indispensable",
+  "ratio": "4:5",
+  "consigne_scene": "Macro view of the rear sprocket and drive chain of a small off-road pit bike resting on a paddock stand, every part bolted in its correct place, chain freshly cleaned and oiled with a few drops shining, no hands in the frame, a chain brush lying on the concrete floor below, warm side light from a workshop door"
+ },
+ {
+  "source": "recu/grok/equipement.png",
+  "nom": "equipement",
+  "role": "vignette",
+  "alt": "L'équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières",
+  "beaute": 4,
+  "page": "park",
+  "emplacement": "Park, section Équipement, et accueil étape « Je m'équipe »",
+  "priorite": "conseillée",
+  "gabarit": "texture",
+  "ratio": "4:5",
+  "scene": "a neat flat lay seen from directly above on raw concrete: a children's off-road helmet in plain white, goggles, a pair of gloves, a chest protector, knee guards and elbow guards, all plain without any brand or logo, arranged with even spacing"
+ },
+ {
+  "source": "recu/modeles-sm.jpg",
+  "nom": "shop-appel",
+  "role": "section-fond",
+  "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "bas",
+  "cadrage": [
+   40,
+   55
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
+  "nom": "seb-appel",
+  "role": "section-fond",
+  "alt": "Séb explique la trajectoire à un jeune pilote casqué",
+  "beaute": 4,
+  "mobile": true,
+  "zone_texte": "bas",
+  "cadrage": [
+   45,
+   45
+  ]
+ }
+]

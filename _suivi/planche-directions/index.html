@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>MiniWheels — trois directions</title>
+<style>
+@font-face{font-family:Archivo;src:url(archivo.woff2) format('woff2');font-weight:100 900;font-stretch:62% 125%;}
+@font-face{font-family:Archivo;src:url(archivo-i.woff2) format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic}
+@font-face{font-family:Figtree;src:url(figtree.woff2) format('woff2');font-weight:300 900}
+@font-face{font-family:Bricolage;src:url(bricolage.woff2) format('woff2');font-weight:200 800;font-stretch:75% 100%}
+@font-face{font-family:Instrument;src:url(instrument.woff2) format('woff2');font-weight:400 700;font-stretch:75% 100%}
+@font-face{font-family:BigSh;src:url(bigsh.woff2) format('woff2');font-weight:900}
+@font-face{font-family:Inter;src:url(inter.woff2) format('woff2');font-weight:100 900}
+*{box-sizing:border-box;margin:0}
+body{background:#d9d9d4;font-family:Figtree,sans-serif;padding:28px;width:1860px}
+h1.t{font:700 26px Figtree;margin:0 0 4px}
+p.s{font:15px Figtree;color:#333;margin-bottom:22px}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.d{border-radius:14px;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.12)}
+.hero{position:relative;height:430px;overflow:hidden}
+.hero img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .in{position:absolute;inset:0;padding:24px 26px;display:flex;flex-direction:column;justify-content:flex-end}
+.nav{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;gap:18px;padding:12px 18px;font-size:12.5px;font-weight:600}
+.nav img{width:40px;height:40px;border-radius:50%}
+.nav .b{margin-left:auto;padding:8px 13px;border-radius:99px;font-weight:700}
+.btn{display:inline-block;padding:12px 18px;border-radius:99px;font-weight:700;font-size:15px;margin-top:14px}
+.info{font-size:13px;margin-top:10px;font-weight:600}
+.sw{display:flex;height:74px}
+.sw div{flex:1;padding:8px 10px;font:600 12px Figtree;display:flex;flex-direction:column;justify-content:flex-end}
+.tx{padding:18px 22px 22px;font-size:14.5px;line-height:1.45}
+.tx h2{font-size:22px;margin-bottom:6px}
+.tx b{font-weight:700}
+.tx ul{padding-left:18px;margin-top:8px}
+.tx li{margin:3px 0}
+.rec{display:inline-block;font:700 12px Figtree;padding:3px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+/* A */
+.A .hero{background:#101211}
+.A .nav{background:#f2f2ee;color:#101211}.A .nav .b{background:#00e400;color:#101211}
+.A .hero .in{background:linear-gradient(to top,rgba(16,18,17,.88) 0%,rgba(16,18,17,.25) 55%,transparent 75%);color:#fff}
+.A h3{font-family:Archivo;font-stretch:62%;font-weight:900;font-style:italic;font-size:76px;line-height:.88;text-transform:uppercase;letter-spacing:-.01em}
+.A h3 em{color:#00e400}
+.A .btn{background:#00e400;color:#101211}
+.A .tx{background:#f2f2ee;color:#101211}.A .tx h2{font-family:Archivo;font-stretch:75%;font-weight:900;font-style:italic;text-transform:uppercase}
+/* B */
+.B .nav{background:#eee6d8;color:#241c16}.B .nav .b{background:#e5302a;color:#fff}
+.B .hero .in{background:linear-gradient(to top,rgba(36,28,22,.85),rgba(36,28,22,.1) 60%,transparent);color:#fbf6ee}
+.B h3{font-family:Bricolage;font-weight:800;font-size:66px;line-height:.92;letter-spacing:-.03em}
+.B h3 em{font-style:normal;color:#ffb199}
+.B .btn{background:#e5302a;color:#fff}
+.B .tx{background:#eee6d8;color:#241c16;font-family:Instrument}.B .tx h2{font-family:Bricolage;font-weight:800;letter-spacing:-.02em}
+/* C */
+.C .hero{background:#0b0c0b}
+.C .hero img.ph{filter:grayscale(1) contrast(1.08)}
+.C .nav{background:#0b0c0b;color:#f4f4f0}.C .nav .b{background:#00ed01;color:#0b0c0b}
+.C .hero .in{background:linear-gradient(to top,rgba(11,12,11,.9),transparent 70%);color:#f4f4f0}
+.C h3{font-family:BigSh;font-weight:900;font-size:92px;line-height:.86;text-transform:uppercase}
+.C h3 em{font-style:normal;color:#00ed01}
+.C .btn{background:#00ed01;color:#0b0c0b}
+.C .tx{background:#0b0c0b;color:#e9e9e4;font-family:Inter}.C .tx h2{font-family:BigSh;font-weight:900;text-transform:uppercase;font-size:28px}
+</style></head><body>
+<h1 class="t">MiniWheels — trois directions artistiques</h1>
+<p class="s">Vraies photos du Park, logo et vert de la marque (#00ED01). Même contenu, trois façons de le porter. Les maquettes favorites restent la barre visée.</p>
+<div class="g">
+ <section class="d A">
+  <div class="hero"><img class="ph" src="a.jpg" alt="">
+   <div class="nav"><img src="logo.jpg" alt=""><span>Le Park</span><span>Le Shop</span><span>Séb</span><span>Stages</span><span class="b">Réserver une session</span></div>
+   <div class="in"><h3>Ton premier<br>tour de <em>piste</em></h3><div class="info">Park ouvert samedi 21 novembre · 14 h-18 h · dès 6 ans</div><div><span class="btn">Réserver · 15 € les 10 min</span></div></div>
+  </div>
+  <div class="sw"><div style="background:#f2f2ee">#F2F2EE<br>fond dominant</div><div style="background:#101211;color:#fff">#101211<br>sections fortes</div><div style="background:#e4e4de">#E4E4DE<br>second clair</div><div style="background:#00e400">#00E400<br>accent marque</div></div>
+  <div class="tx"><h2>A · Paddock <span class="rec" style="background:#00e400">Recommandé</span></h2>
+   <b>Titres</b> Archivo très condensée, noire, italique (comme une plaque de course) · <b>texte</b> Figtree.<br>
+   Blanc et noir du logo, un seul vert fluo pour les boutons et un mot par titre. Grandes photos en couleur du Park.
+   <ul><li><b>Intro</b> : la grille de départ de motocross tombe, le logo roule jusqu'au titre.</li>
+   <li><b>Transitions</b> : un voile noir qui glisse avec un bord en damier.</li>
+   <li><b>Animations</b> : photos qui s'inclinent avec la vitesse du défilement, compteur jusqu'à la prochaine ouverture du Park, tracés des trois pistes, catalogue qui se trie en direct.</li></ul>
+   <i>Niveau visé : Efficience Triathlon (énergie, chiffres, sombre et clair).</i></div>
+ </section>
+ <section class="d B">
+  <div class="hero"><img class="ph" src="b.jpg" alt="">
+   <div class="nav"><img src="logo.jpg" alt=""><span>Le Park</span><span>Le Shop</span><span>Séb</span><span>Stages</span><span class="b">Réserver une session</span></div>
+   <div class="in"><h3>La terre,<br>la poussière,<br>le <em>samedi</em>.</h3><div class="info">Longnes (78) · à une heure de Paris</div><div><span class="btn">Réserver une session</span></div></div>
+  </div>
+  <div class="sw"><div style="background:#eee6d8">#EEE6D8<br>sable</div><div style="background:#241c16;color:#fff">#241C16<br>terre sombre</div><div style="background:#f7f2ea">#F7F2EA<br>second clair</div><div style="background:#e5302a;color:#fff">#E5302A<br>rouge balise</div></div>
+  <div class="tx"><h2>B · Terre battue</h2>
+   <b>Titres</b> Bricolage Grotesque, grasse et serrée · <b>texte</b> Instrument Sans.<br>
+   Chaud et familial : sable, terre, rouge des balises en plastique du Park. Le vert reste dans le logo.
+   <ul><li><b>Intro</b> : un nuage de poussière se dissipe et laisse le titre.</li>
+   <li><b>Transitions</b> : rideau rayé rouge et blanc, comme les balises.</li>
+   <li><b>Animations</b> : grains de terre qui giclent derrière les motos au défilement, photos qui sortent de la poussière, cartes des pistes en relief.</li></ul>
+   <i>Niveau visé : Château Haut-Piquat (matière, chaleur).</i></div>
+ </section>
+ <section class="d C">
+  <div class="hero"><img class="ph" src="c.jpg" alt="">
+   <div class="nav"><img src="logo.jpg" alt=""><span>Le Park</span><span>Le Shop</span><span>Séb</span><span>Stages</span><span class="b">Réserver</span></div>
+   <div class="in"><h3>Shop<br>&amp; <em>Park</em><br>by Séb</h3><div class="info">Pit bikes · Shop · Park · Seb'One Academy</div><div><span class="btn">Réserver une session</span></div></div>
+  </div>
+  <div class="sw"><div style="background:#0b0c0b;color:#fff">#0B0C0B<br>fond dominant</div><div style="background:#1b1d1b;color:#fff">#1B1D1B<br>second sombre</div><div style="background:#f4f4f0">#F4F4F0<br>catalogue, formulaires</div><div style="background:#00ed01">#00ED01<br>vert néon</div></div>
+  <div class="tx"><h2>C · Grand prix de nuit</h2>
+   <b>Titres</b> Big Shoulders Display, très haute · <b>texte</b> Inter.<br>
+   Sombre et spectaculaire, dans l'esprit du site actuel : photos en noir et blanc, un seul vert néon. Catalogue et formulaires sur fond clair.
+   <ul><li><b>Intro</b> : un compte-tours monte, le logo s'allume en vert.</li>
+   <li><b>Transitions</b> : un voile noir qui part en biais, comme un virage.</li>
+   <li><b>Animations</b> : la couleur revient sur les photos à leur arrivée, mots géants qui filent, lueur verte sous la souris.</li></ul>
+   <i>Niveau visé : Laure Polin (sombre tenu). Plus risqué pour un public familial.</i></div>
+ </section>
+</div>
+</body></html>

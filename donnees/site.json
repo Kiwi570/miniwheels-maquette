@@ -1,0 +1,22 @@
+{
+  "nom": "MiniWheels",
+  "adresse": "https://miniwheels-maquette.vercel.app",
+  "siteActuel": "miniwheels.bike",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "park", "shop", "sebastien", "contact"],
+  "actionEntete": { "page": "park", "ancre": "reserver" },
+  "couleurs": { "fond": "#f2f2ee", "texte": "#101211", "voile": "#101211", "ouverture": "#101211", "menu": "#101211", "theme": "#101211" },
+  "formeVoile": "glisse",
+  "contact": {
+    "telephone": "02 37 50 09 05",
+    "telephoneLien": "+33237500905",
+    "telephonePark": "02 37 64 04 88",
+    "telephoneParkLien": "+33237640488",
+    "adresse": "21 route de Mantes, 28260 Le Mesnil-Simon",
+    "adressePark": "D11, route de Versailles, 78980 Longnes"
+  },
+  "polices": ["/assets/fonts/archivo-italique.woff2", "/assets/fonts/figtree.woff2"],
+  "imagePartage": "accueil-ouverture-1280.webp",
+  "curseur": false
+}

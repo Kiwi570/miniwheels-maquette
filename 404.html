@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sortie de piste · MiniWheels</title>
+<meta name="description" content="Cette page n&#39;existe pas ou plus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://miniwheels-maquette.vercel.app/404">
+<style>:root{--fond:#f2f2ee;--texte:#101211;--voile-fond:#101211;--ouverture-fond:#101211;--menu-fond:#101211}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/archivo-italique.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#101211">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MiniWheels">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Sortie de piste · MiniWheels">
+<meta property="og:description" content="Cette page n&#39;existe pas ou plus.">
+<meta property="og:url" content="https://miniwheels-maquette.vercel.app/404">
+<meta property="og:image" content="https://miniwheels-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un jeune pilote saute une bosse du Park MiniWheels">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MotorcycleDealer","name":"MiniWheels Shop & atelier","telephone":"+33237500905","address":{"@type":"PostalAddress","streetAddress":"21 route de Mantes","postalCode":"28260","addressLocality":"Le Mesnil-Simon","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"12:30"}],"founder":{"@type":"Person","name":"Sébastien Guillaume"}},{"@type":"SportsActivityLocation","name":"MiniWheels Park","telephone":"+33237640488","address":{"@type":"PostalAddress","streetAddress":"D11, route de Versailles","postalCode":"78980","addressLocality":"Longnes","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"14:00","closes":"18:00"}]}]}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="glisse" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-rond-240.webp" alt="" width="72" height="72"><span data-voile-libelle>Page introuvable</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-rond-240.webp" alt="" width="120" height="120" data-ouverture-objet>
+  <div class="grille-depart" data-effet="grille-depart"><span class="grille-barre" style="--i:0"><b></b></span><span class="grille-barre" style="--i:1"><b></b></span><span class="grille-barre" style="--i:2"><b></b></span><span class="grille-barre" style="--i:3"><b></b></span><span class="grille-barre" style="--i:4"><b></b></span><span class="grille-barre" style="--i:5"><b></b></span><span class="grille-barre" style="--i:6"><b></b></span><span class="grille-barre" style="--i:7"><b></b></span></div>
+  <p class="ouverture-ligne">Shop &amp; Park</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-rond-240.webp" alt="" width="44" height="44"><span>MiniWheels</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/park" data-libelle="Le Park">Le Park</a></li><li><a href="/shop" data-libelle="Le Shop">Le Shop</a></li><li><a href="/sebastien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/park#reserver" data-libelle="Le Park">Réserver</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/park" class="menu-lien" data-libelle="Le Park">Le Park</a></li><li style="--i:2"><a href="/shop" class="menu-lien" data-libelle="Le Shop">Le Shop</a></li><li style="--i:3"><a href="/sebastien" class="menu-lien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p class="menu-actions"><a href="/park#reserver" class="bouton" data-libelle="Le Park">Réserver une session</a><a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park</a><a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop</a></p>
+</div>
+<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."}},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
+<main id="contenu" tabindex="-1" data-page="404">
+<section class="page-404" id="debut" data-tete>
+  <figure class="media " data-fx="parallaxe" data-fx-force="8" style="--cadrage:55% 40%">
+  <picture>
+    <img src="/assets/images/page-404-1600.webp" srcset="/assets/images/page-404-800.webp 800w, /assets/images/page-404-1600.webp 1600w" sizes="100vw" alt="Un pilote s&#39;envole au-dessus de la piste, la campagne au loin" width="1600" height="900" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="conteneur">
+    <p class="surtitre h-suite">Erreur 404</p>
+    <h1 class="titre titre--xl" data-iris-centre><span class="ligne-masque"><span class="h-ligne">Sortie</span></span><span class="ligne-masque"><span class="h-ligne"><em>de piste</em></span></span></h1>
+    <p class="intro h-suite" data-info-cle>Cette page n&#39;existe pas ou plus. On remonte en selle ?</p>
+    <p class="tete-actions h-suite">
+      <a href="/" class="bouton" data-libelle="Accueil" data-action-principale>Revenir à l&#39;accueil</a>
+      <a href="/park" class="bouton bouton--contour" data-libelle="Le Park">Voir le Park</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-tete">
+    <a class="pied-logo" href="/" data-libelle="Accueil"><img src="/assets/images/logo-rond-240.webp" alt="" width="72" height="72"><span>MiniWheels</span></a>
+    <p class="pied-accroche">Deux adresses, à une heure de Paris</p>
+  </div>
+  <div class="conteneur pied-grille">
+    <div class="pied-lieu">
+      <p class="pied-titre">Le Shop &amp; l&#39;atelier</p>
+      <p>21 route de Mantes, 28260 Le Mesnil-Simon<br><a href="tel:+33237500905">02 37 50 09 05</a></p>
+      <p class="pied-horaires">Mardi au vendredi : 9 h 30-12 h 30 · 14 h-19 h<br>Samedi : 9 h 30-12 h 30<br>Dimanche et lundi : fermé<br></p>
+    </div>
+    <div class="pied-lieu">
+      <p class="pied-titre">Le Park</p>
+      <p>D11, route de Versailles, 78980 Longnes<br><a href="tel:+33237640488">02 37 64 04 88</a></p>
+      <p class="pied-horaires">Samedi, toute l&#39;année : 14 h-18 h<br>Accueil et snack : dès 13 h<br></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/park" data-libelle="Le Park">Le Park</a></li><li><a href="/shop" data-libelle="Le Shop">Le Shop</a></li><li><a href="/sebastien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Suivre MiniWheels</p>
+      <ul>
+        <li><a href="https://www.facebook.com/MiniWheels.Bike" target="_blank" rel="noopener" aria-label="Facebook (nouvel onglet)">Facebook</a></li>
+        <li><a href="https://www.instagram.com/miniwheels.bike/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales et politique de confidentialité : à compléter</p><p>Maquette de démonstration : formulaires et réservations simulés, rien n&#39;est envoyé.</p><p>© 2014-2026 MiniWheels</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33237640488">Appeler</a>
+  <a class="bouton" href="/park#reserver" data-libelle="Le Park">Réserver</a>
+</div>
+</body>
+</html>

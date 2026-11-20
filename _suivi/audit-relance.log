@@ -1,0 +1,15 @@
+… fichiers
+  fait en 0 s
+… mesures
+  20/66
+  41/66
+  59/66
+  fait en 106 s
+… mesures:balayage
+  fait en 28 s
+… films
+  fait en 135 s
+
+Échecs : 11 · À regarder : 9 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/,/404,/contact,/shop,/sebastien --seulement=fichiers,mesures
+Rapport : /home/claude/miniwheels-maquette/_audit/rapport/rapport.md (passe 20261120-162817-standard-partiel)
