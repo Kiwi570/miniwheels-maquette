@@ -1,4320 +1,4391 @@
 {
- "logo": {
-  "nom": "logo",
-  "source": "recu/nous-contacter-28.jpg",
-  "role": "logo",
-  "alt": "MiniWheels, Shop & Park by Séb Guillaume",
-  "grok": false,
-  "mention": null,
-  "beaute": null,
-  "empreinte": "e7726e9734b66dfd",
-  "ratio": null,
-  "largeurs": [
-   240,
-   480
-  ],
-  "mobile": null,
-  "cadrage": null,
-  "sujet": null,
-  "zones_calmes": null,
-  "zone_texte": null,
-  "recadrage": null,
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "logo-240.webp",
-   "logo-480.webp"
-  ],
-  "poids": {
-   "logo-240.webp": 8688,
-   "logo-480.webp": 18436
-  },
-  "media": "c.media({ nom: 'logo', alt: \"MiniWheels, Shop & Park by Séb Guillaume\", sizes: '240px' })"
- },
- "accueil-ouverture": {
-  "nom": "accueil-ouverture",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-60.jpg",
-  "role": "ouverture",
-  "alt": "Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "a053d199b15f2d04",
-  "ratio": "16:9",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 40%"
-  },
-  "cadrage": "42% 36%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 99.3
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.26,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.09,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.02,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "bas",
-  "recadrage": {
-   "left": 0,
-   "top": 111,
-   "width": 2000,
-   "height": 1125,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "accueil-ouverture-640.webp",
-   "accueil-ouverture-1280.webp",
-   "accueil-ouverture-1920.webp",
-   "accueil-ouverture-mobile-640.webp",
-   "accueil-ouverture-mobile-1080.webp"
-  ],
-  "poids": {
-   "accueil-ouverture-640.webp": 43154,
-   "accueil-ouverture-1280.webp": 130178,
-   "accueil-ouverture-1920.webp": 239308,
-   "accueil-ouverture-mobile-640.webp": 95196,
-   "accueil-ouverture-mobile-1080.webp": 173808
-  },
-  "media": "c.media({ nom: 'accueil-ouverture', alt: \"Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu\", cadrage: '42% 36%', cadrageMobile: '50% 40%', sizes: '100vw', priorite: true })"
- },
- "accueil-park": {
-  "nom": "accueil-park",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-29.jpg",
-  "role": "carte-service",
-  "alt": "Deux jeunes pilotes casqués en pleine poussière sur la piste du Park",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "f5f784efd329584a",
-  "ratio": "2:3",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 890,
-   "top": 0,
-   "width": 860,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "recadrage fort : 43 % de l'image gardée"
-  ],
-  "fichiers": [
-   "accueil-park-480.webp",
-   "accueil-park-640.webp",
-   "accueil-park-784.webp"
-  ],
-  "poids": {
-   "accueil-park-480.webp": 98318,
-   "accueil-park-640.webp": 169038,
-   "accueil-park-784.webp": 242556
-  },
-  "media": "c.media({ nom: 'accueil-park', alt: \"Deux jeunes pilotes casqués en pleine poussière sur la piste du Park\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
- },
- "accueil-shop": {
-  "nom": "accueil-shop",
-  "source": "recu/nous-contacter-2.jpg",
-  "role": "carte-service",
-  "alt": "Rangées de pit bikes neuves dans le Shop",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "60d162632874ca19",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "50% 68%",
-  "sujet": {
-   "x": 0,
-   "y": 59.4,
-   "l": 100,
-   "h": 40.3
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.28,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.07,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.07,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 181,
-   "top": 0,
-   "width": 1158,
-   "height": 1447,
-   "source": [
-    2000,
-    1447
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "accueil-shop-480.webp",
-   "accueil-shop-640.webp",
-   "accueil-shop-784.webp"
-  ],
-  "poids": {
-   "accueil-shop-480.webp": 65890,
-   "accueil-shop-640.webp": 105274,
-   "accueil-shop-784.webp": 145852
-  },
-  "media": "c.media({ nom: 'accueil-shop', alt: \"Rangées de pit bikes neuves dans le Shop\", cadrage: '50% 68%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
- },
- "shop-facade": {
-  "nom": "shop-facade",
-  "source": "recu/points-forts-nouveautes.jpg",
-  "role": "carte-service",
-  "alt": "La façade du Shop MiniWheels au Mesnil-Simon : réparation toutes marques, vente neuf et occasion",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "30452266a07e1ab3",
-  "ratio": "3:2",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "50% 50%",
-  "sujet": {
-   "x": 6.7,
-   "y": 6.9,
-   "l": 90.5,
-   "h": 49.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "bas",
-    "score": 0.28,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.06,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.04,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.03,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 13,
-   "width": 2000,
-   "height": 1333,
-   "source": [
-    2000,
-    1359
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "shop-facade-480.webp",
-   "shop-facade-640.webp",
-   "shop-facade-784.webp"
-  ],
-  "poids": {
-   "shop-facade-480.webp": 28826,
-   "shop-facade-640.webp": 45552,
-   "shop-facade-784.webp": 62496
-  },
-  "media": "c.media({ nom: 'shop-facade', alt: \"La façade du Shop MiniWheels au Mesnil-Simon : réparation toutes marques, vente neuf et occasion\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
- },
- "accueil-samedi": {
-  "nom": "accueil-samedi",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-63.jpg",
-  "role": "section-fond",
-  "alt": "Départ dans la poussière dorée du samedi après-midi, les pilotes s'élancent dans le virage",
-  "grok": false,
-  "mention": null,
-  "beaute": 5,
-  "empreinte": "4d6aab96b57979b6",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 40%"
-  },
-  "cadrage": "40% 40%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "droite",
-  "recadrage": {
-   "left": 65,
-   "top": 0,
-   "width": 1935,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "accueil-samedi-640.webp",
-   "accueil-samedi-1280.webp",
-   "accueil-samedi-1920.webp",
-   "accueil-samedi-mobile-640.webp",
-   "accueil-samedi-mobile-1080.webp"
-  ],
-  "poids": {
-   "accueil-samedi-640.webp": 66216,
-   "accueil-samedi-1280.webp": 256430,
-   "accueil-samedi-1920.webp": 357900,
-   "accueil-samedi-mobile-640.webp": 149882,
-   "accueil-samedi-mobile-1080.webp": 299424
-  },
-  "media": "c.media({ nom: 'accueil-samedi', alt: \"Départ dans la poussière dorée du samedi après-midi, les pilotes s'élancent dans le virage\", cadrage: '40% 40%', cadrageMobile: '50% 40%', sizes: '100vw' })"
- },
- "etape-briefing": {
-  "nom": "etape-briefing",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
-  "role": "vignette",
-  "alt": "Séb explique la trajectoire à un jeune pilote casqué avant sa session",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "d46682668ccb644c",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 384,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "etape-briefing-480.webp",
-   "etape-briefing-640.webp",
-   "etape-briefing-800.webp"
-  ],
-  "poids": {
-   "etape-briefing-480.webp": 58400,
-   "etape-briefing-640.webp": 90790,
-   "etape-briefing-800.webp": 133912
-  },
-  "media": "c.media({ nom: 'etape-briefing', alt: \"Séb explique la trajectoire à un jeune pilote casqué avant sa session\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "etape-cest-parti": {
-  "nom": "etape-cest-parti",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-33.jpg",
-  "role": "vignette",
-  "alt": "Deux enfants casqués roulent côte à côte sur la piste éducative",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "ad360acfe23e6ee6",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 4.8,
-   "l": 100,
-   "h": 90.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.06,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.05,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 384,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "etape-cest-parti-480.webp",
-   "etape-cest-parti-640.webp",
-   "etape-cest-parti-800.webp"
-  ],
-  "poids": {
-   "etape-cest-parti-480.webp": 106146,
-   "etape-cest-parti-640.webp": 181570,
-   "etape-cest-parti-800.webp": 270444
-  },
-  "media": "c.media({ nom: 'etape-cest-parti', alt: \"Deux enfants casqués roulent côte à côte sur la piste éducative\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "etape-accompagne": {
-  "nom": "etape-accompagne",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-45.jpg",
-  "role": "vignette",
-  "alt": "Un encadrant court à côté d'un jeune pilote pour ses premiers mètres",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "4f8a4fa945d0a284",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 52%",
-  "sujet": {
-   "x": 0,
-   "y": 19,
-   "l": 100,
-   "h": 76.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.46,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.02,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 484,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "etape-accompagne-480.webp",
-   "etape-accompagne-640.webp",
-   "etape-accompagne-800.webp"
-  ],
-  "poids": {
-   "etape-accompagne-480.webp": 62966,
-   "etape-accompagne-640.webp": 101992,
-   "etape-accompagne-800.webp": 152844
-  },
-  "media": "c.media({ nom: 'etape-accompagne', alt: \"Un encadrant court à côté d'un jeune pilote pour ses premiers mètres\", cadrage: '50% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "etape-autonome": {
-  "nom": "etape-autonome",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-46.jpg",
-  "role": "vignette",
-  "alt": "Un jeune pilote enchaîne seul les bosses de la piste",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "d19b0be6db326c24",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.26,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.01,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 484,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "etape-autonome-480.webp",
-   "etape-autonome-640.webp",
-   "etape-autonome-800.webp"
-  ],
-  "poids": {
-   "etape-autonome-480.webp": 77648,
-   "etape-autonome-640.webp": 141848,
-   "etape-autonome-800.webp": 218802
-  },
-  "media": "c.media({ nom: 'etape-autonome', alt: \"Un jeune pilote enchaîne seul les bosses de la piste\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "piste-kids": {
-  "nom": "piste-kids",
-  "source": "recu/piste-educative-3.jpg",
-  "role": "galerie",
-  "alt": "Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "650f55397beaf5b5",
-  "ratio": "3:2",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "58% 33%",
-  "sujet": {
-   "x": 23.6,
-   "y": 8,
-   "l": 68.5,
-   "h": 82.7
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.2,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.15,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.13,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.05,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 87,
-   "top": 0,
-   "width": 1413,
-   "height": 942,
-   "source": [
-    1500,
-    942
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "piste-kids-480.webp",
-   "piste-kids-640.webp",
-   "piste-kids-960.webp"
-  ],
-  "poids": {
-   "piste-kids-480.webp": 48134,
-   "piste-kids-640.webp": 84598,
-   "piste-kids-960.webp": 185048
-  },
-  "media": "c.media({ nom: 'piste-kids', alt: \"Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste\", cadrage: '58% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
- },
- "piste-sx": {
-  "nom": "piste-sx",
-  "source": "recu/piste-sx-2.png",
-  "role": "galerie",
-  "alt": "La piste SX vue d'en haut : virages serrés et sauts enchaînés dans la poussière",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "d9f3a93461fa494d",
-  "ratio": "3:2",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 44%",
-  "sujet": {
-   "x": 26.4,
-   "y": 27.9,
-   "l": 44.8,
-   "h": 33.8
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.28,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.25,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.22,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.18,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 135,
-   "top": 0,
-   "width": 1368,
-   "height": 912,
-   "source": [
-    1606,
-    912
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "piste-sx-480.webp",
-   "piste-sx-640.webp",
-   "piste-sx-960.webp"
-  ],
-  "poids": {
-   "piste-sx-480.webp": 35740,
-   "piste-sx-640.webp": 58724,
-   "piste-sx-960.webp": 102742
-  },
-  "media": "c.media({ nom: 'piste-sx', alt: \"La piste SX vue d'en haut : virages serrés et sauts enchaînés dans la poussière\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
- },
- "piste-mx": {
-  "nom": "piste-mx",
-  "source": "recu/piste-sx-4.jpg",
-  "role": "galerie",
-  "alt": "Un pilote décolle sur une bosse, ciel bleu derrière",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "8ee4d167e39ebd31",
-  "ratio": "3:2",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 48%",
-  "sujet": {
-   "x": 42,
-   "y": 41.7,
-   "l": 15.6,
-   "h": 37.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.8,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.41,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.38,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.22,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 41,
-   "top": 0,
-   "width": 1359,
-   "height": 906,
-   "source": [
-    1500,
-    906
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "piste-mx-480.webp",
-   "piste-mx-640.webp",
-   "piste-mx-960.webp"
-  ],
-  "poids": {
-   "piste-mx-480.webp": 25718,
-   "piste-mx-640.webp": 44798,
-   "piste-mx-960.webp": 95326
-  },
-  "media": "c.media({ nom: 'piste-mx', alt: \"Un pilote décolle sur une bosse, ciel bleu derrière\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
- },
- "piste-flat": {
-  "nom": "piste-flat",
-  "source": "recu/piste-flat-track-4.jpg",
-  "role": "galerie",
-  "alt": "Glisse en flat track, la roue arrière soulève la terre",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "ffc1e705a9adac1e",
-  "ratio": "3:2",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 56%",
-  "sujet": {
-   "x": 37.1,
-   "y": 42.7,
-   "l": 19.3,
-   "h": 47.6
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.74,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.6,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.18,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.17,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 1,
-   "top": 0,
-   "width": 1319,
-   "height": 879,
-   "source": [
-    1500,
-    879
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "piste-flat-480.webp",
-   "piste-flat-640.webp",
-   "piste-flat-960.webp"
-  ],
-  "poids": {
-   "piste-flat-480.webp": 24386,
-   "piste-flat-640.webp": 43222,
-   "piste-flat-960.webp": 92936
-  },
-  "media": "c.media({ nom: 'piste-flat', alt: \"Glisse en flat track, la roue arrière soulève la terre\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
- },
- "gamme-pilot": {
-  "nom": "gamme-pilot",
-  "source": "recu/modeles-ycf-pilot.jpg",
-  "role": "section-fond",
-  "alt": "Deux pilotes YCF en plein saut dans un sous-bois",
-  "grok": false,
-  "mention": null,
-  "beaute": 5,
-  "empreinte": "9ef22e125513b953",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 45%"
-  },
-  "cadrage": "45% 45%",
-  "sujet": {
-   "x": 19,
-   "y": 26.9,
-   "l": 68.7,
-   "h": 66.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.14,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.12,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.08,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.07,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 2000,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-pilot-640.webp",
-   "gamme-pilot-1280.webp",
-   "gamme-pilot-1920.webp",
-   "gamme-pilot-mobile-640.webp",
-   "gamme-pilot-mobile-1080.webp"
-  ],
-  "poids": {
-   "gamme-pilot-640.webp": 60170,
-   "gamme-pilot-1280.webp": 186364,
-   "gamme-pilot-1920.webp": 265408,
-   "gamme-pilot-mobile-640.webp": 115548,
-   "gamme-pilot-mobile-1080.webp": 204622
-  },
-  "media": "c.media({ nom: 'gamme-pilot', alt: \"Deux pilotes YCF en plein saut dans un sous-bois\", cadrage: '45% 45%', cadrageMobile: '50% 45%', sizes: '100vw' })"
- },
- "gamme-bigy": {
-  "nom": "gamme-bigy",
-  "source": "recu/modeles-bigy.jpg",
-  "role": "galerie",
-  "alt": "Pilote YCF Bigy en appui dans la terre",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "98f5d90d326aa117",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 45%",
-  "sujet": {
-   "x": 0.8,
-   "y": 9.7,
-   "l": 67,
-   "h": 86.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.39,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.34,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.26,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.15,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 567,
-   "top": 0,
-   "width": 1066,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-bigy-480.webp",
-   "gamme-bigy-640.webp",
-   "gamme-bigy-960.webp"
-  ],
-  "poids": {
-   "gamme-bigy-480.webp": 53994,
-   "gamme-bigy-640.webp": 80216,
-   "gamme-bigy-960.webp": 136594
-  },
-  "media": "c.media({ nom: 'gamme-bigy', alt: \"Pilote YCF Bigy en appui dans la terre\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "gamme-sm": {
-  "nom": "gamme-sm",
-  "source": "recu/modeles-sm.jpg",
-  "role": "galerie",
-  "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "5a21688ee72db88a",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 55%",
-  "sujet": {
-   "x": 24.7,
-   "y": 14.8,
-   "l": 62.1,
-   "h": 70.8
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.49,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.32,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.26,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.16,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 307,
-   "top": 0,
-   "width": 1066,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-sm-480.webp",
-   "gamme-sm-640.webp",
-   "gamme-sm-960.webp"
-  ],
-  "poids": {
-   "gamme-sm-480.webp": 47350,
-   "gamme-sm-640.webp": 73424,
-   "gamme-sm-960.webp": 130324
-  },
-  "media": "c.media({ nom: 'gamme-sm', alt: \"Pilote en YCF supermotard sur l'asphalte, genou sorti\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "gamme-kids": {
-  "nom": "gamme-kids",
-  "source": "recu/modeles-ycf-50-cc.jpg",
-  "role": "galerie",
-  "alt": "Jeune pilote sur une YCF 50 cc rouge, casque et maillot colorés",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "1cf7909848a9ec00",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "49% 45%",
-  "sujet": {
-   "x": 0.9,
-   "y": 9.4,
-   "l": 99.1,
-   "h": 83.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.34,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.3,
-    "ton": "sombre"
-   },
-   {
-    "cote": "droite",
-    "score": 0.2,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.13,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 480,
-   "top": 0,
-   "width": 1066,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-kids-480.webp",
-   "gamme-kids-640.webp",
-   "gamme-kids-960.webp"
-  ],
-  "poids": {
-   "gamme-kids-480.webp": 45130,
-   "gamme-kids-640.webp": 66686,
-   "gamme-kids-960.webp": 112808
-  },
-  "media": "c.media({ nom: 'gamme-kids', alt: \"Jeune pilote sur une YCF 50 cc rouge, casque et maillot colorés\", cadrage: '49% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "gamme-parent": {
-  "nom": "gamme-parent",
-  "source": "recu/modeles-pit-bikes.jpg",
-  "role": "galerie",
-  "alt": "Un papa règle la moto de son enfant casqué avant de rouler",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "26c74871ff211ab1",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "51% 45%",
-  "sujet": {
-   "x": 0,
-   "y": 3.7,
-   "l": 62,
-   "h": 89.3
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.2,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.08,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.06,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 93,
-   "top": 0,
-   "width": 800,
-   "height": 1000,
-   "source": [
-    1000,
-    1000
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "1000 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,2 fois (source de 800 px après recadrage)"
-  ],
-  "fichiers": [
-   "gamme-parent-480.webp",
-   "gamme-parent-640.webp",
-   "gamme-parent-960.webp"
-  ],
-  "poids": {
-   "gamme-parent-480.webp": 70108,
-   "gamme-parent-640.webp": 105602,
-   "gamme-parent-960.webp": 175950
-  },
-  "media": "c.media({ nom: 'gamme-parent', alt: \"Un papa règle la moto de son enfant casqué avant de rouler\", cadrage: '51% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "seb-portrait": {
-  "nom": "seb-portrait",
-  "source": "recu/magasin.png",
-  "role": "portrait",
-  "alt": "Portrait de Sébastien Guillaume, fondateur de MiniWheels",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "5ae7a220484ab8b8",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "50% 40%",
-  "sujet": {
-   "x": 8,
-   "y": 4.6,
-   "l": 84.6,
-   "h": 72.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 1,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.85,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.66,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.4,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 78,
-   "top": 0,
-   "width": 685,
-   "height": 856,
-   "source": [
-    1400,
-    856
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "agrandie 1,14 fois (source de 685 px après recadrage)"
-  ],
-  "fichiers": [
-   "seb-portrait-480.webp",
-   "seb-portrait-640.webp",
-   "seb-portrait-784.webp"
-  ],
-  "poids": {
-   "seb-portrait-480.webp": 6824,
-   "seb-portrait-640.webp": 10286,
-   "seb-portrait-784.webp": 13090
-  },
-  "media": "c.media({ nom: 'seb-portrait', alt: \"Portrait de Sébastien Guillaume, fondateur de MiniWheels\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
- },
- "samedi-1": {
-  "nom": "samedi-1",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-26.jpg",
-  "role": "galerie",
-  "alt": "Saut d'un jeune pilote au-dessus de la bosse",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "db8cd64f25ce6fc0",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "35% 38%",
-  "sujet": {
-   "x": 27.3,
-   "y": 19,
-   "l": 72.7,
-   "h": 76.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.7,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.48,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.26,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.17,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 280,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-1-480.webp",
-   "samedi-1-640.webp",
-   "samedi-1-960.webp"
-  ],
-  "poids": {
-   "samedi-1-480.webp": 23932,
-   "samedi-1-640.webp": 40308,
-   "samedi-1-960.webp": 85468
-  },
-  "media": "c.media({ nom: 'samedi-1', alt: \"Saut d'un jeune pilote au-dessus de la bosse\", cadrage: '35% 38%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-2": {
-  "nom": "samedi-2",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-30.jpg",
-  "role": "galerie",
-  "alt": "Deux pilotes en l'air côte à côte",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "2777dbd504ffd99e",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 60%",
-  "sujet": {
-   "x": 0,
-   "y": 4.8,
-   "l": 99.9,
-   "h": 90.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.47,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.25,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.04,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 220,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-2-480.webp",
-   "samedi-2-640.webp",
-   "samedi-2-960.webp"
-  ],
-  "poids": {
-   "samedi-2-480.webp": 22774,
-   "samedi-2-640.webp": 36760,
-   "samedi-2-960.webp": 75084
-  },
-  "media": "c.media({ nom: 'samedi-2', alt: \"Deux pilotes en l'air côte à côte\", cadrage: '50% 60%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-3": {
-  "nom": "samedi-3",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-50.jpg",
-  "role": "galerie",
-  "alt": "Saut à contre-jour au coucher du soleil",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "00e82d1b875c57ea",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 37%",
-  "sujet": {
-   "x": 0,
-   "y": 23.8,
-   "l": 100,
-   "h": 71.4
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.72,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.37,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.37,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 80,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-3-480.webp",
-   "samedi-3-640.webp",
-   "samedi-3-960.webp"
-  ],
-  "poids": {
-   "samedi-3-480.webp": 16514,
-   "samedi-3-640.webp": 27792,
-   "samedi-3-960.webp": 59152
-  },
-  "media": "c.media({ nom: 'samedi-3', alt: \"Saut à contre-jour au coucher du soleil\", cadrage: '50% 37%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-4": {
-  "nom": "samedi-4",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-51.jpg",
-  "role": "galerie",
-  "alt": "Virage serré dans la terre ocre",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "b2795aeda7294fc9",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 56%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 220,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-4-480.webp",
-   "samedi-4-640.webp",
-   "samedi-4-960.webp"
-  ],
-  "poids": {
-   "samedi-4-480.webp": 24464,
-   "samedi-4-640.webp": 37264,
-   "samedi-4-960.webp": 69248
-  },
-  "media": "c.media({ nom: 'samedi-4', alt: \"Virage serré dans la terre ocre\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-5": {
-  "nom": "samedi-5",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-59.jpg",
-  "role": "galerie",
-  "alt": "Pilote qui arrive face à l'objectif dans la poussière",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "66c44745f34f6158",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "49% 37%",
-  "sujet": {
-   "x": 3.6,
-   "y": 0,
-   "l": 96.4,
-   "h": 85.7
-  },
-  "zones_calmes": [
-   {
-    "cote": "bas",
-    "score": 0.14,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-5-480.webp",
-   "samedi-5-640.webp",
-   "samedi-5-960.webp"
-  ],
-  "poids": {
-   "samedi-5-480.webp": 47008,
-   "samedi-5-640.webp": 75074,
-   "samedi-5-960.webp": 139320
-  },
-  "media": "c.media({ nom: 'samedi-5', alt: \"Pilote qui arrive face à l'objectif dans la poussière\", cadrage: '49% 37%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-6": {
-  "nom": "samedi-6",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-64.jpg",
-  "role": "galerie",
-  "alt": "Pilote casqué sur sa pit bike sous un ciel bleu",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "3a944a98b11f590e",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 49%",
-  "sujet": {
-   "x": 1.5,
-   "y": 4.8,
-   "l": 98.5,
-   "h": 90.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.43,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.23,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.15,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 100,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-6-480.webp",
-   "samedi-6-640.webp",
-   "samedi-6-960.webp"
-  ],
-  "poids": {
-   "samedi-6-480.webp": 36620,
-   "samedi-6-640.webp": 61322,
-   "samedi-6-960.webp": 127746
-  },
-  "media": "c.media({ nom: 'samedi-6', alt: \"Pilote casqué sur sa pit bike sous un ciel bleu\", cadrage: '50% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-8": {
-  "nom": "samedi-8",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-14.jpg",
-  "role": "galerie",
-  "alt": "Deux pilotes en vol dans la lumière d'automne",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "05648f63d414b424",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 40%",
-  "sujet": {
-   "x": 30.3,
-   "y": 23.8,
-   "l": 40,
-   "h": 57.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.83,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.77,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.56,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.55,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 40,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-8-480.webp",
-   "samedi-8-640.webp",
-   "samedi-8-960.webp"
-  ],
-  "poids": {
-   "samedi-8-480.webp": 13668,
-   "samedi-8-640.webp": 21606,
-   "samedi-8-960.webp": 41966
-  },
-  "media": "c.media({ nom: 'samedi-8', alt: \"Deux pilotes en vol dans la lumière d'automne\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-9": {
-  "nom": "samedi-9",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
-  "role": "galerie",
-  "alt": "Le peloton du samedi dans les virages de la piste SX",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "c6f5b4c75727e04e",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 48%",
-  "sujet": {
-   "x": 1.5,
-   "y": 0,
-   "l": 98.5,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.05,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.04,
-    "ton": "clair"
-   },
-   {
-    "cote": "haut",
-    "score": 0.01,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 100,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-9-480.webp",
-   "samedi-9-640.webp",
-   "samedi-9-960.webp"
-  ],
-  "poids": {
-   "samedi-9-480.webp": 37704,
-   "samedi-9-640.webp": 60210,
-   "samedi-9-960.webp": 118056
-  },
-  "media": "c.media({ nom: 'samedi-9', alt: \"Le peloton du samedi dans les virages de la piste SX\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "samedi-10": {
-  "nom": "samedi-10",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-2.jpg",
-  "role": "galerie",
-  "alt": "Un parent encourage le saut de son enfant",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "79ad9b9c0502070b",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "79% 63%",
-  "sujet": {
-   "x": 0,
-   "y": 38.1,
-   "l": 100,
-   "h": 57.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.88,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.15,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.11,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 280,
-   "top": 0,
-   "width": 1720,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "samedi-10-480.webp",
-   "samedi-10-640.webp",
-   "samedi-10-960.webp"
-  ],
-  "poids": {
-   "samedi-10-480.webp": 28342,
-   "samedi-10-640.webp": 48734,
-   "samedi-10-960.webp": 108858
-  },
-  "media": "c.media({ nom: 'samedi-10', alt: \"Un parent encourage le saut de son enfant\", cadrage: '79% 63%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
- },
- "accueil-appel": {
-  "nom": "accueil-appel",
-  "source": "recu/piste-flat-track-2.jpg",
-  "role": "section-fond",
-  "alt": "Un pilote lève le bras dans la poussière du Park",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "80a096a7a1ef15eb",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640
-   ],
-   "cadrage": "59% 49%"
-  },
-  "cadrage": "34% 49%",
-  "sujet": {
-   "x": 11.2,
-   "y": 31.5,
-   "l": 34.6,
-   "h": 64.7
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.51,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.27,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.17,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.13,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "droite",
-  "recadrage": {
-   "left": 123,
-   "top": 0,
-   "width": 1377,
-   "height": 918,
-   "source": [
-    1500,
-    918
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "version téléphone sans 1080 px (source trop petite)",
-   "agrandie 1,39 fois (source de 1377 px après recadrage)"
-  ],
-  "fichiers": [
-   "accueil-appel-640.webp",
-   "accueil-appel-1280.webp",
-   "accueil-appel-1920.webp",
-   "accueil-appel-mobile-640.webp"
-  ],
-  "poids": {
-   "accueil-appel-640.webp": 65514,
-   "accueil-appel-1280.webp": 246212,
-   "accueil-appel-1920.webp": 299882,
-   "accueil-appel-mobile-640.webp": 139398
-  },
-  "media": "c.media({ nom: 'accueil-appel', alt: \"Un pilote lève le bras dans la poussière du Park\", cadrage: '34% 49%', cadrageMobile: '59% 49%', sizes: '100vw' })"
- },
- "park-ouverture": {
-  "nom": "park-ouverture",
-  "source": "recu/piste-educative-2.png",
-  "role": "ouverture",
-  "alt": "Le Park vu d'en haut : les trois pistes bordées de balises rouges et blanches, à Longnes",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "9bef555456b0ea74",
-  "ratio": "16:9",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640
-   ],
-   "cadrage": "50% 45%"
-  },
-  "cadrage": "50% 45%",
-  "sujet": {
-   "x": 20.6,
-   "y": 4.4,
-   "l": 48.5,
-   "h": 72.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.37,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.14,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.1,
-    "ton": "clair"
-   },
-   {
-    "cote": "haut",
-    "score": 0.07,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": "gauche",
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 2000,
-   "height": 1125,
-   "source": [
-    2000,
-    1127
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "version téléphone sans 1080 px (source trop petite)"
-  ],
-  "fichiers": [
-   "park-ouverture-640.webp",
-   "park-ouverture-1280.webp",
-   "park-ouverture-1920.webp",
-   "park-ouverture-mobile-640.webp"
-  ],
-  "poids": {
-   "park-ouverture-640.webp": 47534,
-   "park-ouverture-1280.webp": 140746,
-   "park-ouverture-1920.webp": 245750,
-   "park-ouverture-mobile-640.webp": 75380
-  },
-  "media": "c.media({ nom: 'park-ouverture', alt: \"Le Park vu d'en haut : les trois pistes bordées de balises rouges et blanches, à Longnes\", cadrage: '50% 45%', cadrageMobile: '50% 45%', sizes: '100vw', priorite: true })"
- },
- "park-location": {
-  "nom": "park-location",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-65.jpg",
-  "role": "vignette",
-  "alt": "Jeune pilote casqué, lunettes relevées, prêt pour sa session",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "cf79daac925d4687",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.18,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.05,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 384,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "park-location-480.webp",
-   "park-location-640.webp",
-   "park-location-800.webp"
-  ],
-  "poids": {
-   "park-location-480.webp": 58796,
-   "park-location-640.webp": 87456,
-   "park-location-800.webp": 121036
-  },
-  "media": "c.media({ nom: 'park-location', alt: \"Jeune pilote casqué, lunettes relevées, prêt pour sa session\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "park-avec-ta-moto": {
-  "nom": "park-avec-ta-moto",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-13.jpg",
-  "role": "vignette",
-  "alt": "Un parent et son enfant casqué préparent la moto au paddock",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "7efba0e9db0e173b",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 4.8,
-   "l": 100,
-   "h": 90.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 184,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "park-avec-ta-moto-480.webp",
-   "park-avec-ta-moto-640.webp",
-   "park-avec-ta-moto-800.webp"
-  ],
-  "poids": {
-   "park-avec-ta-moto-480.webp": 51724,
-   "park-avec-ta-moto-640.webp": 83036,
-   "park-avec-ta-moto-800.webp": 119060
-  },
-  "media": "c.media({ nom: 'park-avec-ta-moto', alt: \"Un parent et son enfant casqué préparent la moto au paddock\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "equipe-seb": {
-  "nom": "equipe-seb",
-  "source": "recu/nous-contacter-29.png",
-  "role": "portrait",
-  "alt": "Séb, responsable du Park, Brevet d'État",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "1424f77c0efc82eb",
-  "ratio": "1:1",
-  "largeurs": [
-   480
-  ],
-  "mobile": null,
-  "cadrage": "51% 57%",
-  "sujet": {
-   "x": 6.1,
-   "y": 6.1,
-   "l": 89.5,
-   "h": 93.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 421,
-   "height": 421,
-   "source": [
-    421,
-    421
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "largeurs retirées (source trop petite) : 640, 784",
-   "421 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,14 fois (source de 421 px après recadrage)"
-  ],
-  "fichiers": [
-   "equipe-seb-480.webp"
-  ],
-  "poids": {
-   "equipe-seb-480.webp": 28696
-  },
-  "media": "c.media({ nom: 'equipe-seb', alt: \"Séb, responsable du Park, Brevet d'État\", cadrage: '51% 57%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
- },
- "equipe-coco": {
-  "nom": "equipe-coco",
-  "source": "recu/nous-contacter-5.png",
-  "role": "portrait",
-  "alt": "Coco, à l'accueil et derrière l'appareil photo",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "25a7fd399117dca8",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "53% 55%",
-  "sujet": {
-   "x": 9.7,
-   "y": 6.1,
-   "l": 86.2,
-   "h": 92.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "bas",
-    "score": 0.08,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 568,
-   "height": 568,
-   "source": [
-    568,
-    568
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "568 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,38 fois (source de 568 px après recadrage)"
-  ],
-  "fichiers": [
-   "equipe-coco-480.webp",
-   "equipe-coco-640.webp",
-   "equipe-coco-784.webp"
-  ],
-  "poids": {
-   "equipe-coco-480.webp": 27318,
-   "equipe-coco-640.webp": 37240,
-   "equipe-coco-784.webp": 45912
-  },
-  "media": "c.media({ nom: 'equipe-coco', alt: \"Coco, à l'accueil et derrière l'appareil photo\", cadrage: '53% 55%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
- },
- "equipe-chouchou": {
-  "nom": "equipe-chouchou",
-  "source": "recu/coco.png",
-  "role": "portrait",
-  "alt": "Chouchou, au snack dès 13 h",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "2052d733b62ff2eb",
-  "ratio": "1:1",
-  "largeurs": [
-   480
-  ],
-  "mobile": null,
-  "cadrage": "49% 50%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 100
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.35,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.18,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.12,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.02,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 421,
-   "height": 421,
-   "source": [
-    421,
-    421
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "largeurs retirées (source trop petite) : 640, 784",
-   "421 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,14 fois (source de 421 px après recadrage)"
-  ],
-  "fichiers": [
-   "equipe-chouchou-480.webp"
-  ],
-  "poids": {
-   "equipe-chouchou-480.webp": 16840
-  },
-  "media": "c.media({ nom: 'equipe-chouchou', alt: \"Chouchou, au snack dès 13 h\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
- },
- "park-snack": {
-  "nom": "park-snack",
-  "source": "recu/terrain-entretenu.png",
-  "role": "vignette",
-  "alt": "Le camion à crêpes du snack partenaire",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "4f9e7cda8b5a8377",
-  "ratio": "4:3",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "40% 37%",
-  "sujet": {
-   "x": 0.3,
-   "y": 6.9,
-   "l": 75.8,
-   "h": 81.6
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.18,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.11,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 583,
-   "height": 437,
-   "source": [
-    583,
-    438
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "583 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,37 fois (source de 583 px après recadrage)"
-  ],
-  "fichiers": [
-   "park-snack-480.webp",
-   "park-snack-640.webp",
-   "park-snack-800.webp"
-  ],
-  "poids": {
-   "park-snack-480.webp": 21732,
-   "park-snack-640.webp": 28934,
-   "park-snack-800.webp": 36892
-  },
-  "media": "c.media({ nom: 'park-snack', alt: \"Le camion à crêpes du snack partenaire\", cadrage: '40% 37%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
- },
- "park-appel": {
-  "nom": "park-appel",
-  "source": "recu/piste-flat-track-5.jpg",
-  "role": "section-fond",
-  "alt": "Départ groupé dans la poussière, les parents au bord de la piste",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "60c95cdea059debf",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640
-   ],
-   "cadrage": "50% 72%"
-  },
-  "cadrage": "43% 72%",
-  "sujet": {
-   "x": 38.3,
-   "y": 60.3,
-   "l": 9.3,
-   "h": 37.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.28,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.27,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.25,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.2,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "gauche",
-  "recadrage": {
-   "left": 0,
-   "top": 13,
-   "width": 1386,
-   "height": 924,
-   "source": [
-    1386,
-    937
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "version téléphone sans 1080 px (source trop petite)",
-   "agrandie 1,39 fois (source de 1386 px après recadrage)"
-  ],
-  "fichiers": [
-   "park-appel-640.webp",
-   "park-appel-1280.webp",
-   "park-appel-1920.webp",
-   "park-appel-mobile-640.webp"
-  ],
-  "poids": {
-   "park-appel-640.webp": 62892,
-   "park-appel-1280.webp": 242250,
-   "park-appel-1920.webp": 298886,
-   "park-appel-mobile-640.webp": 122348
-  },
-  "media": "c.media({ nom: 'park-appel', alt: \"Départ groupé dans la poussière, les parents au bord de la piste\", cadrage: '43% 72%', cadrageMobile: '50% 72%', sizes: '100vw' })"
- },
- "shop-ouverture": {
-  "nom": "shop-ouverture",
-  "source": "recu/nous-contacter-2.jpg",
-  "role": "ouverture",
-  "alt": "L'intérieur du Shop : des rangées de pit bikes neuves sous les bannières YCF et Sherco",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "67ebe4d6af2bc8b3",
-  "ratio": "16:9",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 60%"
-  },
-  "cadrage": "50% 49%",
-  "sujet": {
-   "x": 3.7,
-   "y": 48.1,
-   "l": 93.2,
-   "h": 51.8
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.28,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.07,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.07,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "gauche",
-  "recadrage": {
-   "left": 0,
-   "top": 318,
-   "width": 2000,
-   "height": 1125,
-   "source": [
-    2000,
-    1447
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "shop-ouverture-640.webp",
-   "shop-ouverture-1280.webp",
-   "shop-ouverture-1920.webp",
-   "shop-ouverture-mobile-640.webp",
-   "shop-ouverture-mobile-1080.webp"
-  ],
-  "poids": {
-   "shop-ouverture-640.webp": 68274,
-   "shop-ouverture-1280.webp": 216410,
-   "shop-ouverture-1920.webp": 306296,
-   "shop-ouverture-mobile-640.webp": 125670,
-   "shop-ouverture-mobile-1080.webp": 238848
-  },
-  "media": "c.media({ nom: 'shop-ouverture', alt: \"L'intérieur du Shop : des rangées de pit bikes neuves sous les bannières YCF et Sherco\", cadrage: '50% 49%', cadrageMobile: '50% 60%', sizes: '100vw', priorite: true })"
- },
- "gamme-lite": {
-  "nom": "gamme-lite",
-  "source": "recu/modeles-ycf-lite.jpg",
-  "role": "galerie",
-  "alt": "YCF Lite dans une pente de terre",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "210ae546091f253a",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 50%",
-  "sujet": {
-   "x": 21.9,
-   "y": 29.1,
-   "l": 66.6,
-   "h": 55.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.46,
-    "ton": "sombre"
-   },
-   {
-    "cote": "droite",
-    "score": 0.37,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.24,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.21,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 307,
-   "top": 0,
-   "width": 1066,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-lite-480.webp",
-   "gamme-lite-640.webp",
-   "gamme-lite-960.webp"
-  ],
-  "poids": {
-   "gamme-lite-480.webp": 66412,
-   "gamme-lite-640.webp": 106842,
-   "gamme-lite-960.webp": 197068
-  },
-  "media": "c.media({ nom: 'gamme-lite', alt: \"YCF Lite dans une pente de terre\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "gamme-start": {
-  "nom": "gamme-start",
-  "source": "recu/modeles-ycf-start.jpg",
-  "role": "galerie",
-  "alt": "Pilote YCF Start en action",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "bd2dac44c942da9b",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "50% 35%",
-  "sujet": {
-   "x": 28.8,
-   "y": 8.3,
-   "l": 44.1,
-   "h": 48.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "bas",
-    "score": 0.31,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0.29,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.27,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.23,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 327,
-   "top": 0,
-   "width": 1066,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-start-480.webp",
-   "gamme-start-640.webp",
-   "gamme-start-960.webp"
-  ],
-  "poids": {
-   "gamme-start-480.webp": 67120,
-   "gamme-start-640.webp": 102074,
-   "gamme-start-960.webp": 170372
-  },
-  "media": "c.media({ nom: 'gamme-start', alt: \"Pilote YCF Start en action\", cadrage: '50% 35%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "gamme-sherco": {
-  "nom": "gamme-sherco",
-  "source": "recu/sherco-500-se-f-3.jpg",
-  "role": "galerie",
-  "alt": "Sherco d'enduro qui projette le sable dans un virage",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "ab7a53b82d48c07b",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "41% 47%",
-  "sujet": {
-   "x": 13.9,
-   "y": 35,
-   "l": 54,
-   "h": 33.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.56,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.29,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.27,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.11,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 1067,
-   "height": 1334,
-   "source": [
-    2000,
-    1334
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "gamme-sherco-480.webp",
-   "gamme-sherco-640.webp",
-   "gamme-sherco-960.webp"
-  ],
-  "poids": {
-   "gamme-sherco-480.webp": 29764,
-   "gamme-sherco-640.webp": 45406,
-   "gamme-sherco-960.webp": 80894
-  },
-  "media": "c.media({ nom: 'gamme-sherco', alt: \"Sherco d'enduro qui projette le sable dans un virage\", cadrage: '41% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
- },
- "archive-1": {
-  "nom": "archive-1",
-  "source": "recu/sebastien-guillaume-26.jpg",
-  "role": "galerie",
-  "alt": "Séb en course d'enduro, en appui dans un virage d'herbe",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "31f1181c96ae8a51",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "43% 40%",
-  "sujet": {
-   "x": 15.6,
-   "y": 23,
-   "l": 54.9,
-   "h": 57.6
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.19,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.17,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.13,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.09,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-1-480.webp",
-   "archive-1-640.webp",
-   "archive-1-960.webp"
-  ],
-  "poids": {
-   "archive-1-480.webp": 70086,
-   "archive-1-640.webp": 107706,
-   "archive-1-960.webp": 180526
-  },
-  "media": "c.media({ nom: 'archive-1', alt: \"Séb en course d'enduro, en appui dans un virage d'herbe\", cadrage: '43% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-2": {
-  "nom": "archive-2",
-  "source": "recu/sebastien-guillaume-19.jpg",
-  "role": "galerie",
-  "alt": "Séb en tenue de course, au départ d'une spéciale",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "01f71ba4d2989690",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "39% 30%",
-  "sujet": {
-   "x": 20.1,
-   "y": 2.8,
-   "l": 58.7,
-   "h": 96.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.1,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.08,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.07,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-2-480.webp",
-   "archive-2-640.webp",
-   "archive-2-960.webp"
-  ],
-  "poids": {
-   "archive-2-480.webp": 59088,
-   "archive-2-640.webp": 84880,
-   "archive-2-960.webp": 135858
-  },
-  "media": "c.media({ nom: 'archive-2', alt: \"Séb en tenue de course, au départ d'une spéciale\", cadrage: '39% 30%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-3": {
-  "nom": "archive-3",
-  "source": "recu/sebastien-guillaume-31.jpg",
-  "role": "galerie",
-  "alt": "Séb en action sur une moto jaune numéro 107",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "2f079ad75fa93849",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "55% 27%",
-  "sujet": {
-   "x": 23.1,
-   "y": 0.1,
-   "l": 61.9,
-   "h": 99.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.14,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0.06,
-    "ton": "sombre"
-   },
-   {
-    "cote": "droite",
-    "score": 0.01,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.01,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-3-480.webp",
-   "archive-3-640.webp",
-   "archive-3-960.webp"
-  ],
-  "poids": {
-   "archive-3-480.webp": 43318,
-   "archive-3-640.webp": 63324,
-   "archive-3-960.webp": 101414
-  },
-  "media": "c.media({ nom: 'archive-3', alt: \"Séb en action sur une moto jaune numéro 107\", cadrage: '55% 27%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-4": {
-  "nom": "archive-4",
-  "source": "recu/sebastien-guillaume-27.jpg",
-  "role": "galerie",
-  "alt": "Séb sur le podium, bouquet en main",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "69dcf9f5a2b173eb",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "52% 43%",
-  "sujet": {
-   "x": 9.2,
-   "y": 18.8,
-   "l": 85.8,
-   "h": 81.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.09,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-4-480.webp",
-   "archive-4-640.webp",
-   "archive-4-960.webp"
-  ],
-  "poids": {
-   "archive-4-480.webp": 43562,
-   "archive-4-640.webp": 66122,
-   "archive-4-960.webp": 112278
-  },
-  "media": "c.media({ nom: 'archive-4', alt: \"Séb sur le podium, bouquet en main\", cadrage: '52% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-5": {
-  "nom": "archive-5",
-  "source": "recu/sebastien-guillaume-30.jpg",
-  "role": "galerie",
-  "alt": "Séb avec l'équipe de France au milieu des pilotes",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "6bfcb3f9239975ce",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "48% 39%",
-  "sujet": {
-   "x": 0,
-   "y": 18.1,
-   "l": 100,
-   "h": 45.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "bas",
-    "score": 0.2,
-    "ton": "sombre"
-   },
-   {
-    "cote": "droite",
-    "score": 0.06,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.04,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.04,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-5-480.webp",
-   "archive-5-640.webp",
-   "archive-5-960.webp"
-  ],
-  "poids": {
-   "archive-5-480.webp": 72876,
-   "archive-5-640.webp": 112250,
-   "archive-5-960.webp": 175752
-  },
-  "media": "c.media({ nom: 'archive-5', alt: \"Séb avec l'équipe de France au milieu des pilotes\", cadrage: '48% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-6": {
-  "nom": "archive-6",
-  "source": "recu/sebastien-guillaume-22.jpg",
-  "role": "galerie",
-  "alt": "Séb en maillot France, sur sa moto numéro 24",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "1f06a968cc5c3e2f",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "52% 31%",
-  "sujet": {
-   "x": 37.7,
-   "y": 14.9,
-   "l": 29,
-   "h": 38.3
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.56,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.33,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.26,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.2,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-6-480.webp",
-   "archive-6-640.webp",
-   "archive-6-960.webp"
-  ],
-  "poids": {
-   "archive-6-480.webp": 37176,
-   "archive-6-640.webp": 58656,
-   "archive-6-960.webp": 97784
-  },
-  "media": "c.media({ nom: 'archive-6', alt: \"Séb en maillot France, sur sa moto numéro 24\", cadrage: '52% 31%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "archive-7": {
-  "nom": "archive-7",
-  "source": "recu/sebastien-guillaume-24.jpg",
-  "role": "galerie",
-  "alt": "Séb au travail sur sa moto au paddock",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "e3ab0ade57dd5ce9",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   960
-  ],
-  "mobile": null,
-  "cadrage": "58% 26%",
-  "sujet": {
-   "x": 41.7,
-   "y": 0,
-   "l": 50.6,
-   "h": 98.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.2,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.03,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.02,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [
-   "agrandie 1,15 fois (source de 832 px après recadrage)"
-  ],
-  "fichiers": [
-   "archive-7-480.webp",
-   "archive-7-640.webp",
-   "archive-7-960.webp"
-  ],
-  "poids": {
-   "archive-7-480.webp": 55578,
-   "archive-7-640.webp": 84472,
-   "archive-7-960.webp": 138672
-  },
-  "media": "c.media({ nom: 'archive-7', alt: \"Séb au travail sur sa moto au paddock\", cadrage: '58% 26%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
- },
- "academy-badge": {
-  "nom": "academy-badge",
-  "source": "recu/sebastien-guillaume-17.jpg",
-  "role": "vignette",
-  "alt": "Badge de la Seb'One Academy, école de pilotage pit bike",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "65f850eb5704ac50",
-  "ratio": "1:1",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "51% 29%",
-  "sujet": {
-   "x": 41.2,
-   "y": 17.6,
-   "l": 19.1,
-   "h": 22.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.2,
-    "ton": "sombre"
-   },
-   {
-    "cote": "droite",
-    "score": 0.2,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.2,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0.17,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 832,
-   "height": 832,
-   "source": [
-    832,
-    832
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "832 px de large"
-  ],
-  "avertissements": [],
-  "fichiers": [
-   "academy-badge-480.webp",
-   "academy-badge-640.webp",
-   "academy-badge-800.webp"
-  ],
-  "poids": {
-   "academy-badge-480.webp": 31716,
-   "academy-badge-640.webp": 45098,
-   "academy-badge-800.webp": 58184
-  },
-  "media": "c.media({ nom: 'academy-badge', alt: \"Badge de la Seb'One Academy, école de pilotage pit bike\", cadrage: '51% 29%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
- },
- "academy-seb": {
-  "nom": "academy-seb",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-52.jpg",
-  "role": "vignette",
-  "alt": "Séb avec un pilote de l'Academy au bord de la piste",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "88f0132b04adc310",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 47%",
-  "sujet": {
-   "x": 0,
-   "y": 4.8,
-   "l": 100,
-   "h": 90.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.38,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "sombre"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 584,
-   "top": 0,
-   "width": 1032,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "academy-seb-480.webp",
-   "academy-seb-640.webp",
-   "academy-seb-800.webp"
-  ],
-  "poids": {
-   "academy-seb-480.webp": 46094,
-   "academy-seb-640.webp": 73130,
-   "academy-seb-800.webp": 105242
-  },
-  "media": "c.media({ nom: 'academy-seb', alt: \"Séb avec un pilote de l'Academy au bord de la piste\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "academy-stage": {
-  "nom": "academy-stage",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
-  "role": "section-fond",
-  "alt": "Groupe de pilotes en stage dans les virages",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "1ce4e2dc15fac402",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 48%"
-  },
-  "cadrage": "49% 48%",
-  "sujet": {
-   "x": 6.4,
-   "y": 0,
-   "l": 93.6,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0.05,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.04,
-    "ton": "clair"
-   },
-   {
-    "cote": "haut",
-    "score": 0.01,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "clair"
-   }
-  ],
-  "zone_texte": "gauche",
-  "recadrage": {
-   "left": 3,
-   "top": 0,
-   "width": 1935,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "academy-stage-640.webp",
-   "academy-stage-1280.webp",
-   "academy-stage-1920.webp",
-   "academy-stage-mobile-640.webp",
-   "academy-stage-mobile-1080.webp"
-  ],
-  "poids": {
-   "academy-stage-640.webp": 55222,
-   "academy-stage-1280.webp": 172238,
-   "academy-stage-1920.webp": 259490,
-   "academy-stage-mobile-640.webp": 120198,
-   "academy-stage-mobile-1080.webp": 224098
-  },
-  "media": "c.media({ nom: 'academy-stage', alt: \"Groupe de pilotes en stage dans les virages\", cadrage: '49% 48%', cadrageMobile: '50% 48%', sizes: '100vw' })"
- },
- "contact-park": {
-  "nom": "contact-park",
-  "source": "recu/piste-educative.jpg",
-  "role": "carte-service",
-  "alt": "L'entrée de la piste éducative du Park, balises rouges et blanches",
-  "grok": false,
-  "mention": null,
-  "beaute": 3,
-  "empreinte": "b87f59699c928e20",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "50% 55%",
-  "sujet": {
-   "x": 0,
-   "y": 47.8,
-   "l": 100,
-   "h": 51.9
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.72,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.26,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.06,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 300,
-   "top": 0,
-   "width": 1200,
-   "height": 1500,
-   "source": [
-    2000,
-    1500
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "contact-park-480.webp",
-   "contact-park-640.webp",
-   "contact-park-784.webp"
-  ],
-  "poids": {
-   "contact-park-480.webp": 53008,
-   "contact-park-640.webp": 92466,
-   "contact-park-784.webp": 135106
-  },
-  "media": "c.media({ nom: 'contact-park', alt: \"L'entrée de la piste éducative du Park, balises rouges et blanches\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
- },
- "page-404": {
-  "nom": "page-404",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-24.jpg",
-  "role": "404",
-  "alt": "Un pilote s'envole au-dessus de la piste, la campagne au loin",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "3292b06c2ec4cebd",
-  "ratio": "16:9",
-  "largeurs": [
-   800,
-   1600
-  ],
-  "mobile": null,
-  "cadrage": "55% 41%",
-  "sujet": {
-   "x": 9.4,
-   "y": 34.5,
-   "l": 87.5,
-   "h": 65.5
-  },
-  "zones_calmes": [
-   {
-    "cote": "haut",
-    "score": 0.9,
-    "ton": "clair"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.38,
-    "ton": "clair"
-   },
-   {
-    "cote": "droite",
-    "score": 0.37,
-    "ton": "clair"
-   },
-   {
-    "cote": "bas",
-    "score": 0.02,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 103,
-   "width": 2000,
-   "height": 1125,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "page-404-800.webp",
-   "page-404-1600.webp"
-  ],
-  "poids": {
-   "page-404-800.webp": 48728,
-   "page-404-1600.webp": 173344
-  },
-  "media": "c.media({ nom: 'page-404', alt: \"Un pilote s'envole au-dessus de la piste, la campagne au loin\", cadrage: '55% 41%', sizes: '100vw', ratio: '16 / 9' })"
- },
- "atelier-ouverture": {
-  "nom": "atelier-ouverture",
-  "source": "recu/grok/atelier-ouverture.png",
-  "role": "section-fond",
-  "alt": "Une pit bike sur son lève-moto rouge dans un petit atelier, outils au mur",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "dd43734ef95d44f4",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "49% 56%"
-  },
-  "cadrage": "50% 50%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 96.1
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "gauche",
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 1600,
-   "height": 1067,
-   "source": [
-    1600,
-    1074
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [
-   "agrandie 1,2 fois (source de 1600 px après recadrage)"
-  ],
-  "fichiers": [
-   "atelier-ouverture-640.webp",
-   "atelier-ouverture-1280.webp",
-   "atelier-ouverture-1920.webp",
-   "atelier-ouverture-mobile-640.webp",
-   "atelier-ouverture-mobile-1080.webp"
-  ],
-  "poids": {
-   "atelier-ouverture-640.webp": 56988,
-   "atelier-ouverture-1280.webp": 151050,
-   "atelier-ouverture-1920.webp": 230700,
-   "atelier-ouverture-mobile-640.webp": 104298,
-   "atelier-ouverture-mobile-1080.webp": 183262
-  },
-  "media": "c.media({ nom: 'atelier-ouverture', alt: \"Une pit bike sur son lève-moto rouge dans un petit atelier, outils au mur\", cadrageMobile: '49% 56%', sizes: '100vw' })"
- },
- "atelier-detail": {
-  "nom": "atelier-detail",
-  "source": "recu/grok/atelier-detail.png",
-  "role": "carte-service",
-  "alt": "Gros plan sur la chaîne et le pignon d'une pit bike en entretien",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "9756f0240b128399",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   784
-  ],
-  "mobile": null,
-  "cadrage": "42% 50%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 95.5,
-   "h": 100
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "sombre"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 33,
-   "width": 1074,
-   "height": 1343,
-   "source": [
-    1074,
-    1600
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "1074 px de large"
-  ],
-  "avertissements": [],
-  "fichiers": [
-   "atelier-detail-480.webp",
-   "atelier-detail-640.webp",
-   "atelier-detail-784.webp"
-  ],
-  "poids": {
-   "atelier-detail-480.webp": 48528,
-   "atelier-detail-640.webp": 74442,
-   "atelier-detail-784.webp": 98876
-  },
-  "media": "c.media({ nom: 'atelier-detail', alt: \"Gros plan sur la chaîne et le pignon d'une pit bike en entretien\", cadrage: '42% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
- },
- "equipement": {
-  "nom": "equipement",
-  "source": "recu/grok/equipement.png",
-  "role": "vignette",
-  "alt": "L'équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "29077c340dfe29f6",
-  "ratio": "4:5",
-  "largeurs": [
-   480,
-   640,
-   800
-  ],
-  "mobile": null,
-  "cadrage": "50% 50%",
-  "sujet": {
-   "x": 4.5,
-   "y": 0,
-   "l": 86.4,
-   "h": 100
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.01,
-    "ton": "moyen"
-   },
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": null,
-  "recadrage": {
-   "left": 0,
-   "top": 145,
-   "width": 1074,
-   "height": 1343,
-   "source": [
-    1074,
-    1600
-   ]
-  },
-  "faible": true,
-  "raisons_faible": [
-   "1074 px de large"
-  ],
-  "avertissements": [],
-  "fichiers": [
-   "equipement-480.webp",
-   "equipement-640.webp",
-   "equipement-800.webp"
-  ],
-  "poids": {
-   "equipement-480.webp": 83100,
-   "equipement-640.webp": 140568,
-   "equipement-800.webp": 198094
-  },
-  "media": "c.media({ nom: 'equipement', alt: \"L'équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
- },
- "shop-appel": {
-  "nom": "shop-appel",
-  "source": "recu/modeles-sm.jpg",
-  "role": "section-fond",
-  "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "32b9e29a43cad0eb",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "42% 55%"
-  },
-  "cadrage": "40% 55%",
-  "sujet": {
-   "x": 28.5,
-   "y": 14.8,
-   "l": 33.1,
-   "h": 70.8
-  },
-  "zones_calmes": [
-   {
-    "cote": "droite",
-    "score": 0.49,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0.32,
-    "ton": "sombre"
-   },
-   {
-    "cote": "gauche",
-    "score": 0.26,
-    "ton": "sombre"
-   },
-   {
-    "cote": "haut",
-    "score": 0.16,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "bas",
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 2000,
-   "height": 1333,
-   "source": [
-    2000,
-    1333
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "shop-appel-640.webp",
-   "shop-appel-1280.webp",
-   "shop-appel-1920.webp",
-   "shop-appel-mobile-640.webp",
-   "shop-appel-mobile-1080.webp"
-  ],
-  "poids": {
-   "shop-appel-640.webp": 46228,
-   "shop-appel-1280.webp": 142386,
-   "shop-appel-1920.webp": 252666,
-   "shop-appel-mobile-640.webp": 95038,
-   "shop-appel-mobile-1080.webp": 166720
-  },
-  "media": "c.media({ nom: 'shop-appel', alt: \"Pilote en YCF supermotard sur l'asphalte, genou sorti\", cadrage: '40% 55%', cadrageMobile: '42% 55%', sizes: '100vw' })"
- },
- "seb-appel": {
-  "nom": "seb-appel",
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
-  "role": "section-fond",
-  "alt": "Séb explique la trajectoire à un jeune pilote casqué",
-  "grok": false,
-  "mention": null,
-  "beaute": 4,
-  "empreinte": "1ea90f8876ea8dd5",
-  "ratio": "3:2",
-  "largeurs": [
-   640,
-   1280,
-   1920
-  ],
-  "mobile": {
-   "ratio": "9:16",
-   "largeurs": [
-    640,
-    1080
-   ],
-   "cadrage": "50% 45%"
-  },
-  "cadrage": "47% 45%",
-  "sujet": {
-   "x": 0,
-   "y": 0,
-   "l": 100,
-   "h": 95.2
-  },
-  "zones_calmes": [
-   {
-    "cote": "gauche",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "droite",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "haut",
-    "score": 0,
-    "ton": "moyen"
-   },
-   {
-    "cote": "bas",
-    "score": 0,
-    "ton": "moyen"
-   }
-  ],
-  "zone_texte": "bas",
-  "recadrage": {
-   "left": 0,
-   "top": 0,
-   "width": 1935,
-   "height": 1290,
-   "source": [
-    2000,
-    1290
-   ]
-  },
-  "faible": false,
-  "raisons_faible": [],
-  "avertissements": [],
-  "fichiers": [
-   "seb-appel-640.webp",
-   "seb-appel-1280.webp",
-   "seb-appel-1920.webp",
-   "seb-appel-mobile-640.webp",
-   "seb-appel-mobile-1080.webp"
-  ],
-  "poids": {
-   "seb-appel-640.webp": 59510,
-   "seb-appel-1280.webp": 172294,
-   "seb-appel-1920.webp": 273540,
-   "seb-appel-mobile-640.webp": 125102,
-   "seb-appel-mobile-1080.webp": 238266
-  },
-  "media": "c.media({ nom: 'seb-appel', alt: \"Séb explique la trajectoire à un jeune pilote casqué\", cadrage: '47% 45%', cadrageMobile: '50% 45%', sizes: '100vw' })"
- }
+  "logo": {
+    "nom": "logo",
+    "source": "recu/nous-contacter-28.jpg",
+    "role": "logo",
+    "alt": "MiniWheels, Shop & Park by Séb Guillaume",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "e7726e9734b66dfd",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 8688,
+      "logo-480.webp": 18436
+    },
+    "media": "c.media({ nom: 'logo', alt: \"MiniWheels, Shop & Park by Séb Guillaume\", sizes: '240px' })"
+  },
+  "accueil-ouverture": {
+    "nom": "accueil-ouverture",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-60.jpg",
+    "role": "ouverture",
+    "alt": "Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a053d199b15f2d04",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 40%"
+    },
+    "cadrage": "42% 36%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 99.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 111,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-ouverture-640.webp",
+      "accueil-ouverture-1280.webp",
+      "accueil-ouverture-1920.webp",
+      "accueil-ouverture-mobile-640.webp",
+      "accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-ouverture-640.webp": 43154,
+      "accueil-ouverture-1280.webp": 130178,
+      "accueil-ouverture-1920.webp": 239308,
+      "accueil-ouverture-mobile-640.webp": 95196,
+      "accueil-ouverture-mobile-1080.webp": 173808
+    },
+    "media": "c.media({ nom: 'accueil-ouverture', alt: \"Un jeune pilote en tenue verte saute une bosse du Park, casque et lunettes, ciel bleu\", cadrage: '42% 36%', cadrageMobile: '50% 40%', sizes: '100vw', priorite: true })"
+  },
+  "accueil-park": {
+    "nom": "accueil-park",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-29.jpg",
+    "role": "carte-service",
+    "alt": "Deux jeunes pilotes casqués en pleine poussière sur la piste du Park",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "f5f784efd329584a",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 890,
+      "top": 0,
+      "width": 860,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "recadrage fort : 43 % de l'image gardée"
+    ],
+    "fichiers": [
+      "accueil-park-480.webp",
+      "accueil-park-640.webp",
+      "accueil-park-784.webp"
+    ],
+    "poids": {
+      "accueil-park-480.webp": 98318,
+      "accueil-park-640.webp": 169038,
+      "accueil-park-784.webp": 242556
+    },
+    "media": "c.media({ nom: 'accueil-park', alt: \"Deux jeunes pilotes casqués en pleine poussière sur la piste du Park\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "accueil-shop": {
+    "nom": "accueil-shop",
+    "source": "recu/nous-contacter-2.jpg",
+    "role": "carte-service",
+    "alt": "Rangées de pit bikes neuves dans le Shop",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "60d162632874ca19",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 68%",
+    "sujet": {
+      "x": 0,
+      "y": 59.4,
+      "l": 100,
+      "h": 40.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 181,
+      "top": 0,
+      "width": 1158,
+      "height": 1447,
+      "source": [
+        2000,
+        1447
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-shop-480.webp",
+      "accueil-shop-640.webp",
+      "accueil-shop-784.webp"
+    ],
+    "poids": {
+      "accueil-shop-480.webp": 65890,
+      "accueil-shop-640.webp": 105274,
+      "accueil-shop-784.webp": 145852
+    },
+    "media": "c.media({ nom: 'accueil-shop', alt: \"Rangées de pit bikes neuves dans le Shop\", cadrage: '50% 68%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "shop-facade": {
+    "nom": "shop-facade",
+    "source": "recu/points-forts-nouveautes.jpg",
+    "role": "carte-service",
+    "alt": "La façade du Shop MiniWheels au Mesnil-Simon : réparation toutes marques, vente neuf et occasion",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "30452266a07e1ab3",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 6.7,
+      "y": 6.9,
+      "l": 90.5,
+      "h": 49.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.03,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 13,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1359
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "shop-facade-480.webp",
+      "shop-facade-640.webp",
+      "shop-facade-784.webp"
+    ],
+    "poids": {
+      "shop-facade-480.webp": 28826,
+      "shop-facade-640.webp": 45552,
+      "shop-facade-784.webp": 62496
+    },
+    "media": "c.media({ nom: 'shop-facade', alt: \"La façade du Shop MiniWheels au Mesnil-Simon : réparation toutes marques, vente neuf et occasion\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '3 / 2' })"
+  },
+  "accueil-samedi": {
+    "nom": "accueil-samedi",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-63.jpg",
+    "role": "section-fond",
+    "alt": "Départ dans la poussière dorée du samedi après-midi, les pilotes s'élancent dans le virage",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "4d6aab96b57979b6",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 40%"
+    },
+    "cadrage": "40% 40%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "droite",
+    "recadrage": {
+      "left": 65,
+      "top": 0,
+      "width": 1935,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-samedi-640.webp",
+      "accueil-samedi-1280.webp",
+      "accueil-samedi-1920.webp",
+      "accueil-samedi-mobile-640.webp",
+      "accueil-samedi-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-samedi-640.webp": 66216,
+      "accueil-samedi-1280.webp": 256430,
+      "accueil-samedi-1920.webp": 357900,
+      "accueil-samedi-mobile-640.webp": 149882,
+      "accueil-samedi-mobile-1080.webp": 299424
+    },
+    "media": "c.media({ nom: 'accueil-samedi', alt: \"Départ dans la poussière dorée du samedi après-midi, les pilotes s'élancent dans le virage\", cadrage: '40% 40%', cadrageMobile: '50% 40%', sizes: '100vw' })"
+  },
+  "etape-briefing": {
+    "nom": "etape-briefing",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
+    "role": "vignette",
+    "alt": "Séb explique la trajectoire à un jeune pilote casqué avant sa session",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d46682668ccb644c",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 384,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "etape-briefing-480.webp",
+      "etape-briefing-640.webp",
+      "etape-briefing-800.webp"
+    ],
+    "poids": {
+      "etape-briefing-480.webp": 58400,
+      "etape-briefing-640.webp": 90790,
+      "etape-briefing-800.webp": 133912
+    },
+    "media": "c.media({ nom: 'etape-briefing', alt: \"Séb explique la trajectoire à un jeune pilote casqué avant sa session\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "etape-cest-parti": {
+    "nom": "etape-cest-parti",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-33.jpg",
+    "role": "vignette",
+    "alt": "Deux enfants casqués roulent côte à côte sur la piste éducative",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ad360acfe23e6ee6",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 4.8,
+      "l": 100,
+      "h": 90.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 384,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "etape-cest-parti-480.webp",
+      "etape-cest-parti-640.webp",
+      "etape-cest-parti-800.webp"
+    ],
+    "poids": {
+      "etape-cest-parti-480.webp": 106146,
+      "etape-cest-parti-640.webp": 181570,
+      "etape-cest-parti-800.webp": 270444
+    },
+    "media": "c.media({ nom: 'etape-cest-parti', alt: \"Deux enfants casqués roulent côte à côte sur la piste éducative\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "etape-accompagne": {
+    "nom": "etape-accompagne",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-45.jpg",
+    "role": "vignette",
+    "alt": "Un encadrant court à côté d'un jeune pilote pour ses premiers mètres",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "4f8a4fa945d0a284",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 19,
+      "l": 100,
+      "h": 76.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.46,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 484,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "etape-accompagne-480.webp",
+      "etape-accompagne-640.webp",
+      "etape-accompagne-800.webp"
+    ],
+    "poids": {
+      "etape-accompagne-480.webp": 62966,
+      "etape-accompagne-640.webp": 101992,
+      "etape-accompagne-800.webp": 152844
+    },
+    "media": "c.media({ nom: 'etape-accompagne', alt: \"Un encadrant court à côté d'un jeune pilote pour ses premiers mètres\", cadrage: '50% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "etape-autonome": {
+    "nom": "etape-autonome",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-46.jpg",
+    "role": "vignette",
+    "alt": "Un jeune pilote enchaîne seul les bosses de la piste",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "d19b0be6db326c24",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 484,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "etape-autonome-480.webp",
+      "etape-autonome-640.webp",
+      "etape-autonome-800.webp"
+    ],
+    "poids": {
+      "etape-autonome-480.webp": 77648,
+      "etape-autonome-640.webp": 141848,
+      "etape-autonome-800.webp": 218802
+    },
+    "media": "c.media({ nom: 'etape-autonome', alt: \"Un jeune pilote enchaîne seul les bosses de la piste\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "piste-kids": {
+    "nom": "piste-kids",
+    "source": "recu/piste-educative-3.jpg",
+    "role": "galerie",
+    "alt": "Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "650f55397beaf5b5",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "58% 33%",
+    "sujet": {
+      "x": 23.6,
+      "y": 8,
+      "l": 68.5,
+      "h": 82.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 87,
+      "top": 0,
+      "width": 1413,
+      "height": 942,
+      "source": [
+        1500,
+        942
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "piste-kids-480.webp",
+      "piste-kids-640.webp",
+      "piste-kids-960.webp"
+    ],
+    "poids": {
+      "piste-kids-480.webp": 48134,
+      "piste-kids-640.webp": 84598,
+      "piste-kids-960.webp": 185048
+    },
+    "media": "c.media({ nom: 'piste-kids', alt: \"Jeunes pilotes au départ de la piste éducative, encadrés au bord de la piste\", cadrage: '58% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "piste-sx": {
+    "nom": "piste-sx",
+    "source": "recu/piste-sx-2.png",
+    "role": "galerie",
+    "alt": "La piste SX vue d'en haut : virages serrés et sauts enchaînés dans la poussière",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d9f3a93461fa494d",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 26.4,
+      "y": 27.9,
+      "l": 44.8,
+      "h": 33.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 135,
+      "top": 0,
+      "width": 1368,
+      "height": 912,
+      "source": [
+        1606,
+        912
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "piste-sx-480.webp",
+      "piste-sx-640.webp",
+      "piste-sx-960.webp"
+    ],
+    "poids": {
+      "piste-sx-480.webp": 35740,
+      "piste-sx-640.webp": 58724,
+      "piste-sx-960.webp": 102742
+    },
+    "media": "c.media({ nom: 'piste-sx', alt: \"La piste SX vue d'en haut : virages serrés et sauts enchaînés dans la poussière\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "piste-mx": {
+    "nom": "piste-mx",
+    "source": "recu/piste-sx-4.jpg",
+    "role": "galerie",
+    "alt": "Un pilote décolle sur une bosse, ciel bleu derrière",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8ee4d167e39ebd31",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 42,
+      "y": 41.7,
+      "l": 15.6,
+      "h": 37.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.8,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.41,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 41,
+      "top": 0,
+      "width": 1359,
+      "height": 906,
+      "source": [
+        1500,
+        906
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "piste-mx-480.webp",
+      "piste-mx-640.webp",
+      "piste-mx-960.webp"
+    ],
+    "poids": {
+      "piste-mx-480.webp": 25718,
+      "piste-mx-640.webp": 44798,
+      "piste-mx-960.webp": 95326
+    },
+    "media": "c.media({ nom: 'piste-mx', alt: \"Un pilote décolle sur une bosse, ciel bleu derrière\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "piste-flat": {
+    "nom": "piste-flat",
+    "source": "recu/piste-flat-track-4.jpg",
+    "role": "galerie",
+    "alt": "Glisse en flat track, la roue arrière soulève la terre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ffc1e705a9adac1e",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 37.1,
+      "y": 42.7,
+      "l": 19.3,
+      "h": 47.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.74,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.6,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 1,
+      "top": 0,
+      "width": 1319,
+      "height": 879,
+      "source": [
+        1500,
+        879
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "piste-flat-480.webp",
+      "piste-flat-640.webp",
+      "piste-flat-960.webp"
+    ],
+    "poids": {
+      "piste-flat-480.webp": 24386,
+      "piste-flat-640.webp": 43222,
+      "piste-flat-960.webp": 92936
+    },
+    "media": "c.media({ nom: 'piste-flat', alt: \"Glisse en flat track, la roue arrière soulève la terre\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "gamme-pilot": {
+    "nom": "gamme-pilot",
+    "source": "recu/modeles-ycf-pilot.jpg",
+    "role": "section-fond",
+    "alt": "Deux pilotes YCF en plein saut dans un sous-bois",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "9ef22e125513b953",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 45%"
+    },
+    "cadrage": "45% 45%",
+    "sujet": {
+      "x": 19,
+      "y": 26.9,
+      "l": 68.7,
+      "h": 66.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-pilot-640.webp",
+      "gamme-pilot-1280.webp",
+      "gamme-pilot-1920.webp",
+      "gamme-pilot-mobile-640.webp",
+      "gamme-pilot-mobile-1080.webp"
+    ],
+    "poids": {
+      "gamme-pilot-640.webp": 60170,
+      "gamme-pilot-1280.webp": 186364,
+      "gamme-pilot-1920.webp": 265408,
+      "gamme-pilot-mobile-640.webp": 115548,
+      "gamme-pilot-mobile-1080.webp": 204622
+    },
+    "media": "c.media({ nom: 'gamme-pilot', alt: \"Deux pilotes YCF en plein saut dans un sous-bois\", cadrage: '45% 45%', cadrageMobile: '50% 45%', sizes: '100vw' })"
+  },
+  "gamme-bigy": {
+    "nom": "gamme-bigy",
+    "source": "recu/modeles-bigy.jpg",
+    "role": "galerie",
+    "alt": "Pilote YCF Bigy en appui dans la terre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "98f5d90d326aa117",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 0.8,
+      "y": 9.7,
+      "l": 67,
+      "h": 86.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.39,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.34,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 567,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-bigy-480.webp",
+      "gamme-bigy-640.webp",
+      "gamme-bigy-960.webp"
+    ],
+    "poids": {
+      "gamme-bigy-480.webp": 53994,
+      "gamme-bigy-640.webp": 80216,
+      "gamme-bigy-960.webp": 136594
+    },
+    "media": "c.media({ nom: 'gamme-bigy', alt: \"Pilote YCF Bigy en appui dans la terre\", cadrage: '50% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "gamme-sm": {
+    "nom": "gamme-sm",
+    "source": "recu/modeles-sm.jpg",
+    "role": "galerie",
+    "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "5a21688ee72db88a",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 24.7,
+      "y": 14.8,
+      "l": 62.1,
+      "h": 70.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.49,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.32,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 307,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-sm-480.webp",
+      "gamme-sm-640.webp",
+      "gamme-sm-960.webp"
+    ],
+    "poids": {
+      "gamme-sm-480.webp": 47350,
+      "gamme-sm-640.webp": 73424,
+      "gamme-sm-960.webp": 130324
+    },
+    "media": "c.media({ nom: 'gamme-sm', alt: \"Pilote en YCF supermotard sur l'asphalte, genou sorti\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "gamme-kids": {
+    "nom": "gamme-kids",
+    "source": "recu/modeles-ycf-50-cc.jpg",
+    "role": "galerie",
+    "alt": "Jeune pilote sur une YCF 50 cc rouge, casque et maillot colorés",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "1cf7909848a9ec00",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "49% 45%",
+    "sujet": {
+      "x": 0.9,
+      "y": 9.4,
+      "l": 99.1,
+      "h": 83.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.34,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 480,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-kids-480.webp",
+      "gamme-kids-640.webp",
+      "gamme-kids-960.webp"
+    ],
+    "poids": {
+      "gamme-kids-480.webp": 45130,
+      "gamme-kids-640.webp": 66686,
+      "gamme-kids-960.webp": 112808
+    },
+    "media": "c.media({ nom: 'gamme-kids', alt: \"Jeune pilote sur une YCF 50 cc rouge, casque et maillot colorés\", cadrage: '49% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "gamme-parent": {
+    "nom": "gamme-parent",
+    "source": "recu/modeles-pit-bikes.jpg",
+    "role": "galerie",
+    "alt": "Un papa règle la moto de son enfant casqué avant de rouler",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "26c74871ff211ab1",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "51% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 3.7,
+      "l": 62,
+      "h": 89.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 93,
+      "top": 0,
+      "width": 800,
+      "height": 1000,
+      "source": [
+        1000,
+        1000
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 800 px après recadrage)"
+    ],
+    "fichiers": [
+      "gamme-parent-480.webp",
+      "gamme-parent-640.webp",
+      "gamme-parent-960.webp"
+    ],
+    "poids": {
+      "gamme-parent-480.webp": 70108,
+      "gamme-parent-640.webp": 105602,
+      "gamme-parent-960.webp": 175950
+    },
+    "media": "c.media({ nom: 'gamme-parent', alt: \"Un papa règle la moto de son enfant casqué avant de rouler\", cadrage: '51% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "seb-portrait": {
+    "nom": "seb-portrait",
+    "source": "recu/magasin.png",
+    "role": "portrait",
+    "alt": "Portrait de Sébastien Guillaume, fondateur de MiniWheels",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "5ae7a220484ab8b8",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 8,
+      "y": 4.6,
+      "l": 84.6,
+      "h": 72.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 1,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.85,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.4,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 78,
+      "top": 0,
+      "width": 685,
+      "height": 856,
+      "source": [
+        1400,
+        856
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,14 fois (source de 685 px après recadrage)"
+    ],
+    "fichiers": [
+      "seb-portrait-480.webp",
+      "seb-portrait-640.webp",
+      "seb-portrait-784.webp"
+    ],
+    "poids": {
+      "seb-portrait-480.webp": 6824,
+      "seb-portrait-640.webp": 10286,
+      "seb-portrait-784.webp": 13090
+    },
+    "media": "c.media({ nom: 'seb-portrait', alt: \"Portrait de Sébastien Guillaume, fondateur de MiniWheels\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "samedi-1": {
+    "nom": "samedi-1",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-26.jpg",
+    "role": "galerie",
+    "alt": "Saut d'un jeune pilote au-dessus de la bosse",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "db8cd64f25ce6fc0",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "35% 38%",
+    "sujet": {
+      "x": 27.3,
+      "y": 19,
+      "l": 72.7,
+      "h": 76.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.7,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.48,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 280,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-1-480.webp",
+      "samedi-1-640.webp",
+      "samedi-1-960.webp"
+    ],
+    "poids": {
+      "samedi-1-480.webp": 23932,
+      "samedi-1-640.webp": 40308,
+      "samedi-1-960.webp": 85468
+    },
+    "media": "c.media({ nom: 'samedi-1', alt: \"Saut d'un jeune pilote au-dessus de la bosse\", cadrage: '35% 38%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-2": {
+    "nom": "samedi-2",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-30.jpg",
+    "role": "galerie",
+    "alt": "Deux pilotes en l'air côte à côte",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2777dbd504ffd99e",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 60%",
+    "sujet": {
+      "x": 0,
+      "y": 4.8,
+      "l": 99.9,
+      "h": 90.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 220,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-2-480.webp",
+      "samedi-2-640.webp",
+      "samedi-2-960.webp"
+    ],
+    "poids": {
+      "samedi-2-480.webp": 22774,
+      "samedi-2-640.webp": 36760,
+      "samedi-2-960.webp": 75084
+    },
+    "media": "c.media({ nom: 'samedi-2', alt: \"Deux pilotes en l'air côte à côte\", cadrage: '50% 60%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-3": {
+    "nom": "samedi-3",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-50.jpg",
+    "role": "galerie",
+    "alt": "Saut à contre-jour au coucher du soleil",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "00e82d1b875c57ea",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 37%",
+    "sujet": {
+      "x": 0,
+      "y": 23.8,
+      "l": 100,
+      "h": 71.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.72,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 80,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-3-480.webp",
+      "samedi-3-640.webp",
+      "samedi-3-960.webp"
+    ],
+    "poids": {
+      "samedi-3-480.webp": 16514,
+      "samedi-3-640.webp": 27792,
+      "samedi-3-960.webp": 59152
+    },
+    "media": "c.media({ nom: 'samedi-3', alt: \"Saut à contre-jour au coucher du soleil\", cadrage: '50% 37%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-4": {
+    "nom": "samedi-4",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-51.jpg",
+    "role": "galerie",
+    "alt": "Virage serré dans la terre ocre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "b2795aeda7294fc9",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 220,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-4-480.webp",
+      "samedi-4-640.webp",
+      "samedi-4-960.webp"
+    ],
+    "poids": {
+      "samedi-4-480.webp": 24464,
+      "samedi-4-640.webp": 37264,
+      "samedi-4-960.webp": 69248
+    },
+    "media": "c.media({ nom: 'samedi-4', alt: \"Virage serré dans la terre ocre\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-5": {
+    "nom": "samedi-5",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-59.jpg",
+    "role": "galerie",
+    "alt": "Pilote qui arrive face à l'objectif dans la poussière",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "66c44745f34f6158",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "49% 37%",
+    "sujet": {
+      "x": 3.6,
+      "y": 0,
+      "l": 96.4,
+      "h": 85.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-5-480.webp",
+      "samedi-5-640.webp",
+      "samedi-5-960.webp"
+    ],
+    "poids": {
+      "samedi-5-480.webp": 47008,
+      "samedi-5-640.webp": 75074,
+      "samedi-5-960.webp": 139320
+    },
+    "media": "c.media({ nom: 'samedi-5', alt: \"Pilote qui arrive face à l'objectif dans la poussière\", cadrage: '49% 37%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-6": {
+    "nom": "samedi-6",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-64.jpg",
+    "role": "galerie",
+    "alt": "Pilote casqué sur sa pit bike sous un ciel bleu",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "3a944a98b11f590e",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 1.5,
+      "y": 4.8,
+      "l": 98.5,
+      "h": 90.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 100,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-6-480.webp",
+      "samedi-6-640.webp",
+      "samedi-6-960.webp"
+    ],
+    "poids": {
+      "samedi-6-480.webp": 36620,
+      "samedi-6-640.webp": 61322,
+      "samedi-6-960.webp": 127746
+    },
+    "media": "c.media({ nom: 'samedi-6', alt: \"Pilote casqué sur sa pit bike sous un ciel bleu\", cadrage: '50% 49%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-8": {
+    "nom": "samedi-8",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-14.jpg",
+    "role": "galerie",
+    "alt": "Deux pilotes en vol dans la lumière d'automne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "05648f63d414b424",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 30.3,
+      "y": 23.8,
+      "l": 40,
+      "h": 57.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.83,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.77,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.55,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 40,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-8-480.webp",
+      "samedi-8-640.webp",
+      "samedi-8-960.webp"
+    ],
+    "poids": {
+      "samedi-8-480.webp": 13668,
+      "samedi-8-640.webp": 21606,
+      "samedi-8-960.webp": 41966
+    },
+    "media": "c.media({ nom: 'samedi-8', alt: \"Deux pilotes en vol dans la lumière d'automne\", cadrage: '50% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-9": {
+    "nom": "samedi-9",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
+    "role": "galerie",
+    "alt": "Le peloton du samedi dans les virages de la piste SX",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c6f5b4c75727e04e",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 1.5,
+      "y": 0,
+      "l": 98.5,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 100,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-9-480.webp",
+      "samedi-9-640.webp",
+      "samedi-9-960.webp"
+    ],
+    "poids": {
+      "samedi-9-480.webp": 37704,
+      "samedi-9-640.webp": 60210,
+      "samedi-9-960.webp": 118056
+    },
+    "media": "c.media({ nom: 'samedi-9', alt: \"Le peloton du samedi dans les virages de la piste SX\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "samedi-10": {
+    "nom": "samedi-10",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-2.jpg",
+    "role": "galerie",
+    "alt": "Un parent encourage le saut de son enfant",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "79ad9b9c0502070b",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "79% 63%",
+    "sujet": {
+      "x": 0,
+      "y": 38.1,
+      "l": 100,
+      "h": 57.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.88,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 280,
+      "top": 0,
+      "width": 1720,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "samedi-10-480.webp",
+      "samedi-10-640.webp",
+      "samedi-10-960.webp"
+    ],
+    "poids": {
+      "samedi-10-480.webp": 28342,
+      "samedi-10-640.webp": 48734,
+      "samedi-10-960.webp": 108858
+    },
+    "media": "c.media({ nom: 'samedi-10', alt: \"Un parent encourage le saut de son enfant\", cadrage: '79% 63%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "accueil-appel": {
+    "nom": "accueil-appel",
+    "source": "recu/piste-flat-track-2.jpg",
+    "role": "section-fond",
+    "alt": "Un pilote lève le bras dans la poussière du Park",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "80a096a7a1ef15eb",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "59% 49%"
+    },
+    "cadrage": "34% 49%",
+    "sujet": {
+      "x": 11.2,
+      "y": 31.5,
+      "l": 34.6,
+      "h": 64.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "droite",
+    "recadrage": {
+      "left": 123,
+      "top": 0,
+      "width": 1377,
+      "height": 918,
+      "source": [
+        1500,
+        918
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,39 fois (source de 1377 px après recadrage)"
+    ],
+    "fichiers": [
+      "accueil-appel-640.webp",
+      "accueil-appel-1280.webp",
+      "accueil-appel-1920.webp",
+      "accueil-appel-mobile-640.webp"
+    ],
+    "poids": {
+      "accueil-appel-640.webp": 65514,
+      "accueil-appel-1280.webp": 246212,
+      "accueil-appel-1920.webp": 299882,
+      "accueil-appel-mobile-640.webp": 139398
+    },
+    "media": "c.media({ nom: 'accueil-appel', alt: \"Un pilote lève le bras dans la poussière du Park\", cadrage: '34% 49%', cadrageMobile: '59% 49%', sizes: '100vw' })"
+  },
+  "park-ouverture": {
+    "nom": "park-ouverture",
+    "source": "recu/piste-educative-2.png",
+    "role": "ouverture",
+    "alt": "Le Park vu d'en haut : les trois pistes bordées de balises rouges et blanches, à Longnes",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9bef555456b0ea74",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 45%"
+    },
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 20.6,
+      "y": 4.4,
+      "l": 48.5,
+      "h": 72.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.1,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.07,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1127
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "park-ouverture-640.webp",
+      "park-ouverture-1280.webp",
+      "park-ouverture-1920.webp",
+      "park-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "park-ouverture-640.webp": 47534,
+      "park-ouverture-1280.webp": 140746,
+      "park-ouverture-1920.webp": 245750,
+      "park-ouverture-mobile-640.webp": 75380
+    },
+    "media": "c.media({ nom: 'park-ouverture', alt: \"Le Park vu d'en haut : les trois pistes bordées de balises rouges et blanches, à Longnes\", cadrage: '50% 45%', cadrageMobile: '50% 45%', sizes: '100vw', priorite: true })"
+  },
+  "park-location": {
+    "nom": "park-location",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-65.jpg",
+    "role": "vignette",
+    "alt": "Jeune pilote casqué, lunettes relevées, prêt pour sa session",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cf79daac925d4687",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 384,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "park-location-480.webp",
+      "park-location-640.webp",
+      "park-location-800.webp"
+    ],
+    "poids": {
+      "park-location-480.webp": 58796,
+      "park-location-640.webp": 87456,
+      "park-location-800.webp": 121036
+    },
+    "media": "c.media({ nom: 'park-location', alt: \"Jeune pilote casqué, lunettes relevées, prêt pour sa session\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "park-avec-ta-moto": {
+    "nom": "park-avec-ta-moto",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-13.jpg",
+    "role": "vignette",
+    "alt": "Un parent et son enfant casqué préparent la moto au paddock",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "7efba0e9db0e173b",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 4.8,
+      "l": 100,
+      "h": 90.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 184,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "park-avec-ta-moto-480.webp",
+      "park-avec-ta-moto-640.webp",
+      "park-avec-ta-moto-800.webp"
+    ],
+    "poids": {
+      "park-avec-ta-moto-480.webp": 51724,
+      "park-avec-ta-moto-640.webp": 83036,
+      "park-avec-ta-moto-800.webp": 119060
+    },
+    "media": "c.media({ nom: 'park-avec-ta-moto', alt: \"Un parent et son enfant casqué préparent la moto au paddock\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "equipe-seb": {
+    "nom": "equipe-seb",
+    "source": "recu/nous-contacter-29.png",
+    "role": "portrait",
+    "alt": "Séb, responsable du Park, Brevet d'État",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1424f77c0efc82eb",
+    "ratio": "1:1",
+    "largeurs": [
+      480
+    ],
+    "mobile": null,
+    "cadrage": "51% 57%",
+    "sujet": {
+      "x": 6.1,
+      "y": 6.1,
+      "l": 89.5,
+      "h": 93.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 421,
+      "height": 421,
+      "source": [
+        421,
+        421
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 784",
+      "421 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,14 fois (source de 421 px après recadrage)"
+    ],
+    "fichiers": [
+      "equipe-seb-480.webp"
+    ],
+    "poids": {
+      "equipe-seb-480.webp": 28696
+    },
+    "media": "c.media({ nom: 'equipe-seb', alt: \"Séb, responsable du Park, Brevet d'État\", cadrage: '51% 57%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
+  },
+  "equipe-coco": {
+    "nom": "equipe-coco",
+    "source": "recu/nous-contacter-5.png",
+    "role": "portrait",
+    "alt": "Coco, à l'accueil et derrière l'appareil photo",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "25a7fd399117dca8",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "53% 55%",
+    "sujet": {
+      "x": 9.7,
+      "y": 6.1,
+      "l": 86.2,
+      "h": 92.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 568,
+      "height": 568,
+      "source": [
+        568,
+        568
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "568 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,38 fois (source de 568 px après recadrage)"
+    ],
+    "fichiers": [
+      "equipe-coco-480.webp",
+      "equipe-coco-640.webp",
+      "equipe-coco-784.webp"
+    ],
+    "poids": {
+      "equipe-coco-480.webp": 27318,
+      "equipe-coco-640.webp": 37240,
+      "equipe-coco-784.webp": 45912
+    },
+    "media": "c.media({ nom: 'equipe-coco', alt: \"Coco, à l'accueil et derrière l'appareil photo\", cadrage: '53% 55%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
+  },
+  "equipe-chouchou": {
+    "nom": "equipe-chouchou",
+    "source": "recu/coco.png",
+    "role": "portrait",
+    "alt": "Chouchou, au snack dès 13 h",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2052d733b62ff2eb",
+    "ratio": "1:1",
+    "largeurs": [
+      480
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.35,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 421,
+      "height": 421,
+      "source": [
+        421,
+        421
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 640, 784",
+      "421 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,14 fois (source de 421 px après recadrage)"
+    ],
+    "fichiers": [
+      "equipe-chouchou-480.webp"
+    ],
+    "poids": {
+      "equipe-chouchou-480.webp": 16840
+    },
+    "media": "c.media({ nom: 'equipe-chouchou', alt: \"Chouchou, au snack dès 13 h\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
+  },
+  "park-snack": {
+    "nom": "park-snack",
+    "source": "recu/terrain-entretenu.png",
+    "role": "vignette",
+    "alt": "Le camion à crêpes du snack partenaire",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4f9e7cda8b5a8377",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "40% 37%",
+    "sujet": {
+      "x": 0.3,
+      "y": 6.9,
+      "l": 75.8,
+      "h": 81.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 583,
+      "height": 437,
+      "source": [
+        583,
+        438
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "583 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,37 fois (source de 583 px après recadrage)"
+    ],
+    "fichiers": [
+      "park-snack-480.webp",
+      "park-snack-640.webp",
+      "park-snack-800.webp"
+    ],
+    "poids": {
+      "park-snack-480.webp": 21732,
+      "park-snack-640.webp": 28934,
+      "park-snack-800.webp": 36892
+    },
+    "media": "c.media({ nom: 'park-snack', alt: \"Le camion à crêpes du snack partenaire\", cadrage: '40% 37%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "park-appel": {
+    "nom": "park-appel",
+    "source": "recu/piste-flat-track-5.jpg",
+    "role": "section-fond",
+    "alt": "Départ groupé dans la poussière, les parents au bord de la piste",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "60c95cdea059debf",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 72%"
+    },
+    "cadrage": "43% 72%",
+    "sujet": {
+      "x": 38.3,
+      "y": 60.3,
+      "l": 9.3,
+      "h": 37.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 13,
+      "width": 1386,
+      "height": 924,
+      "source": [
+        1386,
+        937
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,39 fois (source de 1386 px après recadrage)"
+    ],
+    "fichiers": [
+      "park-appel-640.webp",
+      "park-appel-1280.webp",
+      "park-appel-1920.webp",
+      "park-appel-mobile-640.webp"
+    ],
+    "poids": {
+      "park-appel-640.webp": 62892,
+      "park-appel-1280.webp": 242250,
+      "park-appel-1920.webp": 298886,
+      "park-appel-mobile-640.webp": 122348
+    },
+    "media": "c.media({ nom: 'park-appel', alt: \"Départ groupé dans la poussière, les parents au bord de la piste\", cadrage: '43% 72%', cadrageMobile: '50% 72%', sizes: '100vw' })"
+  },
+  "shop-ouverture": {
+    "nom": "shop-ouverture",
+    "source": "recu/nous-contacter-2.jpg",
+    "role": "ouverture",
+    "alt": "L'intérieur du Shop : des rangées de pit bikes neuves sous les bannières YCF et Sherco",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "67ebe4d6af2bc8b3",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 60%"
+    },
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 3.7,
+      "y": 48.1,
+      "l": 93.2,
+      "h": 51.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 318,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1447
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "shop-ouverture-640.webp",
+      "shop-ouverture-1280.webp",
+      "shop-ouverture-1920.webp",
+      "shop-ouverture-mobile-640.webp",
+      "shop-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "shop-ouverture-640.webp": 68274,
+      "shop-ouverture-1280.webp": 216410,
+      "shop-ouverture-1920.webp": 306296,
+      "shop-ouverture-mobile-640.webp": 125670,
+      "shop-ouverture-mobile-1080.webp": 238848
+    },
+    "media": "c.media({ nom: 'shop-ouverture', alt: \"L'intérieur du Shop : des rangées de pit bikes neuves sous les bannières YCF et Sherco\", cadrage: '50% 49%', cadrageMobile: '50% 60%', sizes: '100vw', priorite: true })"
+  },
+  "gamme-lite": {
+    "nom": "gamme-lite",
+    "source": "recu/modeles-ycf-lite.jpg",
+    "role": "galerie",
+    "alt": "YCF Lite dans une pente de terre",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "210ae546091f253a",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 21.9,
+      "y": 29.1,
+      "l": 66.6,
+      "h": 55.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.46,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 307,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-lite-480.webp",
+      "gamme-lite-640.webp",
+      "gamme-lite-960.webp"
+    ],
+    "poids": {
+      "gamme-lite-480.webp": 66412,
+      "gamme-lite-640.webp": 106842,
+      "gamme-lite-960.webp": 197068
+    },
+    "media": "c.media({ nom: 'gamme-lite', alt: \"YCF Lite dans une pente de terre\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "gamme-start": {
+    "nom": "gamme-start",
+    "source": "recu/modeles-ycf-start.jpg",
+    "role": "galerie",
+    "alt": "Pilote YCF Start en action",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "bd2dac44c942da9b",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 35%",
+    "sujet": {
+      "x": 28.8,
+      "y": 8.3,
+      "l": 44.1,
+      "h": 48.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.29,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.27,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 327,
+      "top": 0,
+      "width": 1066,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-start-480.webp",
+      "gamme-start-640.webp",
+      "gamme-start-960.webp"
+    ],
+    "poids": {
+      "gamme-start-480.webp": 67120,
+      "gamme-start-640.webp": 102074,
+      "gamme-start-960.webp": 170372
+    },
+    "media": "c.media({ nom: 'gamme-start', alt: \"Pilote YCF Start en action\", cadrage: '50% 35%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "gamme-sherco": {
+    "nom": "gamme-sherco",
+    "source": "recu/sherco-500-se-f-3.jpg",
+    "role": "galerie",
+    "alt": "Sherco d'enduro qui projette le sable dans un virage",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ab7a53b82d48c07b",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "41% 47%",
+    "sujet": {
+      "x": 13.9,
+      "y": 35,
+      "l": 54,
+      "h": 33.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1067,
+      "height": 1334,
+      "source": [
+        2000,
+        1334
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gamme-sherco-480.webp",
+      "gamme-sherco-640.webp",
+      "gamme-sherco-960.webp"
+    ],
+    "poids": {
+      "gamme-sherco-480.webp": 29764,
+      "gamme-sherco-640.webp": 45406,
+      "gamme-sherco-960.webp": 80894
+    },
+    "media": "c.media({ nom: 'gamme-sherco', alt: \"Sherco d'enduro qui projette le sable dans un virage\", cadrage: '41% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "archive-1": {
+    "nom": "archive-1",
+    "source": "recu/sebastien-guillaume-26.jpg",
+    "role": "galerie",
+    "alt": "Séb en course d'enduro, en appui dans un virage d'herbe",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "31f1181c96ae8a51",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "43% 40%",
+    "sujet": {
+      "x": 15.6,
+      "y": 23,
+      "l": 54.9,
+      "h": 57.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-1-480.webp",
+      "archive-1-640.webp",
+      "archive-1-960.webp"
+    ],
+    "poids": {
+      "archive-1-480.webp": 70086,
+      "archive-1-640.webp": 107706,
+      "archive-1-960.webp": 180526
+    },
+    "media": "c.media({ nom: 'archive-1', alt: \"Séb en course d'enduro, en appui dans un virage d'herbe\", cadrage: '43% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-2": {
+    "nom": "archive-2",
+    "source": "recu/sebastien-guillaume-19.jpg",
+    "role": "galerie",
+    "alt": "Séb en tenue de course, au départ d'une spéciale",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "01f71ba4d2989690",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "39% 30%",
+    "sujet": {
+      "x": 20.1,
+      "y": 2.8,
+      "l": 58.7,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-2-480.webp",
+      "archive-2-640.webp",
+      "archive-2-960.webp"
+    ],
+    "poids": {
+      "archive-2-480.webp": 59088,
+      "archive-2-640.webp": 84880,
+      "archive-2-960.webp": 135858
+    },
+    "media": "c.media({ nom: 'archive-2', alt: \"Séb en tenue de course, au départ d'une spéciale\", cadrage: '39% 30%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-3": {
+    "nom": "archive-3",
+    "source": "recu/sebastien-guillaume-31.jpg",
+    "role": "galerie",
+    "alt": "Séb en action sur une moto jaune numéro 107",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2f079ad75fa93849",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "55% 27%",
+    "sujet": {
+      "x": 23.1,
+      "y": 0.1,
+      "l": 61.9,
+      "h": 99.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-3-480.webp",
+      "archive-3-640.webp",
+      "archive-3-960.webp"
+    ],
+    "poids": {
+      "archive-3-480.webp": 43318,
+      "archive-3-640.webp": 63324,
+      "archive-3-960.webp": 101414
+    },
+    "media": "c.media({ nom: 'archive-3', alt: \"Séb en action sur une moto jaune numéro 107\", cadrage: '55% 27%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-4": {
+    "nom": "archive-4",
+    "source": "recu/sebastien-guillaume-27.jpg",
+    "role": "galerie",
+    "alt": "Séb sur le podium, bouquet en main",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "69dcf9f5a2b173eb",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "52% 43%",
+    "sujet": {
+      "x": 9.2,
+      "y": 18.8,
+      "l": 85.8,
+      "h": 81.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-4-480.webp",
+      "archive-4-640.webp",
+      "archive-4-960.webp"
+    ],
+    "poids": {
+      "archive-4-480.webp": 43562,
+      "archive-4-640.webp": 66122,
+      "archive-4-960.webp": 112278
+    },
+    "media": "c.media({ nom: 'archive-4', alt: \"Séb sur le podium, bouquet en main\", cadrage: '52% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-5": {
+    "nom": "archive-5",
+    "source": "recu/sebastien-guillaume-30.jpg",
+    "role": "galerie",
+    "alt": "Séb avec l'équipe de France au milieu des pilotes",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "6bfcb3f9239975ce",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "48% 39%",
+    "sujet": {
+      "x": 0,
+      "y": 18.1,
+      "l": 100,
+      "h": 45.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-5-480.webp",
+      "archive-5-640.webp",
+      "archive-5-960.webp"
+    ],
+    "poids": {
+      "archive-5-480.webp": 72876,
+      "archive-5-640.webp": 112250,
+      "archive-5-960.webp": 175752
+    },
+    "media": "c.media({ nom: 'archive-5', alt: \"Séb avec l'équipe de France au milieu des pilotes\", cadrage: '48% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-6": {
+    "nom": "archive-6",
+    "source": "recu/sebastien-guillaume-22.jpg",
+    "role": "galerie",
+    "alt": "Séb en maillot France, sur sa moto numéro 24",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1f06a968cc5c3e2f",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "52% 31%",
+    "sujet": {
+      "x": 37.7,
+      "y": 14.9,
+      "l": 29,
+      "h": 38.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.33,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-6-480.webp",
+      "archive-6-640.webp",
+      "archive-6-960.webp"
+    ],
+    "poids": {
+      "archive-6-480.webp": 37176,
+      "archive-6-640.webp": 58656,
+      "archive-6-960.webp": 97784
+    },
+    "media": "c.media({ nom: 'archive-6', alt: \"Séb en maillot France, sur sa moto numéro 24\", cadrage: '52% 31%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "archive-7": {
+    "nom": "archive-7",
+    "source": "recu/sebastien-guillaume-24.jpg",
+    "role": "galerie",
+    "alt": "Séb au travail sur sa moto au paddock",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e3ab0ade57dd5ce9",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "58% 26%",
+    "sujet": {
+      "x": 41.7,
+      "y": 0,
+      "l": 50.6,
+      "h": 98.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,15 fois (source de 832 px après recadrage)"
+    ],
+    "fichiers": [
+      "archive-7-480.webp",
+      "archive-7-640.webp",
+      "archive-7-960.webp"
+    ],
+    "poids": {
+      "archive-7-480.webp": 55578,
+      "archive-7-640.webp": 84472,
+      "archive-7-960.webp": 138672
+    },
+    "media": "c.media({ nom: 'archive-7', alt: \"Séb au travail sur sa moto au paddock\", cadrage: '58% 26%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "academy-badge": {
+    "nom": "academy-badge",
+    "source": "recu/sebastien-guillaume-17.jpg",
+    "role": "vignette",
+    "alt": "Badge de la Seb'One Academy, école de pilotage pit bike",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "65f850eb5704ac50",
+    "ratio": "1:1",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "51% 29%",
+    "sujet": {
+      "x": 41.2,
+      "y": 17.6,
+      "l": 19.1,
+      "h": 22.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 832,
+      "height": 832,
+      "source": [
+        832,
+        832
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "832 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "academy-badge-480.webp",
+      "academy-badge-640.webp",
+      "academy-badge-800.webp"
+    ],
+    "poids": {
+      "academy-badge-480.webp": 31716,
+      "academy-badge-640.webp": 45098,
+      "academy-badge-800.webp": 58184
+    },
+    "media": "c.media({ nom: 'academy-badge', alt: \"Badge de la Seb'One Academy, école de pilotage pit bike\", cadrage: '51% 29%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1 / 1' })"
+  },
+  "academy-seb": {
+    "nom": "academy-seb",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-52.jpg",
+    "role": "vignette",
+    "alt": "Séb avec un pilote de l'Academy au bord de la piste",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "88f0132b04adc310",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 4.8,
+      "l": 100,
+      "h": 90.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.38,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 584,
+      "top": 0,
+      "width": 1032,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "academy-seb-480.webp",
+      "academy-seb-640.webp",
+      "academy-seb-800.webp"
+    ],
+    "poids": {
+      "academy-seb-480.webp": 46094,
+      "academy-seb-640.webp": 73130,
+      "academy-seb-800.webp": 105242
+    },
+    "media": "c.media({ nom: 'academy-seb', alt: \"Séb avec un pilote de l'Academy au bord de la piste\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "academy-stage": {
+    "nom": "academy-stage",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-43.jpg",
+    "role": "section-fond",
+    "alt": "Groupe de pilotes en stage dans les virages",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "1ce4e2dc15fac402",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 48%"
+    },
+    "cadrage": "49% 48%",
+    "sujet": {
+      "x": 6.4,
+      "y": 0,
+      "l": 93.6,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 3,
+      "top": 0,
+      "width": 1935,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "academy-stage-640.webp",
+      "academy-stage-1280.webp",
+      "academy-stage-1920.webp",
+      "academy-stage-mobile-640.webp",
+      "academy-stage-mobile-1080.webp"
+    ],
+    "poids": {
+      "academy-stage-640.webp": 55222,
+      "academy-stage-1280.webp": 172238,
+      "academy-stage-1920.webp": 259490,
+      "academy-stage-mobile-640.webp": 120198,
+      "academy-stage-mobile-1080.webp": 224098
+    },
+    "media": "c.media({ nom: 'academy-stage', alt: \"Groupe de pilotes en stage dans les virages\", cadrage: '49% 48%', cadrageMobile: '50% 48%', sizes: '100vw' })"
+  },
+  "contact-park": {
+    "nom": "contact-park",
+    "source": "recu/piste-educative.jpg",
+    "role": "carte-service",
+    "alt": "L'entrée de la piste éducative du Park, balises rouges et blanches",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "b87f59699c928e20",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 47.8,
+      "l": 100,
+      "h": 51.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.72,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 300,
+      "top": 0,
+      "width": 1200,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "contact-park-480.webp",
+      "contact-park-640.webp",
+      "contact-park-784.webp"
+    ],
+    "poids": {
+      "contact-park-480.webp": 53008,
+      "contact-park-640.webp": 92466,
+      "contact-park-784.webp": 135106
+    },
+    "media": "c.media({ nom: 'contact-park', alt: \"L'entrée de la piste éducative du Park, balises rouges et blanches\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "page-404": {
+    "nom": "page-404",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-24.jpg",
+    "role": "404",
+    "alt": "Un pilote s'envole au-dessus de la piste, la campagne au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "3292b06c2ec4cebd",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "55% 41%",
+    "sujet": {
+      "x": 9.4,
+      "y": 34.5,
+      "l": 87.5,
+      "h": 65.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.9,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.38,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 103,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "page-404-800.webp",
+      "page-404-1600.webp"
+    ],
+    "poids": {
+      "page-404-800.webp": 48728,
+      "page-404-1600.webp": 173344
+    },
+    "media": "c.media({ nom: 'page-404', alt: \"Un pilote s'envole au-dessus de la piste, la campagne au loin\", cadrage: '55% 41%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "atelier-ouverture": {
+    "nom": "atelier-ouverture",
+    "source": "recu/grok/atelier-ouverture.png",
+    "role": "section-fond",
+    "alt": "Une pit bike sur son lève-moto rouge dans un petit atelier, outils au mur",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "dd43734ef95d44f4",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "49% 56%"
+    },
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "atelier-ouverture-640.webp",
+      "atelier-ouverture-1280.webp",
+      "atelier-ouverture-1920.webp",
+      "atelier-ouverture-mobile-640.webp",
+      "atelier-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "atelier-ouverture-640.webp": 56988,
+      "atelier-ouverture-1280.webp": 151050,
+      "atelier-ouverture-1920.webp": 230700,
+      "atelier-ouverture-mobile-640.webp": 104298,
+      "atelier-ouverture-mobile-1080.webp": 183262
+    },
+    "media": "c.media({ nom: 'atelier-ouverture', alt: \"Une pit bike sur son lève-moto rouge dans un petit atelier, outils au mur\", cadrageMobile: '49% 56%', sizes: '100vw' })"
+  },
+  "atelier-detail": {
+    "nom": "atelier-detail",
+    "source": "recu/grok/atelier-detail.png",
+    "role": "carte-service",
+    "alt": "Gros plan sur la chaîne et le pignon d'une pit bike en entretien",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9756f0240b128399",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "42% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 33,
+      "width": 1074,
+      "height": 1343,
+      "source": [
+        1074,
+        1600
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1074 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "atelier-detail-480.webp",
+      "atelier-detail-640.webp",
+      "atelier-detail-784.webp"
+    ],
+    "poids": {
+      "atelier-detail-480.webp": 48528,
+      "atelier-detail-640.webp": 74442,
+      "atelier-detail-784.webp": 98876
+    },
+    "media": "c.media({ nom: 'atelier-detail', alt: \"Gros plan sur la chaîne et le pignon d'une pit bike en entretien\", cadrage: '42% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "equipement": {
+    "nom": "equipement",
+    "source": "recu/grok/equipement.png",
+    "role": "vignette",
+    "alt": "L'équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "29077c340dfe29f6",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 4.5,
+      "y": 0,
+      "l": 86.4,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 145,
+      "width": 1074,
+      "height": 1343,
+      "source": [
+        1074,
+        1600
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1074 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "equipement-480.webp",
+      "equipement-640.webp",
+      "equipement-800.webp"
+    ],
+    "poids": {
+      "equipement-480.webp": 83100,
+      "equipement-640.webp": 140568,
+      "equipement-800.webp": 198094
+    },
+    "media": "c.media({ nom: 'equipement', alt: \"L'équipement prêté pour la session : casque, lunettes, gants, pare-pierre, genouillères et coudières\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "shop-appel": {
+    "nom": "shop-appel",
+    "source": "recu/modeles-sm.jpg",
+    "role": "section-fond",
+    "alt": "Pilote en YCF supermotard sur l'asphalte, genou sorti",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "32b9e29a43cad0eb",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "42% 55%"
+    },
+    "cadrage": "40% 55%",
+    "sujet": {
+      "x": 28.5,
+      "y": 14.8,
+      "l": 33.1,
+      "h": 70.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.49,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.32,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.26,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1333
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "shop-appel-640.webp",
+      "shop-appel-1280.webp",
+      "shop-appel-1920.webp",
+      "shop-appel-mobile-640.webp",
+      "shop-appel-mobile-1080.webp"
+    ],
+    "poids": {
+      "shop-appel-640.webp": 46228,
+      "shop-appel-1280.webp": 142386,
+      "shop-appel-1920.webp": 252666,
+      "shop-appel-mobile-640.webp": 95038,
+      "shop-appel-mobile-1080.webp": 166720
+    },
+    "media": "c.media({ nom: 'shop-appel', alt: \"Pilote en YCF supermotard sur l'asphalte, genou sorti\", cadrage: '40% 55%', cadrageMobile: '42% 55%', sizes: '100vw' })"
+  },
+  "seb-appel": {
+    "nom": "seb-appel",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-26.jpg",
+    "role": "section-fond",
+    "alt": "Un jeune pilote s'envole au-dessus de la bosse, le poing levé",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "b5024f1ca45386e0",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 42%"
+    },
+    "cadrage": "43% 42%",
+    "sujet": {
+      "x": 35.4,
+      "y": 19,
+      "l": 64.6,
+      "h": 76.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.7,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.48,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 65,
+      "top": 0,
+      "width": 1935,
+      "height": 1290,
+      "source": [
+        2000,
+        1290
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "seb-appel-640.webp",
+      "seb-appel-1280.webp",
+      "seb-appel-1920.webp",
+      "seb-appel-mobile-640.webp",
+      "seb-appel-mobile-1080.webp"
+    ],
+    "poids": {
+      "seb-appel-640.webp": 36344,
+      "seb-appel-1280.webp": 129326,
+      "seb-appel-1920.webp": 249892,
+      "seb-appel-mobile-640.webp": 102328,
+      "seb-appel-mobile-1080.webp": 187108
+    },
+    "media": "c.media({ nom: 'seb-appel', alt: \"Un jeune pilote s'envole au-dessus de la bosse, le poing levé\", cadrage: '43% 42%', cadrageMobile: '50% 42%', sizes: '100vw' })"
+  },
+  "park-acces-pistes": {
+    "nom": "park-acces-pistes",
+    "source": "recu/propre/miniwheels-vous-offre-souvenirs-55.jpg",
+    "role": "vignette",
+    "alt": "Jeune pilote sur sa propre pit bike devant le panneau Accès pistes du Park",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "b30c7d74605f6109",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "55% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 100,
+      "h": 90.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1868,
+      "height": 1245,
+      "source": [
+        1868,
+        1245
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "park-acces-pistes-480.webp",
+      "park-acces-pistes-640.webp",
+      "park-acces-pistes-800.webp"
+    ],
+    "poids": {
+      "park-acces-pistes-480.webp": 39256,
+      "park-acces-pistes-640.webp": 62604,
+      "park-acces-pistes-800.webp": 89740
+    },
+    "media": "c.media({ nom: 'park-acces-pistes', alt: \"Jeune pilote sur sa propre pit bike devant le panneau Accès pistes du Park\", cadrage: '55% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  }
 }

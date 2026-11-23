@@ -128,7 +128,8 @@
       "titre2": "en 5 étapes",
       "texte": "Pas de licence, pas de moto : l'initiation est offerte avec la location. Il suffit de la demander en réservant.",
       "region": "Les cinq étapes d'une première session, défilement horizontal",
-      "action": "Tout savoir sur l'initiation"
+      "action": "Tout savoir sur l'initiation",
+      "moto": "Progression de la première session"
     },
     "pistes": {
       "titre1": "Trois pistes,",
@@ -159,7 +160,11 @@
       "titre1": "Les photos,",
       "titre2": "c'est cadeau",
       "texte": "Coco photographie chaque après-midi de roulage et les albums sont en ligne le dimanche matin. Depuis septembre 2018, 238 séances ont été mises en images.",
-      "action": "Voir les albums sur Facebook"
+      "action": "Voir les albums sur Facebook",
+      "tampon": "238 séances photographiées depuis 2018",
+      "tamponTexte": "PHOTOS OFFERTES · ALBUMS LE DIMANCHE · ",
+      "tamponN": "238",
+      "tamponSous": "séances"
     },
     "fin": {
       "titre1": "On se voit",
@@ -181,7 +186,9 @@
     "ouverture": {
       "titre": "Quand rouler ?",
       "texte": "Le Park ouvre toute l'année le samedi après-midi. Accueil et snack dès 13 h, location de 14 h 30 à 18 h sur réservation.",
-      "facebook": "Confirmation le vendredi soir sur Facebook"
+      "facebook": "Confirmation le vendredi soir sur Facebook",
+      "semaine": "La semaine MiniWheels",
+      "aujourdhui": "Aujourd'hui"
     },
     "pistes": {
       "titre1": "Les pistes",
@@ -207,7 +214,9 @@
       "simule": "Réservation simulée : rien n'est envoyé. Pour réserver, appelez le Park au 02 37 64 04 88.",
       "confirme": "Demande prête (simulation) : {n} session(s), {total}, samedi à {h}. Appelez le 02 37 64 04 88 pour confirmer.",
       "minutes": "{n} min",
-      "parSession": "{prix} € la session de {duree} min"
+      "parSession": "{prix} € la session de {duree} min",
+      "jauge": "Temps de roulage",
+      "jaugeMax": "2 h"
     },
     "moto": {
       "titre1": "Avec ta moto",
@@ -276,7 +285,8 @@
       "resultats": "{n} véhicules",
       "aucun": "Aucun véhicule ne correspond : essayez une autre famille.",
       "demander": "Demander ce modèle",
-      "filtres": "Familles"
+      "filtres": "Familles",
+      "voirPlus": "Voir les {n} autres véhicules"
     },
     "payer": {
       "titre": "Paiement en 4 fois sans frais",
@@ -387,11 +397,15 @@
       "sujetCadeau": "Une carte cadeau",
       "message": "Message",
       "envoyer": "Envoyer",
-      "donnees": "Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter."
+      "donnees": "Vos données servent seulement à répondre à votre demande."
     },
     "reseaux": {
       "titre": "Suivre le Park",
       "texte": "L'ouverture du samedi est confirmée chaque vendredi soir sur Facebook. Albums photo le dimanche matin."
+    },
+    "corine": {
+      "titre": "Corine vous répond pour le Park",
+      "texte": "Réservation de la location, accès à la piste, Pass'Park : appelez-la au 02 37 64 04 88."
     }
   },
   "introuvable": {

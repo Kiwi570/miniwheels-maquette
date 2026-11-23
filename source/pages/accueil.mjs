@@ -1,9 +1,10 @@
 /* Accueil MiniWheels, direction « Paddock ». Ordre de lecture : le Park ce samedi, la première fois, les pistes,
    le Shop, Séb, les photos, puis l'appel final. Chaque section a au moins un effet au défilement. */
 import { html } from '../../outils/gabarit.mjs';
-import { img, prix, titre, appelFinal, familles } from '../gabarits/aides.mjs';
+import { img, prix, titre, appelFinal, familles, moto } from '../gabarits/aides.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'accueil-ouverture-1280.webp' };
+
 
 export default (c) => {
   const T = c.donnees.tarifs;
@@ -42,7 +43,7 @@ export default (c) => {
       ['shop', 'accueil-shop', 'shop', 'catalogue', 'shopLieu', 'shopTexte'],
       ['shop', 'atelier-detail', 'atelier', 'atelier', 'atelierLieu', 'atelierTexte'],
     ].map(([pageCle, image, cle, ancre, lieu, texte]) => html`<li class="trois-carte">
-      <a href="${c.url(pageCle, ancre)}" data-libelle="${c.libelle(pageCle)}">
+      <a href="${c.url(pageCle, ancre)}" data-libelle="${c.libelle(pageCle)}" data-survol="incline">
         ${img(c, image, { classe: 'trois-media', ratio: '4 / 5', sizes: '(max-width: 760px) 90vw, 33vw', attrs: 'data-fx="zoom" data-fx-force="12"' })}
         <span class="trois-texte"><span class="trois-lieu">${c.t('accueil.trois.' + lieu)}</span><strong>${c.t('accueil.trois.' + cle)}</strong><span>${c.t('accueil.trois.' + texte)}</span></span>
       </a>
@@ -90,6 +91,11 @@ export default (c) => {
         <div class="etape-texte"><span class="etape-n">${String(i + 1).padStart(2, '0')}</span><h3>${e.titre}</h3><p>${e.texte}</p></div>
       </article>`)}
     </div>
+    <div class="conteneur etapes-piste" aria-hidden="true">
+      <span class="etapes-trace"><span class="etapes-trace-pleine"></span></span>
+      <span class="etapes-moto" data-effet="moto-progres">${moto}</span>
+      <span class="etapes-drapeau"></span>
+    </div>
   </div>
   <p class="conteneur etapes-action" data-anime>${c.lien('park', { ancre: 'initiation', classe: 'bouton bouton--sombre', texte: c.t('accueil.etapes.action') })}</p>
 </section>
@@ -109,7 +115,7 @@ export default (c) => {
       ${c.donnees.pistes.map((p, i) => html`<div class="piste-panneau" role="tabpanel" id="panneau-${p.id}" aria-labelledby="onglet-${p.id}"${i ? html` hidden` : ''}>
         ${img(c, p.image, { classe: 'piste-media', ratio: '3 / 2', sizes: '(max-width: 760px) 100vw, 55vw' })}
         <div class="piste-carte">
-          <svg class="piste-trace" viewBox="0 100 420 110" role="img" aria-label="${c.s('accueil.pistes.schema')} : ${p.nom}"><path d="${p.trace}" pathLength="1"/></svg>
+          <svg class="piste-trace" viewBox="0 100 420 110" role="img" aria-label="${c.s('accueil.pistes.schema')} : ${p.nom}"><path d="${p.trace}" pathLength="1"/><circle class="pilote" r="8" cx="0" cy="0" data-effet="pilote-profil"/></svg>
           <p><strong>${p.court}</strong> ${p.texte}</p>
         </div>
       </div>`)}
@@ -127,7 +133,7 @@ export default (c) => {
       </ul>
       ${c.lien('shop', { ancre: 'catalogue', classe: 'bouton bouton--sombre', texte: c.t('accueil.shop.action', { n }) })}
     </div>
-    ${img(c, 'gamme-pilot', { classe: 'shop-media', ratio: '4 / 5', sizes: '(max-width: 760px) 100vw, 46vw', cadrage: '40% 50%', attrs: 'data-fx="parallaxe" data-fx-force="12"' })}
+    ${img(c, 'gamme-kids', { classe: 'shop-media', ratio: '4 / 5', sizes: '(max-width: 760px) 100vw, 46vw', cadrage: '50% 50%', attrs: 'data-fx="parallaxe" data-fx-force="12"' })}
   </div>
   <div class="marques" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel>
     <p data-fx-rangee>${marques.map((m) => html`<span>${m}</span> `)}${marques.map((m) => html`<span>${m}</span> `)}</p>
@@ -154,10 +160,14 @@ export default (c) => {
   <div class="conteneur photos-tete">
     ${titre(c, 'accueil.photos')}
     <p class="intro" data-anime>${c.t('accueil.photos.texte')}</p>
+    <div class="tampon" role="img" aria-label="${c.s('accueil.photos.tampon')}">
+      <svg viewBox="0 0 200 200" aria-hidden="true" class="tampon-tour" data-boucle-css><defs><path id="cercle-tampon" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs><text textLength="462" lengthAdjust="spacing"><textPath href="#cercle-tampon" textLength="462" lengthAdjust="spacing">${c.t('accueil.photos.tamponTexte')}</textPath></text></svg>
+      <span class="tampon-coeur" aria-hidden="true"><strong>${c.t('accueil.photos.tamponN')}</strong><span>${c.t('accueil.photos.tamponSous')}</span></span>
+    </div>
   </div>
   <div class="pellicule">
-    <ul class="pellicule-rangee" data-sens="1" data-effet="pellicule">${[1, 2, 3, 4, 5].map((k) => html`<li>${img(c, `samedi-${k}`, { ratio: '4 / 3', sizes: '(max-width: 760px) 70vw, 30vw' })}</li>`)}</ul>
-    <ul class="pellicule-rangee" data-sens="-1" data-effet="pellicule">${[6, 8, 9, 10].map((k) => html`<li>${img(c, `samedi-${k}`, { ratio: '4 / 3', sizes: '(max-width: 760px) 70vw, 30vw' })}</li>`)}</ul>
+    <ul class="pellicule-rangee" data-sens="1" data-effet="pellicule">${[1, 2, 3, 4, 5].map((k) => html`<li data-survol="incline">${img(c, `samedi-${k}`, { ratio: '4 / 3', sizes: '(max-width: 760px) 70vw, 30vw' })}</li>`)}</ul>
+    <ul class="pellicule-rangee" data-sens="-1" data-effet="pellicule">${[6, 8, 9, 10].map((k) => html`<li data-survol="incline">${img(c, `samedi-${k}`, { ratio: '4 / 3', sizes: '(max-width: 760px) 70vw, 30vw' })}</li>`)}</ul>
   </div>
   <p class="conteneur photos-action" data-anime><a class="bouton bouton--sombre" href="https://www.facebook.com/MiniWheels.Bike" target="_blank" rel="noopener">${c.t('accueil.photos.action')}</a></p>
 </section>

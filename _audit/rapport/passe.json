@@ -1,19 +1,14 @@
 {
- "id": "20261120-164705-standard-partiel",
- "date": "2026-11-20T16:58:47.084Z",
- "niveau": "standard",
- "pages": "toutes",
+ "id": "20261123-144341-complet-cible-partiel",
+ "date": "2026-11-23T14:44:49.628Z",
+ "niveau": "complet",
+ "pages": "/",
  "etapes": [
-  "fichiers",
-  "films",
-  "parcours",
-  "mouvement",
-  "bords",
-  "fluidite"
+  "mesures"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 7,
+ "aRegarder": 0,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

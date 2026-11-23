@@ -1,0 +1,48 @@
+… fichiers
+  fait en 1 s
+… grille
+  fait en 28 s
+… mesures
+  14/234
+  43/234
+  76/234
+  104/234
+  128/234
+  152/234
+  175/234
+  201/234
+  224/234
+  fait en 284 s
+… mesures:balayage
+  fait en 43 s
+… films
+  fait en 130 s
+… bords
+  fait en 62 s
+… parcours:intro
+  fait en 47 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 112 s
+… parcours:hauteur
+  fait en 39 s
+… parcours:projet
+  fait en 0 s
+… ecran
+  fait en 10 s
+… fluidite
+  fait en 174 s
+… mouvement
+  fait en 128 s
+… vitesse
+  fait en 18 s
+… captures
+  fait en 141 s
+… safari
+  fait en 0 s
+
+Échecs : 6 · À regarder : 17 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/park --seulement=fichiers,mesures
+Rapport : /home/claude/miniwheels-maquette/_audit/rapport/rapport.md (passe 20261123-141121-complet)
+FIN 1

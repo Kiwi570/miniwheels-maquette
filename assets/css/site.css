@@ -532,3 +532,129 @@ html:not(.js) .seb-tete-media { height: min(calc(100svh - 260px), 760px); }
   .vehicule-badge { position: static; justify-self: start; margin: 8px 10px 0; }
 }
 @media (max-width: 760px) and (max-height: 640px) { .page-contact-tete .intro, .shop-tete-bas > p:first-child { display: none; } }
+
+/* ===== v2 : vie et jeu ===== */
+/* Jauge de lecture et curseur. */
+.jauge-lecture { height: 4px; background: var(--vert); }
+.curseur { width: 18px; height: 18px; left: -9px; top: -9px; border-color: var(--vert); }
+.curseur.curseur-lien { background: rgba(0, 228, 0, .16); }
+
+/* Hero : traits de vitesse devant le mot vert, posés à la fin de l'intro. */
+.hero-titre em { position: relative; padding-left: .52em; }
+.hero-titre em::before {
+  content: ''; position: absolute; left: .02em; top: .22em; width: .42em; height: .5em; transform-origin: 100% 50%;
+  background: linear-gradient(var(--vert), var(--vert)) 100% 0 / 100% .075em no-repeat,
+              linear-gradient(var(--vert), var(--vert)) 100% 50% / 68% .075em no-repeat,
+              linear-gradient(var(--vert), var(--vert)) 100% 100% / 40% .075em no-repeat;
+  transition: transform .55s cubic-bezier(.2, .8, .2, 1);
+}
+html.js:not(.secours):not([data-arrivee="retour"]):not(.traits-partis) .hero-titre em::before { transform: scaleX(0); }
+html.js:not(.secours):not([data-arrivee="retour"]) [data-tete] .h-ligne { transform: translate3d(-110%, 0, 0); }
+
+/* Pit bike dessinée (étapes, jauge, pictogrammes). */
+.moto, .picto { display: block; width: 100%; height: auto; overflow: visible; }
+:is(.moto, .picto) :is(circle, .cadre, .roue path) { fill: none; stroke: var(--noir); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+:is(.moto, .picto) .roue path { stroke-width: 2; }
+:is(.moto, .picto) .selle { fill: var(--vert); stroke: none; }
+
+/* Étapes : la piste en pointillés et la moto qui la parcourt. */
+.etapes-piste { position: relative; height: 60px; margin-top: 14px; }
+.etapes-trace { position: absolute; left: var(--gouttiere); right: calc(var(--gouttiere) + 34px); top: 46px; height: 5px; border-radius: 3px; overflow: hidden;
+  background: repeating-linear-gradient(90deg, #b5b6af 0 14px, transparent 14px 24px); }
+.etapes-trace-pleine { position: absolute; inset: 0; background: var(--noir); transform-origin: 0 50%; }
+.etapes-moto { position: absolute; left: var(--gouttiere); top: -14px; width: 84px; }
+.etapes-drapeau { position: absolute; right: var(--gouttiere); top: 10px; width: 30px; height: 40px; border-left: 3px solid var(--noir); }
+.etapes-drapeau::after { content: ''; position: absolute; left: 0; top: 0; width: 27px; height: 20px; background: repeating-conic-gradient(var(--noir) 0 25%, #fff 0 50%) 0 0 / 10px 10px; box-shadow: 0 0 0 1px var(--noir); }
+
+/* Compte à rebours façon tableau d'affichage. */
+.compte-case { perspective: 400px; }
+.compte-case b { display: block; transform-origin: 50% 60%; backface-visibility: hidden; }
+
+/* Pistes : le pilote qui parcourt le profil. */
+.piste-trace .pilote { fill: var(--blanc); stroke: var(--vert); stroke-width: 4; }
+
+/* Les photos : tampon « 238 séances ». */
+.photos-tete { grid-template-columns: minmax(0, 1fr) minmax(0, .8fr) auto; }
+.tampon { position: relative; width: 170px; aspect-ratio: 1; display: grid; place-items: center; align-self: center; border-radius: 50%; overflow: clip; }
+.tampon::before { content: ''; position: absolute; inset: 20%; border-radius: 50%; background: var(--vert); }
+.tampon-tour { position: absolute; inset: 0; width: 100%; height: 100%; animation: tourne 24s linear infinite; }
+.tampon-tour text { font-family: var(--police-texte); font-weight: 800; font-size: 15px; letter-spacing: .16em; fill: var(--noir); }
+.tampon-coeur { position: relative; display: grid; justify-items: center; gap: .3rem; line-height: 1; color: var(--noir); }
+.tampon-coeur strong { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; font-size: 2.7rem; }
+.tampon-coeur span { font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.palmares-n { font-size: clamp(4rem, 6vw, 6rem); }
+
+/* Park : la semaine MiniWheels. */
+.semaine { list-style: none; padding: 0; margin: 30px 0 16px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.jour { position: relative; display: grid; align-content: start; gap: 6px; min-height: 136px; padding: 16px 12px; border-radius: 12px; background: #1d201e; box-shadow: inset 0 0 0 1px #2f3431; }
+.jour b { font-family: var(--police-titres); font-style: italic; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: 1.9rem; line-height: 1; color: #e9e9e4; }
+.jour span { font-size: .92rem; color: #c9ccc8; }
+.jour em { font-style: normal; font-size: .88rem; font-weight: 600; }
+.jour--stage { box-shadow: inset 0 0 0 2px var(--vert); }
+.jour--park { background: var(--vert); box-shadow: none; }
+.jour--park :is(b, span, em) { color: var(--noir); }
+.jour--park span { font-weight: 800; font-size: 1.02rem; }
+.jour--park::after { content: ''; position: absolute; inset: -6px; border-radius: 16px; border: 2px solid var(--vert); animation: halo 2.4s ease-out infinite; pointer-events: none; }
+@keyframes halo { from { transform: scale(.96); opacity: .9; } to { transform: scale(1.08); opacity: 0; } }
+@keyframes halo-tel { from { transform: scale(.99, .92); opacity: .9; } to { transform: scale(1.02, 1.3); opacity: 0; } }
+.jour-auj { display: none; position: absolute; top: -11px; left: 10px; font-style: normal; font-size: .78rem; font-weight: 800; padding: 2px 9px; border-radius: 999px; background: #fff; color: var(--noir); }
+.jour.est-aujourdhui .jour-auj { display: block; }
+.jour.est-aujourdhui { outline: 2px solid #fff; outline-offset: 3px; }
+.semaine-detail { display: flex; flex-wrap: wrap; gap: 6px 28px; margin: 0 0 10px; color: #c9ccc8; }
+.semaine-detail b { color: var(--blanc); }
+
+/* Park : jauge de roulage du calculateur. */
+.jauge { display: grid; gap: 6px; }
+.jauge-libelle { font-weight: 700; font-size: .92rem; }
+.jauge-piste { position: relative; height: 44px; border-radius: 10px; overflow: hidden; background: repeating-linear-gradient(90deg, #e4e4de 0 12px, #f2f2ee 12px 24px); }
+.jauge-pleine { position: absolute; inset: 0; background: var(--vert); transform-origin: 0 50%; transform: scaleX(var(--k)); }
+.jauge-moto { position: absolute; left: 0; top: 6px; width: 48px; transform: translateX(calc(var(--k) * 300px)); }
+.jauge-bornes { display: flex; justify-content: space-between; font-size: .8rem; color: var(--gris); }
+
+/* Shop : pictogrammes, survol, « voir plus ». */
+.plaque-picto { display: block; width: 56%; }
+.vehicule-plaque :is(.moto, .picto) :is(circle, .cadre, .roue path) { stroke: var(--vert); }
+.vehicule-plaque :is(.moto, .picto) .selle { fill: #fff; }
+.vehicule .media img { transition: transform .4s var(--courbe); }
+.vehicule:hover .media img { transform: scale(1.06); }
+.vehicule:hover .roue { animation: tourne .7s linear infinite; }
+.vehicule-plaque small { color: var(--vert); }
+.voir-plus { margin: 24px 0 0; text-align: center; }
+#marques .marques { margin-top: 0; }
+
+/* Séb : « SÉB » entier derrière le texte, polaroïds, tampon de l'Academy. */
+.seb-geant { justify-content: flex-end; padding-right: var(--gouttiere); font-size: clamp(11rem, 26vw, 25rem); }
+.archives { padding-block: 22px 28px; }
+.archive { rotate: var(--r, 0deg); transition: rotate .35s var(--courbe), scale .35s var(--courbe); }
+.archive .media { border-radius: 4px; border: 10px solid #fff; border-bottom-width: 34px; background: #fff; box-shadow: 0 10px 26px rgba(16, 18, 17, .18); }
+.archive:hover { rotate: 0deg; scale: 1.04; }
+.academy-visuel { position: relative; }
+.academy-tampon { position: absolute; left: -26px; bottom: -26px; z-index: 2; width: clamp(110px, 11vw, 150px); border-radius: 50%; box-shadow: 0 0 0 6px var(--clair2); animation: tourne 26s linear infinite; }
+.academy-tampon .media { border-radius: 50%; }
+
+/* Contact : Corine pour le Park, damier de fin. */
+.corine { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; align-items: center; margin-top: 26px; padding: 16px; border-radius: var(--rayon); background: #fff; }
+.corine .media { border-radius: 50%; }
+.corine p { margin: 0; }
+#ecrire { padding-bottom: calc(clamp(60px, 9vw, 124px) + 24px); }
+
+@media (max-width: 1000px) {
+  .semaine { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .photos-tete { grid-template-columns: minmax(0, 1fr) auto; }
+  .photos-tete .intro { grid-column: 1; }
+  .photos-tete .tampon { grid-column: 2; grid-row: 1 / span 2; }
+}
+@media (max-width: 760px) {
+  .etapes-piste { position: sticky; left: 0; width: 100vw; }
+  .semaine { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .jour { grid-template-columns: 64px minmax(0, 1fr); min-height: 0; align-items: center; padding: 12px 14px; }
+  .jour em { grid-column: 2; }
+  .jour b { font-size: 1.6rem; }
+  .jour-auj { top: 50%; left: auto; right: 12px; transform: translateY(-50%); }
+  .jour--park::after { inset: -4px; animation-name: halo-tel; }
+  .photos-tete { grid-template-columns: minmax(0, 1fr); }
+  .photos-tete .tampon { grid-column: 1; grid-row: auto; justify-self: end; width: 150px; margin-top: -10px; }
+  .tampon-tour text { font-size: 16px; }
+  .seb-geant { justify-content: center; padding-right: 0; font-size: 46vw; }
+  .academy-tampon { left: 10px; bottom: -22px; width: 100px; }
+}

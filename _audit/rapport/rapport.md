@@ -1,29 +1,25 @@
 # Rapport d’audit
 
-Projet : `miniwheels-maquette` · 20/11/2026 17:58:47 · 12 min · 6 page(s) · audit standard (étapes : fichiers, films, parcours, mouvement, bords, fluidite)
+Projet : `miniwheels-maquette` · 23/11/2026 15:44:49 · 1 min · 1 page(s) · audit complet ciblé sur / (étapes : mesures)
 
 ## Résumé
 
 - Statut : **tout a tourné, aucun échec**
-- Passe : `20261120-164705-standard-partiel` · version ?v=1
+- Passe : `20261123-144341-complet-cible-partiel` · version ?v=2
 - Échecs : **0**
-- À regarder : **7**
+- À regarder : **0**
 - Non lancé : **0**
-- Contrôles passés : vercel.json (1), .vercelignore (1), robots.txt (1), numéro de version (1), langues (1), films d’ouverture (10), films de transition (10), bords de l’écran (6), intro accélérable et passable (7), menu (1), clavier (6), liens et boutons (6), liens profonds (16), liens vers la page en cours (5), changements de hauteur (4), fluidité (10), défilement selon l’appareil (5), mouvement (10), effets du plan (10), souris immobile (4)
+- Contrôles passés : mesures (39), balayage (1)
 
-## Passes de cette version (?v=1)
+## Passes de cette version (?v=2)
 
 Chaque passe garde son rapport dans `_audit/passes/` : une relance ciblée ne fait pas disparaître la preuve d’une passe plus large.
 
 | Passe | Niveau | Pages | Étapes | Échecs | À regarder | Non lancé | Statut |
 |---|---|---|---|---:|---:|---:|---|
-| 20261120-155656-rapide | rapide | toutes | toutes | 359 | 16 | 1 | échecs |
-| 20261120-160714-standard | standard | toutes | toutes | 47 | 11 | 1 | échecs |
-| 20261120-162817-standard-partiel | standard | toutes | fichiers, mesures, films | 11 | 9 | 0 | échecs |
-| 20261120-163351-standard-cible-partiel | standard | /,/404,/contact,/shop,/sebastien | fichiers, mesures | 1 | 3 | 0 | échecs |
-| 20261120-163602-standard-cible-partiel | standard | / | fichiers, mesures | 1 | 1 | 0 | échecs |
-| 20261120-163931-complet-partiel | complet | toutes | mesures, ecran | 0 | 4 | 0 | complet |
-| **20261120-164705-standard-partiel** (celle-ci) | standard | toutes | fichiers, films, parcours, mouvement, bords, fluidite | 0 | 7 | 0 | complet |
+| 20261123-141121-complet | complet | toutes | toutes | 6 | 17 | 1 | échecs |
+| 20261123-143955-complet-cible-partiel | complet | /,/park,/contact | fichiers, mesures | 0 | 3 | 0 | complet |
+| **20261123-144341-complet-cible-partiel** (celle-ci) | complet | / | mesures | 0 | 0 | 0 | complet |
 
 ## Échecs
 
@@ -31,27 +27,7 @@ Aucun.
 
 ## À regarder
 
-### « à compléter » visible (1)
-
-- **« à compléter » visible** — `contact.html` — 1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)
-
-### retour arrière : changement brusque (3)
-
-- **retour arrière : changement brusque** — `/` — à 237 ms (différence 27 %) (films/retour-arrière-1366.png) _(1366×768 retour arrière)_
-- **retour arrière : changement brusque** — `/` — à 70 ms (différence 50 %) (films/retour-arrière-390.png) _(390×844 retour arrière)_
-- **retour arrière : changement brusque** — `/` — à 104 ms (différence 29 %) (films/retour-arrière-390.png) _(390×844 retour arrière)_
-
-### retour avant : changement brusque (1)
-
-- **retour avant : changement brusque** — `/park` — à 152 ms (différence 27 %) (films/retour-avant-1366.png) _(1366×768 retour avant)_
-
-### rechargement au milieu de la page (1)
-
-- **rechargement au milieu de la page** — `/sebastien` — écran différent à la même position après rechargement (4.7 %), voir comparaisons/rechargement-sebastien-*.png _(1366×768)_
-
-### effet qui ne bouge pas au défilement (1)
-
-- **effet qui ne bouge pas au défilement** — `/park` — form.calc — calcul-session : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section _(1366×768 normal, 390×844 normal)_
+Rien.
 
 ## Non lancé
 
@@ -60,37 +36,7 @@ Tout a été lancé.
 
 ## Repères
 
-- Numéro de version des fichiers : ?v=1
-- Journal v1 : 4 étape(s) notée(s), 57 min de travail pour 75 min de budget, 10 min d’attente de l’utilisateur.
-- Journal : « plans, images du site et document Grok » 16 min pour 10 prévues.
-- Audit standard : étapes lourdes sur /, /contact, /park, /sebastien, /shop.
 - Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.
-- Ouverture / (1366×768) : 2151 ms depuis le premier octet
-- Ouverture /contact (1366×768) : 1982 ms depuis le premier octet
-- Ouverture /park (1366×768) : 2103 ms depuis le premier octet
-- film de l'ouverture /park 1366×768 : réussi à la tentative 3 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
-- Ouverture /sebastien (1366×768) : 2104 ms depuis le premier octet
-- Ouverture /shop (1366×768) : 2117 ms depuis le premier octet
-- Ouverture / (390×844) : 2084 ms depuis le premier octet
-- film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
-- Ouverture /contact (390×844) : 1997 ms depuis le premier octet
-- Ouverture /park (390×844) : 2074 ms depuis le premier octet
-- Ouverture /sebastien (390×844) : 2074 ms depuis le premier octet
-- Ouverture /shop (390×844) : 2055 ms depuis le premier octet
-- bords de l’écran / 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
-- Bords de l’écran : 313 images d’intro, 21 de voile et 124 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.
-- Changements de hauteur /contact : aucun effet ScrollTrigger, rien à recalculer.
-- Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.
-- Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 441, tâche la plus longue 0 ms
-- Fluidité /contact 1366×768 (molette) : 0 % d'images lentes sur 136, tâche la plus longue 0 ms
-- Fluidité /park 1366×768 (molette) : 0 % d'images lentes sur 432, tâche la plus longue 0 ms
-- Fluidité /sebastien 1366×768 (molette) : 0 % d'images lentes sur 279, tâche la plus longue 0 ms
-- Fluidité /shop 1366×768 (molette) : 0 % d'images lentes sur 488, tâche la plus longue 0 ms
-- Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1367, tâche la plus longue 0 ms
-- Fluidité /contact 390×844 (doigt) : 0 % d'images lentes sur 1343, tâche la plus longue 0 ms
-- Fluidité /park 390×844 (doigt) : 0 % d'images lentes sur 1345, tâche la plus longue 0 ms
-- Fluidité /sebastien 390×844 (doigt) : 0 % d'images lentes sur 1339, tâche la plus longue 0 ms
-- Fluidité /shop 390×844 (doigt) : 0 % d'images lentes sur 1342, tâche la plus longue 0 ms
 
 ## Fichiers
 

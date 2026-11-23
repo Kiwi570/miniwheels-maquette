@@ -53,3 +53,24 @@ export function familles(c) {
     return { ...f, n: liste.length, min: Math.min(...liste.map((x) => x.prix)) };
   });
 }
+
+/* Petite pit bike dessinée en code : elle roule sur la piste des cinq étapes (roues qui tournent). */
+export const moto = html`<svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg>`;
+
+/* Pictogrammes dessinés en code pour les véhicules sans photo sûre. */
+export const quad = html`<svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg>`;
+export const ssv = html`<svg class="picto" viewBox="0 0 80 46" aria-hidden="true">
+  <g class="roue" style="transform-origin:17px 34px"><circle cx="17" cy="34" r="9"/></g>
+  <g class="roue" style="transform-origin:62px 34px"><circle cx="62" cy="34" r="9"/></g>
+  <path class="cadre" d="M6 26 L72 26 L74 20 L56 18 L46 6 L24 6 L18 18 L8 20 Z M26 34 L53 34 M30 6 L30 18 M46 6 L52 18"/>
+</svg>`;

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-italique.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#101211">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -82,6 +82,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
   </div>
 </header>
+<span class="jauge-lecture" data-barre-lecture aria-hidden="true"></span>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
 (function () {
@@ -103,7 +104,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/park" class="menu-lien" data-libelle="Le Park">Le Park</a></li><li style="--i:2"><a href="/shop" class="menu-lien" data-libelle="Le Shop">Le Shop</a></li><li style="--i:3"><a href="/sebastien" class="menu-lien" data-libelle="Séb &amp; Academy" aria-current="page">Séb &amp; Academy</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
   <p class="menu-actions"><a href="/park#reserver" class="bouton" data-libelle="Le Park">Réserver une session</a><a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park</a><a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop</a></p>
 </div>
-<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."}},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
+<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."},"semaine":[{"j":1,"court":"Lun","texte":"Repos"},{"j":2,"court":"Mar","texte":"Shop 9 h 30-19 h"},{"j":3,"court":"Mer","texte":"Shop · stages un mercredi sur deux","stage":true},{"j":4,"court":"Jeu","texte":"Shop 9 h 30-19 h"},{"j":5,"court":"Ven","texte":"Shop 9 h 30-19 h"},{"j":6,"court":"Sam","texte":"Park 14 h-18 h","park":true,"plus":"Shop le matin"},{"j":0,"court":"Dim","texte":"Repos"}]},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
 <main id="contenu" tabindex="-1" data-page="sebastien">
 <section class="page-seb-tete" id="debut" data-tete>
   <p class="seb-geant" aria-hidden="true" data-audit-ignorer><span data-effet="seb-geant">S</span><span data-effet="seb-geant">É</span><span data-effet="seb-geant">B</span></p>
@@ -147,31 +148,31 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="intro" data-anime>Photos d&#39;archives de la carrière de Séb.</p>
   </div>
   <div class="archives" tabindex="0" role="region" aria-label="Archives de course, défilement horizontal" data-anime="cascade">
-    <div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+    <div class="archive" style="--r:-3deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-1-960.webp" srcset="/assets/images/archive-1-480.webp 480w, /assets/images/archive-1-640.webp 640w, /assets/images/archive-1-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb en course d&#39;enduro, en appui dans un virage d&#39;herbe" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:2.4deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-2-960.webp" srcset="/assets/images/archive-2-480.webp 480w, /assets/images/archive-2-640.webp 640w, /assets/images/archive-2-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb en tenue de course, au départ d&#39;une spéciale" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:-1.6deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-3-960.webp" srcset="/assets/images/archive-3-480.webp 480w, /assets/images/archive-3-640.webp 640w, /assets/images/archive-3-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb en action sur une moto jaune numéro 107" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:3deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-4-960.webp" srcset="/assets/images/archive-4-480.webp 480w, /assets/images/archive-4-640.webp 640w, /assets/images/archive-4-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb sur le podium, bouquet en main" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:-2.4deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-5-960.webp" srcset="/assets/images/archive-5-480.webp 480w, /assets/images/archive-5-640.webp 640w, /assets/images/archive-5-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb avec l&#39;équipe de France au milieu des pilotes" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:1.6deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-6-960.webp" srcset="/assets/images/archive-6-480.webp 480w, /assets/images/archive-6-640.webp 640w, /assets/images/archive-6-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb en maillot France, sur sa moto numéro 24" width="960" height="960" loading="lazy" decoding="async">
   </picture>
-</figure></div><div class="archive"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
+</figure></div><div class="archive" style="--r:-1deg"><figure class="media " data-fx="vitesse" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
     <img src="/assets/images/archive-7-960.webp" srcset="/assets/images/archive-7-480.webp 480w, /assets/images/archive-7-640.webp 640w, /assets/images/archive-7-960.webp 960w" sizes="(max-width: 760px) 70vw, 24vw" alt="Séb au travail sur sa moto au paddock" width="960" height="960" loading="lazy" decoding="async">
   </picture>
@@ -197,31 +198,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <a href="/contact?sujet=stage#ecrire" class="bouton bouton--contour" data-libelle="Contact">Nous écrire</a>
       </p>
     </div>
-    <div style="display:grid;gap:16px">
+    <div class="academy-visuel">
       <figure class="media " data-fx="parallaxe" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/academy-stage-mobile-640.webp 640w, /assets/images/academy-stage-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 45vw">
     <img src="/assets/images/academy-stage-1280.webp" srcset="/assets/images/academy-stage-640.webp 640w, /assets/images/academy-stage-1280.webp 1280w, /assets/images/academy-stage-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 45vw" alt="Groupe de pilotes en stage dans les virages" width="1280" height="853" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <div style="display:flex;gap:16px;align-items:center" data-anime>
-        <figure class="media academy-badge" style="--cadrage:50% 50%;aspect-ratio:1">
+      <span class="academy-tampon" data-boucle-css><figure class="media academy-badge" style="--cadrage:50% 50%;aspect-ratio:1">
   <picture>
-    <img src="/assets/images/academy-badge-800.webp" srcset="/assets/images/academy-badge-480.webp 480w, /assets/images/academy-badge-640.webp 640w, /assets/images/academy-badge-800.webp 800w" sizes="150px" alt="Badge de la Seb&#39;One Academy, école de pilotage pit bike" width="800" height="800" loading="lazy" decoding="async">
+    <img src="/assets/images/academy-badge-800.webp" srcset="/assets/images/academy-badge-480.webp 480w, /assets/images/academy-badge-640.webp 640w, /assets/images/academy-badge-800.webp 800w" sizes="160px" alt="Badge de la Seb&#39;One Academy, école de pilotage pit bike" width="800" height="800" loading="lazy" decoding="async">
   </picture>
-</figure>
-        <figure class="media academy-badge" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
-  <picture>
-    <img src="/assets/images/academy-seb-800.webp" srcset="/assets/images/academy-seb-480.webp 480w, /assets/images/academy-seb-640.webp 640w, /assets/images/academy-seb-800.webp 800w" sizes="200px" alt="Séb avec un pilote de l&#39;Academy au bord de la piste" width="800" height="1000" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      </div>
+</figure></span>
     </div>
   </div>
 </section>
 <section class="fin sombre" id="fin">
   <figure class="media fin-media" data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/seb-appel-mobile-640.webp 640w, /assets/images/seb-appel-mobile-1080.webp 1080w" sizes="100vw">
-    <img src="/assets/images/seb-appel-1280.webp" srcset="/assets/images/seb-appel-640.webp 640w, /assets/images/seb-appel-1280.webp 1280w, /assets/images/seb-appel-1920.webp 1920w" sizes="100vw" alt="Séb explique la trajectoire à un jeune pilote casqué" width="1280" height="853" loading="lazy" decoding="async">
+    <img src="/assets/images/seb-appel-1280.webp" srcset="/assets/images/seb-appel-640.webp 640w, /assets/images/seb-appel-1280.webp 1280w, /assets/images/seb-appel-1920.webp 1920w" sizes="100vw" alt="Un jeune pilote s&#39;envole au-dessus de la bosse, le poing levé" width="1280" height="853" loading="lazy" decoding="async">
   </picture>
 </figure>
   <div class="conteneur fin-contenu">

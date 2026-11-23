@@ -638,16 +638,28 @@
   ]
  },
  {
-  "source": "recu/propre/miniwheels-vous-offre-souvenirs-40.jpg",
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-26.jpg",
   "nom": "seb-appel",
   "role": "section-fond",
-  "alt": "Séb explique la trajectoire à un jeune pilote casqué",
+  "alt": "Un jeune pilote s'envole au-dessus de la bosse, le poing levé",
   "beaute": 4,
   "mobile": true,
   "zone_texte": "bas",
   "cadrage": [
    45,
-   45
+   42
+  ]
+ },
+ {
+  "source": "recu/propre/miniwheels-vous-offre-souvenirs-55.jpg",
+  "nom": "park-acces-pistes",
+  "role": "vignette",
+  "alt": "Jeune pilote sur sa propre pit bike devant le panneau Accès pistes du Park",
+  "beaute": 5,
+  "ratio": "3:2",
+  "cadrage": [
+   55,
+   50
   ]
  }
 ]

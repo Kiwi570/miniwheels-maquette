@@ -1,7 +1,7 @@
 /* Le Park : ouverture coupée en deux (titre et statut à gauche, vue d'en haut à droite, balises qui défilent),
    puis quand rouler, les pistes, la location avec calcul et créneau, avec sa moto, l'équipement, l'équipe, la FAQ. */
 import { html } from '../../outils/gabarit.mjs';
-import { img, prix, titre, appelFinal } from '../gabarits/aides.mjs';
+import { img, prix, titre, appelFinal, moto } from '../gabarits/aides.mjs';
 
 export const page = { cle: 'park', fichier: 'park', imagePartage: 'park-ouverture-1280.webp' };
 
@@ -29,9 +29,10 @@ export default (c) => {
   <div class="conteneur">
     <h2 class="titre" data-anime="lignes">${c.t('park.ouverture.titre')}</h2>
     <p class="intro" data-anime>${c.t('park.ouverture.texte')}</p>
-    <ul class="horaires-cartes" data-anime="cascade">
-      ${H.lignes.map((l) => html`<li class="horaire"><span>${l[0]}</span><strong>${l[1]}</strong></li>`)}
-    </ul>
+    <ol class="semaine" data-anime="cascade" aria-label="${c.s('park.ouverture.semaine')}">
+      ${c.donnees.horaires.semaine.map((d) => html`<li class="jour${d.park ? ' jour--park' : ''}${d.stage ? ' jour--stage' : ''}" data-jour="${d.j}"><b>${d.court}</b><span>${d.texte}</span>${d.plus ? html`<em>${d.plus}</em>` : ''}<i class="jour-auj">${c.t('park.ouverture.aujourdhui')}</i></li>`)}
+    </ol>
+    <p class="semaine-detail" data-anime>${H.lignes.slice(1).map((l) => html`<span><b>${l[0]}</b> : ${l[1]}</span>`)}</p>
     <div class="compte" style="margin-top:28px">
       <span class="compte-libelle">${c.t('accueil.samedi.dans')} · <span data-prochain-long>${c.t('accueil.hero.badgeJour')}</span></span>
       <span class="compte-cases" data-compte>
@@ -67,18 +68,19 @@ export default (c) => {
       </div>
       <p data-anime><b>${c.t('park.location.inclus')} :</b> ${T.inclus.join(' · ')}.</p>
       <p class="petit" data-anime>${c.t('park.location.apporter')}</p>
-      ${img(c, 'park-location', { ratio: '4 / 3', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-anime="rideau"' })}
+      ${img(c, 'etape-cest-parti', { ratio: '4 / 3', cadrage: '50% 18%', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-anime="rideau"' })}
     </div>
-    <form class="calc" data-calc data-effet="calcul-session" novalidate
+    <form class="calc" data-calc novalidate
       data-confirme="${c.s('park.location.confirme')}" data-erreur-session="Ajoutez au moins une session." data-erreur-creneau="Choisissez un créneau.">
       <h3>${c.t('park.location.calcTitre')}</h3>
       ${T.location.map((f) => html`<div class="calc-ligne" data-calc-ligne="${f.id}" data-prix="${f.prix}" data-duree="${f.duree}">
         <span><b>${f.nom}</b></span>
-        <span class="pas"><button type="button" data-pas="-1" aria-label="${c.s('park.location.moins')} session : ${f.nom}">−</button><output aria-live="polite" aria-label="${c.s('park.location.sessions')} : ${f.nom}">0</output><button type="button" data-pas="1" aria-label="${c.s('park.location.plus')} session : ${f.nom}">+</button></span>
+        <span class="pas"><button type="button" data-pas="-1" aria-label="${c.s('park.location.moins')} session : ${f.nom}">−</button><output aria-live="polite" aria-label="${c.s('park.location.sessions')} : ${f.nom}">${f.id === 'enfant' ? '1' : '0'}</output><button type="button" data-pas="1" aria-label="${c.s('park.location.plus')} session : ${f.nom}">+</button></span>
         <small>${c.t('park.location.parSession', { prix: f.prix, duree: f.duree })}</small>
       </div>`)}
       <label class="calc-case"><input type="checkbox" name="initiation" checked> ${c.t('park.location.initiation')}</label>
-      <div class="calc-total"><span>${c.t('park.location.total')} · <span data-calc-duree>0 min</span> ${c.t('park.location.duree')}</span><strong data-calc-total aria-live="polite">0 €</strong></div>
+      <div class="calc-total"><span>${c.t('park.location.total')} · <span data-calc-duree>${T.location[0].duree} min</span> ${c.t('park.location.duree')}</span><strong data-calc-total aria-live="polite">${prix(T.location[0].prix)}</strong></div>
+      <div class="jauge" aria-hidden="true"><span class="jauge-libelle">${c.t('park.location.jauge')}</span><span class="jauge-piste"><span class="jauge-pleine" data-jauge data-effet="calcul-session" style="--k:${T.location[0].duree / 120}"></span><span class="jauge-moto" style="--k:${T.location[0].duree / 120}">${moto}</span></span><span class="jauge-bornes"><span>0</span><span>1 h</span><span>${c.t('park.location.jaugeMax')}</span></span></div>
       <fieldset class="creneaux"><legend>${c.t('park.location.creneau')}</legend>
         ${T.creneaux.map((h) => html`<label><input type="radio" name="creneau" value="${h}"><span>${h.replace(':', ' h ').replace(' h 00', ' h')}</span></label>`)}
       </fieldset>
@@ -114,7 +116,7 @@ export default (c) => {
         <div class="carte-fid"><h3>${c.t('park.moto.fid')}</h3><p>${c.t('park.moto.fidTexte')}</p></div>
       </div>
     </div>
-    ${img(c, 'park-avec-ta-moto', { ratio: '4 / 5', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-anime="rideau"' })}
+    ${img(c, 'park-acces-pistes', { ratio: '3 / 2', sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-anime="rideau"' })}
   </div>
 </section>
 

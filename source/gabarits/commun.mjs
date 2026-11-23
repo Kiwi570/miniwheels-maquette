@@ -65,6 +65,7 @@ function entete(c) {
     </div>
   </div>
 </header>
+<span class="jauge-lecture" data-barre-lecture aria-hidden="true"></span>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
 (function () {

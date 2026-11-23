@@ -1,14 +1,134 @@
 {
-  "fuseau": "Europe/Paris",
-  "shop": {
-    "nom": "Le Shop & l'atelier",
-    "plages": { "2": [["09:30","12:30"],["14:00","19:00"]], "3": [["09:30","12:30"],["14:00","19:00"]], "4": [["09:30","12:30"],["14:00","19:00"]], "5": [["09:30","12:30"],["14:00","19:00"]], "6": [["09:30","12:30"]] },
-    "lignes": [["Mardi au vendredi", "9 h 30-12 h 30 · 14 h-19 h"], ["Samedi", "9 h 30-12 h 30"], ["Dimanche et lundi", "fermé"]]
+ "fuseau": "Europe/Paris",
+ "shop": {
+  "nom": "Le Shop & l'atelier",
+  "plages": {
+   "2": [
+    [
+     "09:30",
+     "12:30"
+    ],
+    [
+     "14:00",
+     "19:00"
+    ]
+   ],
+   "3": [
+    [
+     "09:30",
+     "12:30"
+    ],
+    [
+     "14:00",
+     "19:00"
+    ]
+   ],
+   "4": [
+    [
+     "09:30",
+     "12:30"
+    ],
+    [
+     "14:00",
+     "19:00"
+    ]
+   ],
+   "5": [
+    [
+     "09:30",
+     "12:30"
+    ],
+    [
+     "14:00",
+     "19:00"
+    ]
+   ],
+   "6": [
+    [
+     "09:30",
+     "12:30"
+    ]
+   ]
   },
-  "park": {
-    "nom": "Le Park",
-    "plages": { "6": [["14:00","18:00"]] },
-    "lignes": [["Samedi, toute l'année", "14 h-18 h"], ["Accueil et snack", "dès 13 h"], ["Location", "14 h 30-18 h, sur réservation"]],
-    "reserve": "Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."
+  "lignes": [
+   [
+    "Mardi au vendredi",
+    "9 h 30-12 h 30 · 14 h-19 h"
+   ],
+   [
+    "Samedi",
+    "9 h 30-12 h 30"
+   ],
+   [
+    "Dimanche et lundi",
+    "fermé"
+   ]
+  ]
+ },
+ "park": {
+  "nom": "Le Park",
+  "plages": {
+   "6": [
+    [
+     "14:00",
+     "18:00"
+    ]
+   ]
+  },
+  "lignes": [
+   [
+    "Samedi, toute l'année",
+    "14 h-18 h"
+   ],
+   [
+    "Accueil et snack",
+    "dès 13 h"
+   ],
+   [
+    "Location",
+    "14 h 30-18 h, sur réservation"
+   ]
+  ],
+  "reserve": "Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."
+ },
+ "semaine": [
+  {
+   "j": 1,
+   "court": "Lun",
+   "texte": "Repos"
+  },
+  {
+   "j": 2,
+   "court": "Mar",
+   "texte": "Shop 9 h 30-19 h"
+  },
+  {
+   "j": 3,
+   "court": "Mer",
+   "texte": "Shop · stages un mercredi sur deux",
+   "stage": true
+  },
+  {
+   "j": 4,
+   "court": "Jeu",
+   "texte": "Shop 9 h 30-19 h"
+  },
+  {
+   "j": 5,
+   "court": "Ven",
+   "texte": "Shop 9 h 30-19 h"
+  },
+  {
+   "j": 6,
+   "court": "Sam",
+   "texte": "Park 14 h-18 h",
+   "park": true,
+   "plus": "Shop le matin"
+  },
+  {
+   "j": 0,
+   "court": "Dim",
+   "texte": "Repos"
   }
+ ]
 }

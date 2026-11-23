@@ -47,7 +47,7 @@ export default (c) => html`
     <p class="intro" data-anime>${c.t('seb.archives.texte')}</p>
   </div>
   <div class="archives" tabindex="0" role="region" aria-label="${c.s('seb.archives.region')}" data-anime="cascade">
-    ${[1, 2, 3, 4, 5, 6, 7].map((k) => html`<div class="archive">${img(c, `archive-${k}`, { ratio: '1', sizes: '(max-width: 760px) 70vw, 24vw', attrs: 'data-fx="vitesse"' })}</div>`)}
+    ${[1, 2, 3, 4, 5, 6, 7].map((k) => html`<div class="archive" style="--r:${[-3, 2.4, -1.6, 3, -2.4, 1.6, -1][k - 1]}deg">${img(c, `archive-${k}`, { ratio: '1', sizes: '(max-width: 760px) 70vw, 24vw', attrs: 'data-fx="vitesse"' })}</div>`)}
   </div>
 </section>
 
@@ -70,12 +70,9 @@ export default (c) => html`
         ${c.lien('contact', { ancre: 'ecrire', params: 'sujet=stage', classe: 'bouton bouton--contour', texte: c.t('contact.formulaire.titre1') })}
       </p>
     </div>
-    <div style="display:grid;gap:16px">
+    <div class="academy-visuel">
       ${img(c, 'academy-stage', { ratio: '4 / 5', alt: c.s('seb.academy.photo'), sizes: '(max-width: 760px) 100vw, 45vw', attrs: 'data-fx="parallaxe"' })}
-      <div style="display:flex;gap:16px;align-items:center" data-anime>
-        ${img(c, 'academy-badge', { classe: 'academy-badge', ratio: '1', sizes: '150px' })}
-        ${img(c, 'academy-seb', { ratio: '4 / 5', sizes: '200px', classe: 'academy-badge' })}
-      </div>
+      <span class="academy-tampon" data-boucle-css>${img(c, 'academy-badge', { classe: 'academy-badge', ratio: '1', sizes: '160px' })}</span>
     </div>
   </div>
 </section>

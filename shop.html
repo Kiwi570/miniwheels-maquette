@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-italique.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#101211">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -82,6 +82,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
   </div>
 </header>
+<span class="jauge-lecture" data-barre-lecture aria-hidden="true"></span>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
 (function () {
@@ -103,7 +104,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/park" class="menu-lien" data-libelle="Le Park">Le Park</a></li><li style="--i:2"><a href="/shop" class="menu-lien" data-libelle="Le Shop" aria-current="page">Le Shop</a></li><li style="--i:3"><a href="/sebastien" class="menu-lien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
   <p class="menu-actions"><a href="/park#reserver" class="bouton" data-libelle="Le Park">Réserver une session</a><a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park</a><a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop</a></p>
 </div>
-<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."}},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
+<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."},"semaine":[{"j":1,"court":"Lun","texte":"Repos"},{"j":2,"court":"Mar","texte":"Shop 9 h 30-19 h"},{"j":3,"court":"Mer","texte":"Shop · stages un mercredi sur deux","stage":true},{"j":4,"court":"Jeu","texte":"Shop 9 h 30-19 h"},{"j":5,"court":"Ven","texte":"Shop 9 h 30-19 h"},{"j":6,"court":"Sam","texte":"Park 14 h-18 h","park":true,"plus":"Shop le matin"},{"j":0,"court":"Dim","texte":"Repos"}]},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
 <main id="contenu" tabindex="-1" data-page="shop">
 <section class="page-shop-tete" id="debut" data-tete>
   <div class="conteneur shop-tete-haut">
@@ -146,7 +147,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-mini-ycf-12-800.webp" srcset="/assets/images/v-mini-ycf-12-480.webp 480w, /assets/images/v-mini-ycf-12-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 12&quot;, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-mini-ycf-12-800.webp" srcset="/assets/images/v-mini-ycf-12-480.webp 480w, /assets/images/v-mini-ycf-12-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 12&quot;, photo du constructeur" width="574" height="382" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -161,7 +162,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-mini-ycf-12-edition-limitee-800.webp" srcset="/assets/images/v-mini-ycf-12-edition-limitee-480.webp 480w, /assets/images/v-mini-ycf-12-edition-limitee-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 12&quot; édition limitée, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-mini-ycf-12-edition-limitee-800.webp" srcset="/assets/images/v-mini-ycf-12-edition-limitee-480.webp 480w, /assets/images/v-mini-ycf-12-edition-limitee-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 12&quot; édition limitée, photo du constructeur" width="646" height="431" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -175,7 +176,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-mini-ycf-16-800.webp" srcset="/assets/images/v-mini-ycf-16-480.webp 480w, /assets/images/v-mini-ycf-16-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 16&quot;, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-mini-ycf-16-800.webp" srcset="/assets/images/v-mini-ycf-16-480.webp 480w, /assets/images/v-mini-ycf-16-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Mini YCF 16&quot;, photo du constructeur" width="709" height="473" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -190,7 +191,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-50a-800.webp" srcset="/assets/images/v-ycf-50a-480.webp 480w, /assets/images/v-ycf-50a-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF 50A, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-50a-800.webp" srcset="/assets/images/v-ycf-50a-480.webp 480w, /assets/images/v-ycf-50a-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF 50A, photo du constructeur" width="430" height="287" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -204,7 +205,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-w50-800.webp" srcset="/assets/images/v-ycf-w50-480.webp 480w, /assets/images/v-ycf-w50-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF W50, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-w50-800.webp" srcset="/assets/images/v-ycf-w50-480.webp 480w, /assets/images/v-ycf-w50-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF W50, photo du constructeur" width="435" height="290" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -219,7 +220,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-lite-88-s-800.webp" srcset="/assets/images/v-ycf-lite-88-s-480.webp 480w, /assets/images/v-ycf-lite-88-s-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 88 S, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-lite-88-s-800.webp" srcset="/assets/images/v-ycf-lite-88-s-480.webp 480w, /assets/images/v-ycf-lite-88-s-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 88 S, photo du constructeur" width="618" height="412" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -231,7 +232,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-ycf-lite-125" data-famille="pit-bike" data-energie="thermique" data-prix="999" data-nom="YCF Lite 125" data-ordre="6">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">125 cc</span><small>Pit bikes</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>125 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>YCF Lite 125</h3>
@@ -243,7 +249,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-lite-150-800.webp" srcset="/assets/images/v-ycf-lite-150-480.webp 480w, /assets/images/v-ycf-lite-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 150, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-lite-150-800.webp" srcset="/assets/images/v-ycf-lite-150-480.webp 480w, /assets/images/v-ycf-lite-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 150, photo du constructeur" width="680" height="454" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -257,7 +263,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-lite-150-l-800.webp" srcset="/assets/images/v-ycf-lite-150-l-480.webp 480w, /assets/images/v-ycf-lite-150-l-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 150 L, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-lite-150-l-800.webp" srcset="/assets/images/v-ycf-lite-150-l-480.webp 480w, /assets/images/v-ycf-lite-150-l-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Lite 150 L, photo du constructeur" width="704" height="469" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -271,7 +277,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-start-88-se-800.webp" srcset="/assets/images/v-ycf-start-88-se-480.webp 480w, /assets/images/v-ycf-start-88-se-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start 88 SE, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-start-88-se-800.webp" srcset="/assets/images/v-ycf-start-88-se-480.webp 480w, /assets/images/v-ycf-start-88-se-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start 88 SE, photo du constructeur" width="578" height="386" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -285,7 +291,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-start-w88-800.webp" srcset="/assets/images/v-ycf-start-w88-480.webp 480w, /assets/images/v-ycf-start-w88-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start W88, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-start-w88-800.webp" srcset="/assets/images/v-ycf-start-w88-480.webp 480w, /assets/images/v-ycf-start-w88-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start W88, photo du constructeur" width="584" height="389" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -299,7 +305,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-start-125-se-800.webp" srcset="/assets/images/v-ycf-start-125-se-480.webp 480w, /assets/images/v-ycf-start-125-se-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start 125 SE, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-start-125-se-800.webp" srcset="/assets/images/v-ycf-start-125-se-480.webp 480w, /assets/images/v-ycf-start-125-se-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Start 125 SE, photo du constructeur" width="647" height="432" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -313,7 +319,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-pilot-150-800.webp" srcset="/assets/images/v-ycf-pilot-150-480.webp 480w, /assets/images/v-ycf-pilot-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Pilot 150, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-pilot-150-800.webp" srcset="/assets/images/v-ycf-pilot-150-480.webp 480w, /assets/images/v-ycf-pilot-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Pilot 150, photo du constructeur" width="702" height="468" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -327,7 +333,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-factory-150-sp2-800.webp" srcset="/assets/images/v-ycf-factory-150-sp2-480.webp 480w, /assets/images/v-ycf-factory-150-sp2-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Factory 150 SP2, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-factory-150-sp2-800.webp" srcset="/assets/images/v-ycf-factory-150-sp2-480.webp 480w, /assets/images/v-ycf-factory-150-sp2-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Factory 150 SP2, photo du constructeur" width="699" height="466" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -341,7 +347,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-factory-190-sp3-800.webp" srcset="/assets/images/v-ycf-factory-190-sp3-480.webp 480w, /assets/images/v-ycf-factory-190-sp3-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Factory 190 SP3, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-factory-190-sp3-800.webp" srcset="/assets/images/v-ycf-factory-190-sp3-480.webp 480w, /assets/images/v-ycf-factory-190-sp3-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Factory 190 SP3, photo du constructeur" width="679" height="453" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -355,7 +361,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-bigy-150-800.webp" srcset="/assets/images/v-ycf-bigy-150-480.webp 480w, /assets/images/v-ycf-bigy-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 150, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-bigy-150-800.webp" srcset="/assets/images/v-ycf-bigy-150-480.webp 480w, /assets/images/v-ycf-bigy-150-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 150, photo du constructeur" width="717" height="478" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -369,7 +375,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-bigy-150-factory-800.webp" srcset="/assets/images/v-ycf-bigy-150-factory-480.webp 480w, /assets/images/v-ycf-bigy-150-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 150 Factory, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-bigy-150-factory-800.webp" srcset="/assets/images/v-ycf-bigy-150-factory-480.webp 480w, /assets/images/v-ycf-bigy-150-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 150 Factory, photo du constructeur" width="700" height="467" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -383,7 +389,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-bigy-190-daytona-factory-xl-800.webp" srcset="/assets/images/v-ycf-bigy-190-daytona-factory-xl-480.webp 480w, /assets/images/v-ycf-bigy-190-daytona-factory-xl-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 190 Daytona Factory XL, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-bigy-190-daytona-factory-xl-800.webp" srcset="/assets/images/v-ycf-bigy-190-daytona-factory-xl-480.webp 480w, /assets/images/v-ycf-bigy-190-daytona-factory-xl-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF Bigy 190 Daytona Factory XL, photo du constructeur" width="712" height="475" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -397,7 +403,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-sm-125-800.webp" srcset="/assets/images/v-ycf-sm-125-480.webp 480w, /assets/images/v-ycf-sm-125-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 125, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-sm-125-800.webp" srcset="/assets/images/v-ycf-sm-125-480.webp 480w, /assets/images/v-ycf-sm-125-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 125, photo du constructeur" width="623" height="415" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -411,7 +417,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-sm-155-800.webp" srcset="/assets/images/v-ycf-sm-155-480.webp 480w, /assets/images/v-ycf-sm-155-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 155, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-sm-155-800.webp" srcset="/assets/images/v-ycf-sm-155-480.webp 480w, /assets/images/v-ycf-sm-155-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 155, photo du constructeur" width="664" height="443" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -425,7 +431,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-ycf-sm-190-800.webp" srcset="/assets/images/v-ycf-sm-190-480.webp 480w, /assets/images/v-ycf-sm-190-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 190, photo du constructeur" width="800" height="467" loading="lazy" decoding="async">
+    <img src="/assets/images/v-ycf-sm-190-800.webp" srcset="/assets/images/v-ycf-sm-190-480.webp 480w, /assets/images/v-ycf-sm-190-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="YCF SM 190, photo du constructeur" width="686" height="457" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -437,7 +443,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-ycf-sunday-s147" data-famille="flat-track" data-energie="thermique" data-prix="2299" data-nom="YCF Sunday S147" data-ordre="21">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">YCF Sunday</span><small>Flat track</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>YCF Sunday</small>
         </div>
         <span class="vehicule-badge">Nouveauté</span>
         <div class="vehicule-corps">
@@ -448,7 +459,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-ycf-sunday-s187" data-famille="flat-track" data-energie="thermique" data-prix="3299" data-nom="YCF Sunday S187" data-ordre="22">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">YCF Sunday</span><small>Flat track</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>YCF Sunday</small>
         </div>
         <span class="vehicule-badge">Nouveauté</span>
         <div class="vehicule-corps">
@@ -459,7 +475,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-young-rider-start" data-famille="electrique" data-energie="électrique" data-prix="1499" data-nom="Kuberg Young Rider Start" data-ordre="23">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Young Rider Start</h3>
@@ -469,7 +490,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-young-rider-trial-e" data-famille="electrique" data-energie="électrique" data-prix="1739" data-nom="Kuberg Young Rider Trial E" data-ordre="24">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Young Rider Trial E</h3>
@@ -479,7 +505,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-young-rider-hero-edition-trial" data-famille="electrique" data-energie="électrique" data-prix="1899" data-nom="Kuberg Young Rider Hero Edition Trial" data-ordre="25">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Young Rider Hero Edition Trial</h3>
@@ -489,7 +520,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-young-rider-cross" data-famille="electrique" data-energie="électrique" data-prix="1899" data-nom="Kuberg Young Rider Cross" data-ordre="26">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Young Rider Cross</h3>
@@ -499,7 +535,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-young-rider-hero-edition-cross" data-famille="electrique" data-energie="électrique" data-prix="1999" data-nom="Kuberg Young Rider Hero Edition Cross" data-ordre="27">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Young Rider Hero Edition Cross</h3>
@@ -509,7 +550,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-racing-cross-x-force-pro-50" data-famille="electrique" data-energie="électrique" data-prix="4539" data-nom="Kuberg Racing Cross X-Force Pro 50" data-ordre="28">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Racing Cross X-Force Pro 50</h3>
@@ -519,7 +565,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-challenger" data-famille="electrique" data-energie="électrique" data-prix="4899" data-nom="Kuberg Challenger" data-ordre="29">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Challenger</h3>
@@ -529,7 +580,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-kuberg-freerider" data-famille="electrique" data-energie="électrique" data-prix="5399" data-nom="Kuberg Freerider" data-ordre="30">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Kuberg</span><small>Électriques</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>Kuberg</small>
         </div>
         <div class="vehicule-corps">
           <h3>Kuberg Freerider</h3>
@@ -539,7 +595,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-50-sm-r-factory" data-famille="enduro" data-energie="thermique" data-prix="3499" data-nom="Sherco 50 SM-R Factory" data-ordre="31">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">50 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>50 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 50 SM-R Factory</h3>
@@ -549,7 +610,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-50-sm-r-silver" data-famille="enduro" data-energie="thermique" data-prix="3499" data-nom="Sherco 50 SM-R Silver" data-ordre="32">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">50 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>50 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 50 SM-R Silver</h3>
@@ -561,7 +627,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-50-sm-r-blackmoon-800.webp" srcset="/assets/images/v-sherco-50-sm-r-blackmoon-480.webp 480w, /assets/images/v-sherco-50-sm-r-blackmoon-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-R Blackmoon, photo du constructeur" width="800" height="534" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-50-sm-r-blackmoon-800.webp" srcset="/assets/images/v-sherco-50-sm-r-blackmoon-480.webp 480w, /assets/images/v-sherco-50-sm-r-blackmoon-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-R Blackmoon, photo du constructeur" width="680" height="454" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -573,7 +639,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-50-se-r-factory" data-famille="enduro" data-energie="thermique" data-prix="3699" data-nom="Sherco 50 SE-R Factory" data-ordre="34">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">50 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>50 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 50 SE-R Factory</h3>
@@ -585,7 +656,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-50-sm-rs-factory-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-factory-480.webp 480w, /assets/images/v-sherco-50-sm-rs-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Factory, photo du constructeur" width="800" height="534" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-50-sm-rs-factory-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-factory-480.webp 480w, /assets/images/v-sherco-50-sm-rs-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Factory, photo du constructeur" width="677" height="452" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -599,7 +670,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-50-sm-rs-silver-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-silver-480.webp 480w, /assets/images/v-sherco-50-sm-rs-silver-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Silver, photo du constructeur" width="800" height="534" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-50-sm-rs-silver-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-silver-480.webp 480w, /assets/images/v-sherco-50-sm-rs-silver-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Silver, photo du constructeur" width="680" height="453" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -613,7 +684,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-50-sm-rs-blackmoon-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-blackmoon-480.webp 480w, /assets/images/v-sherco-50-sm-rs-blackmoon-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Blackmoon, photo du constructeur" width="800" height="534" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-50-sm-rs-blackmoon-800.webp" srcset="/assets/images/v-sherco-50-sm-rs-blackmoon-480.webp 480w, /assets/images/v-sherco-50-sm-rs-blackmoon-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SM-RS Blackmoon, photo du constructeur" width="680" height="454" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -627,7 +698,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-50-se-rs-factory-800.webp" srcset="/assets/images/v-sherco-50-se-rs-factory-480.webp 480w, /assets/images/v-sherco-50-se-rs-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SE-RS Factory, photo du constructeur" width="800" height="531" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-50-se-rs-factory-800.webp" srcset="/assets/images/v-sherco-50-se-rs-factory-480.webp 480w, /assets/images/v-sherco-50-se-rs-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 50 SE-RS Factory, photo du constructeur" width="684" height="456" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -639,7 +710,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-125-se-factory" data-famille="enduro" data-energie="thermique" data-prix="9099" data-nom="Sherco 125 SE Factory" data-ordre="39">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">125 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>125 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 125 SE Factory</h3>
@@ -649,7 +725,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-250-se-factory" data-famille="enduro" data-energie="thermique" data-prix="10299" data-nom="Sherco 250 SE Factory" data-ordre="40">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">250 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>250 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 250 SE Factory</h3>
@@ -659,7 +740,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-300-se-factory" data-famille="enduro" data-energie="thermique" data-prix="10399" data-nom="Sherco 300 SE Factory" data-ordre="41">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">300 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>300 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 300 SE Factory</h3>
@@ -669,7 +755,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-250-se-f-factory" data-famille="enduro" data-energie="thermique" data-prix="11899" data-nom="Sherco 250 SE-F Factory" data-ordre="42">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">250 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>250 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 250 SE-F Factory</h3>
@@ -679,7 +770,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-300-se-f-factory" data-famille="enduro" data-energie="thermique" data-prix="12099" data-nom="Sherco 300 SE-F Factory" data-ordre="43">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">300 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>300 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 300 SE-F Factory</h3>
@@ -689,7 +785,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-sherco-450-se-f-factory" data-famille="enduro" data-energie="thermique" data-prix="12199" data-nom="Sherco 450 SE-F Factory" data-ordre="44">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">450 cc</span><small>Sherco</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span><small>450 cc</small>
         </div>
         <div class="vehicule-corps">
           <h3>Sherco 450 SE-F Factory</h3>
@@ -701,7 +802,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-sherco-500-se-f-factory-800.webp" srcset="/assets/images/v-sherco-500-se-f-factory-480.webp 480w, /assets/images/v-sherco-500-se-f-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 500 SE-F Factory, photo du constructeur" width="800" height="450" loading="lazy" decoding="async">
+    <img src="/assets/images/v-sherco-500-se-f-factory-800.webp" srcset="/assets/images/v-sherco-500-se-f-factory-480.webp 480w, /assets/images/v-sherco-500-se-f-factory-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Sherco 500 SE-F Factory, photo du constructeur" width="702" height="468" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -715,7 +816,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-kix-k-800-800.webp" srcset="/assets/images/v-kix-k-800-480.webp 480w, /assets/images/v-kix-k-800-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="KIX K-800, photo du constructeur" width="800" height="800" loading="lazy" decoding="async">
+    <img src="/assets/images/v-kix-k-800-800.webp" srcset="/assets/images/v-kix-k-800-480.webp 480w, /assets/images/v-kix-k-800-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="KIX K-800, photo du constructeur" width="800" height="533" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -729,7 +830,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="vehicule-plaque">
           <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/v-pocket-quad-flip-49-800.webp" srcset="/assets/images/v-pocket-quad-flip-49-480.webp 480w, /assets/images/v-pocket-quad-flip-49-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Pocket Quad Flip 49, photo du constructeur" width="800" height="600" loading="lazy" decoding="async">
+    <img src="/assets/images/v-pocket-quad-flip-49-800.webp" srcset="/assets/images/v-pocket-quad-flip-49-480.webp 480w, /assets/images/v-pocket-quad-flip-49-800.webp 800w" sizes="(max-width: 760px) 90vw, 300px" alt="Pocket Quad Flip 49, photo du constructeur" width="800" height="533" loading="lazy" decoding="async">
   </picture>
 </figure>
         </div>
@@ -741,7 +842,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-pocket-quad-flip-800w" data-famille="quad" data-energie="électrique" data-prix="699" data-nom="Pocket Quad Flip 800W" data-ordre="48">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>Pocket Quad Flip 800W</h3>
@@ -751,7 +857,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-typhoon-110" data-famille="quad" data-energie="thermique" data-prix="899" data-nom="Typhoon 110" data-ordre="49">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>Typhoon 110</h3>
@@ -761,7 +872,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-typhoon-125" data-famille="quad" data-energie="thermique" data-prix="1149" data-nom="Typhoon 125" data-ordre="50">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>Typhoon 125</h3>
@@ -771,7 +887,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-50-sx" data-famille="quad" data-energie="thermique" data-prix="999" data-nom="HY 50 SX" data-ordre="51">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 50 SX</h3>
@@ -781,7 +902,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-50s-girly" data-famille="quad" data-energie="thermique" data-prix="999" data-nom="HY 50S Girly" data-ordre="52">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 50S Girly</h3>
@@ -791,7 +917,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-80-sx" data-famille="quad" data-energie="thermique" data-prix="1290" data-nom="HY 80 SX" data-ordre="53">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 80 SX</h3>
@@ -801,7 +932,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-80s-girly" data-famille="quad" data-energie="thermique" data-prix="1290" data-nom="HY 80S Girly" data-ordre="54">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 80S Girly</h3>
@@ -811,7 +947,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-80-xlx" data-famille="quad" data-energie="thermique" data-prix="1490" data-nom="HY 80 XLX" data-ordre="55">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 80 XLX</h3>
@@ -821,7 +962,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-110-st" data-famille="quad" data-energie="thermique" data-prix="1790" data-nom="HY 110 ST" data-ordre="56">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 110 ST</h3>
@@ -831,7 +977,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-125-sx" data-famille="quad" data-energie="thermique" data-prix="1790" data-nom="HY 125 SX" data-ordre="57">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 125 SX</h3>
@@ -841,7 +992,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-hy-150-sx" data-famille="quad" data-energie="thermique" data-prix="1690" data-nom="HY 150 SX" data-ordre="58">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>HY 150 SX</h3>
@@ -851,7 +1007,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-a500-ix" data-famille="quad" data-energie="thermique" data-prix="4990" data-nom="A500 IX" data-ordre="59">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>A500 IX</h3>
@@ -861,7 +1022,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-s750-crossover" data-famille="quad" data-energie="thermique" data-prix="7890" data-nom="S750 Crossover" data-ordre="60">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">Quads</span><small>Quads</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 72 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:16px 32px"><circle cx="16" cy="32" r="9"/></g>
+  <g class="roue" style="transform-origin:56px 32px"><circle cx="56" cy="32" r="9"/></g>
+  <path class="cadre" d="M8 22 L22 18 L48 18 L64 22 M30 18 L33 10 M44 18 L48 9 L56 9 M25 32 L47 32"/>
+  <path class="selle" d="M30 16 L46 16 L43 21 L33 21 Z"/>
+</svg></span><small>Quads</small>
         </div>
         <div class="vehicule-corps">
           <h3>S750 Crossover</h3>
@@ -871,7 +1037,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-jobber-500" data-famille="ssv" data-energie="thermique" data-prix="7990" data-nom="Jobber 500" data-ordre="61">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">SSV</span><small>SSV</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 80 46" aria-hidden="true">
+  <g class="roue" style="transform-origin:17px 34px"><circle cx="17" cy="34" r="9"/></g>
+  <g class="roue" style="transform-origin:62px 34px"><circle cx="62" cy="34" r="9"/></g>
+  <path class="cadre" d="M6 26 L72 26 L74 20 L56 18 L46 6 L24 6 L18 18 L8 20 Z M26 34 L53 34 M30 6 L30 18 M46 6 L52 18"/>
+</svg></span><small>SSV</small>
         </div>
         <div class="vehicule-corps">
           <h3>Jobber 500</h3>
@@ -881,7 +1051,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-jobber-maxx-750" data-famille="ssv" data-energie="thermique" data-prix="10990" data-nom="Jobber Maxx 750" data-ordre="62">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">SSV</span><small>SSV</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 80 46" aria-hidden="true">
+  <g class="roue" style="transform-origin:17px 34px"><circle cx="17" cy="34" r="9"/></g>
+  <g class="roue" style="transform-origin:62px 34px"><circle cx="62" cy="34" r="9"/></g>
+  <path class="cadre" d="M6 26 L72 26 L74 20 L56 18 L46 6 L24 6 L18 18 L8 20 Z M26 34 L53 34 M30 6 L30 18 M46 6 L52 18"/>
+</svg></span><small>SSV</small>
         </div>
         <div class="vehicule-corps">
           <h3>Jobber Maxx 750</h3>
@@ -891,7 +1065,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-jobber-maxx-800" data-famille="ssv" data-energie="thermique" data-prix="11999" data-nom="Jobber Maxx 800" data-ordre="63">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">SSV</span><small>SSV</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 80 46" aria-hidden="true">
+  <g class="roue" style="transform-origin:17px 34px"><circle cx="17" cy="34" r="9"/></g>
+  <g class="roue" style="transform-origin:62px 34px"><circle cx="62" cy="34" r="9"/></g>
+  <path class="cadre" d="M6 26 L72 26 L74 20 L56 18 L46 6 L24 6 L18 18 L8 20 Z M26 34 L53 34 M30 6 L30 18 M46 6 L52 18"/>
+</svg></span><small>SSV</small>
         </div>
         <div class="vehicule-corps">
           <h3>Jobber Maxx 800</h3>
@@ -901,7 +1079,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li><li class="vehicule" id="v-jobber-dmaxx-full-options" data-famille="ssv" data-energie="thermique" data-prix="13999" data-nom="Jobber DMaxx Full Options" data-ordre="64">
         <div class="vehicule-plaque">
-          <span aria-hidden="true">SSV</span><small>SSV</small>
+          <span class="plaque-picto" aria-hidden="true"><svg class="picto" viewBox="0 0 80 46" aria-hidden="true">
+  <g class="roue" style="transform-origin:17px 34px"><circle cx="17" cy="34" r="9"/></g>
+  <g class="roue" style="transform-origin:62px 34px"><circle cx="62" cy="34" r="9"/></g>
+  <path class="cadre" d="M6 26 L72 26 L74 20 L56 18 L46 6 L24 6 L18 18 L8 20 Z M26 34 L53 34 M30 6 L30 18 M46 6 L52 18"/>
+</svg></span><small>SSV</small>
         </div>
         <div class="vehicule-corps">
           <h3>Jobber DMaxx Full Options</h3>
@@ -911,6 +1093,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </li>
     </ul>
+    <p class="voir-plus"><button type="button" class="bouton bouton--sombre" data-voir-plus data-modele="Voir les {n} autres véhicules" hidden>Voir les 50 autres véhicules</button></p>
     <p class="aucun" data-aucun hidden>Aucun véhicule ne correspond : essayez une autre famille.</p>
     <div class="payer" data-anime>
       <strong>4×</strong>

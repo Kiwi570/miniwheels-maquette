@@ -108,6 +108,73 @@
         "voile": "glisse voulue : voile noir à bords en damier, le drapeau de course"
       },
       "notes": "Accueil validé au premier aperçu. 24 zips d'images du site (790 images) : planches regardées en partie (souvenirs, pistes, Séb, produits)."
+    },
+    {
+      "version": 2,
+      "skill": "v11.1.1",
+      "perimetre": [
+        "accueil",
+        "park",
+        "shop",
+        "sebastien",
+        "contact",
+        "404"
+      ],
+      "demande": "Dernier audit complet et analyse de tout le site (pages, sections, harmonie, parcours, visuels, animations), puis ajustements pour une version optimale, ludique et de haut niveau.",
+      "etapes": [
+        {
+          "etape": "revue page par page (ordinateur et téléphone)",
+          "debut": "2026-11-23T15:01:00+01:00",
+          "fin": "2026-11-23T15:04:00+01:00"
+        },
+        {
+          "etape": "améliorations : visuels, effets, parcours",
+          "debut": "2026-11-23T15:04:00+01:00",
+          "fin": "2026-11-23T15:11:00+01:00"
+        },
+        {
+          "etape": "audit complet",
+          "debut": "2026-11-23T15:11:00+01:00",
+          "fin": "2026-11-23T15:31:00+01:00"
+        },
+        {
+          "etape": "corrections et relances ciblées",
+          "debut": "2026-11-23T15:31:00+01:00",
+          "fin": "2026-11-23T15:45:00+01:00"
+        },
+        {
+          "etape": "livraison",
+          "debut": "2026-11-23T15:45:00+01:00",
+          "fin": "2026-11-23T15:55:00+01:00"
+        }
+      ],
+      "attentes": [],
+      "allersRetours": 0,
+      "modules": [],
+      "audit": {
+        "niveau": "complet (toutes pages, toutes tailles, films, parcours, fluidité, mouvement)",
+        "echecsPremierPassage": 6,
+        "relances": 2,
+        "corrections": [
+          "« 238 » et « séances » du tampon espacés, disque agrandi",
+          "tampon rogné en cercle (débordait sans JavaScript en tournant)",
+          "halo du samedi moins large sur téléphone (débordait de 4 px)",
+          "photo « gamme-parent » trop faible remplacée par « Accès pistes » (souvenirs-55, logo retiré au recadrage)",
+          "« Politique de confidentialité : à compléter » retiré du formulaire de contact"
+        ],
+        "aRegarder": "sections #ouverture et #faq du Park typographiques (voulu) ; petits sauts d'image au retour arrière/avant (chargement de la photo d'ouverture)"
+      },
+      "effetsAjoutes": [
+        "moto-progres",
+        "pilote-profil",
+        "semaine",
+        "jauge du calculateur",
+        "tampon des photos",
+        "compte à rebours qui bascule",
+        "traits de vitesse du titre"
+      ],
+      "effetsRetires": [],
+      "notes": "Version faite sans question : revue, améliorations et audit en une passe."
     }
   ]
 }

@@ -50,7 +50,10 @@ export default (c) => {
           <a class="bouton bouton--contour" href="https://www.instagram.com/miniwheels.bike/" target="_blank" rel="noopener" aria-label="${c.s('commun.reseauInstagram')}">Instagram</a>
         </p>
       </div>
-      ${img(c, 'equipe-coco', { ratio: '1', sizes: '120px', classe: 'academy-badge', attrs: 'data-anime="rideau"' })}
+      <div class="corine" data-anime>
+        ${img(c, 'equipe-coco', { ratio: '1', sizes: '96px' })}
+        <p><b>${c.t('contact.corine.titre')}</b><br>${c.t('contact.corine.texte')}</p>
+      </div>
     </div>
     <form class="formulaire" data-formulaire novalidate data-anime>
       <div class="champs-deux">
@@ -75,6 +78,7 @@ export default (c) => {
       <p data-message-envoi hidden></p>
     </form>
   </div>
+  <div class="damier" aria-hidden="true"></div>
 </section>
 `;
 };

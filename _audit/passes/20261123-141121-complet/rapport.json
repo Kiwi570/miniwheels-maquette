@@ -1,0 +1,605 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.conteneur.photos-tete:nth-of-type(1) > div.tampon > span.tampon-coeur > span « SÉANCES »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.conteneur.photos-tete:nth-of-type(1) > div.tampon > span.tampon-coeur > strong « 238 »",
+      "lieux": [
+        "390×844 normal",
+        "375×667 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1000×560 normal",
+        "1280×720 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1728×1000 normal",
+        "1920×1080 normal",
+        "2560×1440 normal",
+        "320×568 sansJs",
+        "320×568 sansWebgl",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "768×1024 sansJs",
+        "390×844 sansWebgl",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "768×1024 sansWebgl",
+        "1000×560 sansJs",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1280×720 sansWebgl",
+        "1440×900 sansJs",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "débordement horizontal",
+      "detail": "page large de 325 px pour un écran de 320 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "section#photos > div.conteneur.photos-tete:nth-of-type(1) > div.tampon > svg.tampon-tour",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "débordement horizontal",
+      "detail": "page large de 379 px pour un écran de 375 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "375×667",
+      "mode": "sansJs",
+      "selecteur": "section#photos > div.conteneur.photos-tete:nth-of-type(1) > div.tampon > svg.tampon-tour",
+      "lieux": [
+        "375×667 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "débordement horizontal",
+      "detail": "page large de 394 px pour un écran de 392 px",
+      "etape": "mesures",
+      "page": "/park",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "body#haut > div:nth-of-type(4) « Appeler Réserver »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "gamme-parent (4/5, faible, 48 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/park",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.conteneur.bloc-grille > figure.media.fx-fini > picture > img « Un papa règle la moto de son enfant casqué avant d »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "gamme-parent (4/5, faible, 42 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/park",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.conteneur.bloc-grille > figure.media > picture > img « Un papa règle la moto de son enfant casqué avant d »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "contact.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "aucune entrée pour la version 2 de donnees/site.json",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/park",
+      "taille": "375×667",
+      "mode": "normal",
+      "selecteur": "section#ouverture « QUAND ROULER ? Le Park ouvre toute l'année le same »",
+      "lieux": [
+        "375×667 normal",
+        "320×568 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1000×560 normal",
+        "1280×720 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1728×1000 normal",
+        "1920×1080 normal",
+        "320×568 sansJs",
+        "2560×1440 normal",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "768×1024 sansJs",
+        "390×844 sansWebgl",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "768×1024 sansWebgl",
+        "1000×560 sansJs",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/park",
+      "taille": "375×667",
+      "mode": "normal",
+      "selecteur": "section#faq « QUESTIONS FRÉQUENTES À partir de quel âge peut-on  »",
+      "lieux": [
+        "375×667 normal",
+        "320×568 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1000×560 normal",
+        "1280×720 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1728×1000 normal",
+        "1920×1080 normal",
+        "320×568 sansJs",
+        "2560×1440 normal",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "768×1024 sansJs",
+        "390×844 sansWebgl",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "768×1024 sansWebgl",
+        "1000×560 sansJs",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/sebastien",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#palmares « LE PALMARÈS D'UN CHAMPION Quinze ans de carrière,  »",
+      "lieux": [
+        "320×568 normal",
+        "375×667 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1280×720 normal",
+        "1000×560 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1920×1080 normal",
+        "1728×1000 normal",
+        "320×568 sansJs",
+        "2560×1440 normal",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "390×844 sansWebgl",
+        "768×1024 sansJs",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "1000×560 sansJs",
+        "768×1024 sansWebgl",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/sebastien",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#frise « DE LA COURSE À LA TRANSMISSION AVRIL 2014 Le Shop  »",
+      "lieux": [
+        "320×568 normal",
+        "375×667 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1280×720 normal",
+        "1000×560 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1920×1080 normal",
+        "1728×1000 normal",
+        "320×568 sansJs",
+        "2560×1440 normal",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "390×844 sansWebgl",
+        "768×1024 sansJs",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "1000×560 sansJs",
+        "768×1024 sansWebgl",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 182 ms (différence 27 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 75 ms (différence 46 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/park",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 109 ms (différence 33 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/park",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 84 ms (différence 50 %) (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 151 ms (différence 29 %) (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 50 ms (différence 46 %) (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/park",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (4.5 %), voir comparaisons/rechargement-sebastien-*.png",
+      "etape": "parcours",
+      "page": "/sebastien",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (5.8 %), voir comparaisons/rechargement-shop-*.png",
+      "etape": "parcours",
+      "page": "/shop",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "calcul-session : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/park",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "span.jauge-pleine",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "catalogue-tri : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/shop",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.grille-vehicules",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "compte-session : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.compte",
+      "lieux": [
+        "390×844 normal"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 7,
+    "mesures": 234,
+    "balayage": 5,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "bords de l’écran": 6,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 16,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 4,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5,
+    "mouvement": 10,
+    "effets du plan": 10,
+    "souris immobile": 5,
+    "vitesse": 5,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=2",
+    "Grille wouahou : point « 1. L’effet signature se manipule » dispensé (config.json) : v11 : objet à manipuler non obligatoire ; calculateur de session et catalogue filtrable à la place.",
+    "Grille wouahou : point « 4. Quelque chose relie les sections et les pages » dispensé (config.json) : v11 : pas de fil imposé ; palette et damier tiennent le site.",
+    "Grille wouahou : point « 5. Un titre fait l’événement sur chaque page » dispensé (config.json) : v11 : conseil seulement.",
+    "Grille wouahou : point « 6. La scène est un geste du métier » dispensé (config.json) : v11 : conseil seulement.",
+    "Grille wouahou : point « 7. L’action principale a un retour physique » dispensé (config.json) : v11 : conseil seulement.",
+    "Grille wouahou : point « 3. La transition reprend le motif » dispensé (config.json) : glisse voulue : voile noir à bords en damier, le drapeau de course.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2031 ms depuis le premier octet",
+    "Ouverture /contact (1366×768) : 1970 ms depuis le premier octet",
+    "Ouverture /park (1366×768) : 2143 ms depuis le premier octet",
+    "Ouverture /sebastien (1366×768) : 2039 ms depuis le premier octet",
+    "Ouverture /shop (1366×768) : 2075 ms depuis le premier octet",
+    "film de l'ouverture /shop 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture / (390×844) : 1989 ms depuis le premier octet",
+    "Ouverture /contact (390×844) : 1966 ms depuis le premier octet",
+    "Ouverture /park (390×844) : 2027 ms depuis le premier octet",
+    "film de l'ouverture /park 390×844 : réussi à la tentative 3 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /sebastien (390×844) : 2037 ms depuis le premier octet",
+    "Ouverture /shop (390×844) : 2044 ms depuis le premier octet",
+    "film de l'ouverture /shop 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "bords de l’écran /sebastien 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 337 images d’intro, 16 de voile et 132 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Changements de hauteur /contact : aucun effet ScrollTrigger, rien à recalculer.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /contact : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /park : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /sebastien : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /shop : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 433, tâche la plus longue 0 ms",
+    "Fluidité /contact 1366×768 (molette) : 0 % d'images lentes sur 190, tâche la plus longue 0 ms",
+    "Fluidité /park 1366×768 (molette) : 0 % d'images lentes sur 449, tâche la plus longue 0 ms",
+    "Fluidité /sebastien 1366×768 (molette) : 1 % d'images lentes sur 278, tâche la plus longue 0 ms",
+    "Fluidité /shop 1366×768 (molette) : 0 % d'images lentes sur 284, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1369, tâche la plus longue 0 ms",
+    "Fluidité /contact 390×844 (doigt) : 0 % d'images lentes sur 1348, tâche la plus longue 0 ms",
+    "Fluidité /park 390×844 (doigt) : 0 % d'images lentes sur 1354, tâche la plus longue 0 ms",
+    "Fluidité /sebastien 390×844 (doigt) : 0 % d'images lentes sur 1340, tâche la plus longue 0 ms",
+    "Fluidité /shop 390×844 (doigt) : 0 % d'images lentes sur 1343, tâche la plus longue 0 ms",
+    "Vitesse / : 0.61 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /contact : 0.29 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /park : 0.40 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /sebastien : 0.46 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /shop : 0.66 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "dispensé",
+      "detail": "v11 : objet à manipuler non obligatoire ; calculateur de session et catalogue filtrable à la place"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "dispensé",
+      "detail": "glisse voulue : voile noir à bords en damier, le drapeau de course"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "dispensé",
+      "detail": "v11 : pas de fil imposé ; palette et damier tiennent le site"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "dispensé",
+      "detail": "v11 : conseil seulement"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "dispensé",
+      "detail": "v11 : conseil seulement"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "dispensé",
+      "detail": "v11 : conseil seulement"
+    }
+  ]
+}

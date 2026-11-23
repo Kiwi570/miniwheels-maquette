@@ -1,4 +1,4 @@
-# MiniWheels · maquette v1
+# MiniWheels · maquette v2
 
 Maquette du site de MiniWheels (Shop & Park by Séb Guillaume), direction « Paddock » : blanc plaque, noir pneu, le vert du logo (#00ED01), titres Archivo très condensée italique, texte Figtree.
 
@@ -8,14 +8,14 @@ Adresse prévue : https://miniwheels-maquette.vercel.app (site statique, sans é
 
 | Page | Adresse | Contenu |
 |---|---|---|
-| Accueil | `/` | Intro « grille de départ », prochaine ouverture du Park en direct, trois en un, tarifs, première session en 5 étapes, trois pistes, Shop, Séb, photos, appel final |
-| Le Park | `/park` | Horaires et compte à rebours, pistes, location avec calcul du prix et créneau du samedi (simulés), accès avec sa moto, Pass'Park et Fid'Park, initiation, équipement, équipe, FAQ |
-| Le Shop & l'atelier | `/shop` | Catalogue filtrable de 65 véhicules (famille, énergie, tri ; filtre gardé dans l'adresse), paiement en 4 fois, atelier, marques, venir au Shop |
-| Séb & Academy | `/sebastien` | Palmarès, frise 2014-2018, archives de course, stages Seb'One Academy |
-| Contact | `/contact` | Les deux lieux avec statut en direct, horaires et itinéraires, formulaire simulé (sujet et modèle préremplis depuis le catalogue) |
+| Accueil | `/` | Intro « grille de départ », prochaine ouverture du Park en direct (compte à rebours qui bascule), trois en un, tarifs, première session en 5 étapes (pit bike qui roule au défilement), trois pistes en profil avec pilote animé, Shop, Séb, photos avec tampon tournant, appel final |
+| Le Park | `/park` | Semaine en 7 cases et compte à rebours, pistes, location avec calcul du prix, jauge de temps de roulage et créneau du samedi (simulés), accès avec sa moto, Pass'Park et Fid'Park, initiation, équipement, équipe, FAQ |
+| Le Shop & l'atelier | `/shop` | Catalogue filtrable de 65 véhicules (15 à l'arrivée puis « Voir les autres » ; famille, énergie, tri ; filtre gardé dans l'adresse ; pictogrammes pour les véhicules sans photo), paiement en 4 fois, atelier, marques, venir au Shop |
+| Séb & Academy | `/sebastien` | Palmarès, frise 2014-2018, archives de course en polaroïds, stages Seb'One Academy avec badge tournant |
+| Contact | `/contact` | Les deux lieux avec statut en direct, horaires et itinéraires, carte « Corine vous répond », formulaire simulé (sujet et modèle préremplis depuis le catalogue) |
 | 404 | `/404` | « Sortie de piste » |
 
-Pages du site actuel non reprises en v1 (disponibles en v2) : fiches produits détaillées, pages de gammes YCF, photos du Park (albums), carte cadeau, règlement intérieur, charte.
+Pages du site actuel non reprises (possibles dans une version suivante) : fiches produits détaillées, pages de gammes YCF, photos du Park (albums), carte cadeau, règlement intérieur, charte.
 
 ## Travailler sur la maquette
 
@@ -28,7 +28,7 @@ Pages du site actuel non reprises en v1 (disponibles en v2) : fiches produits d�
 ## À fournir par le client (à compléter)
 
 - Mentions légales : à compléter. Éléments connus sur le site actuel : S.G.P., EURL au capital de 2 000 €, SIRET 501 466 940 00019, 21 route de Mantes, 28260 Le Mesnil-Simon, directeur de la publication Sébastien Guillaume. L'hébergeur deviendra Vercel Inc. (adresse à vérifier sur vercel.com au moment de la mise en ligne).
-- Politique de confidentialité (RGPD) : à compléter.
+- Politique de confidentialité (RGPD) : à compléter (la mention a été retirée du formulaire de contact en v2 ; à rajouter avec un lien quand la page existera).
 - Adresse e-mail de contact : aucune sur le site actuel.
 - Crédits photos : photos du Park (Coco), photos constructeur YCF, Sherco, Kuberg, quads ; à confirmer.
 - Crédits des illustrations générées : trois images créées par IA (atelier, chaîne, équipement), marquées « Illustration générée ». Garder cette mention sur le site final.
@@ -43,7 +43,7 @@ Pages du site actuel non reprises en v1 (disponibles en v2) : fiches produits d�
 - Jours fériés et fermetures exceptionnelles : inconnus ; le statut « ouvert » ne les connaît pas.
 - Avis clients : aucun avis reproduit (le site actuel renvoie vers Facebook, Yelp et Pages Jaunes).
 - Lien YouTube : non repris (adresse exacte à confirmer).
-- Photos de véhicules : 28 véhicules sur 65 ont leur photo dans la maquette (celles dont le modèle est sûr) ; les autres ont une plaque typographique.
+- Photos de véhicules : 28 véhicules sur 65 ont leur photo dans la maquette (celles dont le modèle est sûr) ; les autres ont un pictogramme (pit bike, quad ou SSV).
 
 ## Incohérences du site actuel à signaler au client
 

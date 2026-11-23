@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-italique.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#101211">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -82,6 +82,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
   </div>
 </header>
+<span class="jauge-lecture" data-barre-lecture aria-hidden="true"></span>
 <script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
    et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
 (function () {
@@ -103,7 +104,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/park" class="menu-lien" data-libelle="Le Park" aria-current="page">Le Park</a></li><li style="--i:2"><a href="/shop" class="menu-lien" data-libelle="Le Shop">Le Shop</a></li><li style="--i:3"><a href="/sebastien" class="menu-lien" data-libelle="Séb &amp; Academy">Séb &amp; Academy</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
   <p class="menu-actions"><a href="/park#reserver" class="bouton" data-libelle="Le Park">Réserver une session</a><a class="bouton bouton--contour" href="tel:+33237640488">Appeler le Park</a><a class="bouton bouton--contour" href="tel:+33237500905">Appeler le Shop</a></p>
 </div>
-<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."}},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
+<script type="application/json" id="donnees-horaires">{"horaires":{"fuseau":"Europe/Paris","shop":{"nom":"Le Shop & l'atelier","plages":{"2":[["09:30","12:30"],["14:00","19:00"]],"3":[["09:30","12:30"],["14:00","19:00"]],"4":[["09:30","12:30"],["14:00","19:00"]],"5":[["09:30","12:30"],["14:00","19:00"]],"6":[["09:30","12:30"]]},"lignes":[["Mardi au vendredi","9 h 30-12 h 30 · 14 h-19 h"],["Samedi","9 h 30-12 h 30"],["Dimanche et lundi","fermé"]]},"park":{"nom":"Le Park","plages":{"6":[["14:00","18:00"]]},"lignes":[["Samedi, toute l'année","14 h-18 h"],["Accueil et snack","dès 13 h"],["Location","14 h 30-18 h, sur réservation"]],"reserve":"Selon l'état de la piste et la météo : l'ouverture est confirmée chaque vendredi soir sur la page Facebook MiniWheels."},"semaine":[{"j":1,"court":"Lun","texte":"Repos"},{"j":2,"court":"Mar","texte":"Shop 9 h 30-19 h"},{"j":3,"court":"Mer","texte":"Shop · stages un mercredi sur deux","stage":true},{"j":4,"court":"Jeu","texte":"Shop 9 h 30-19 h"},{"j":5,"court":"Ven","texte":"Shop 9 h 30-19 h"},{"j":6,"court":"Sam","texte":"Park 14 h-18 h","park":true,"plus":"Shop le matin"},{"j":0,"court":"Dim","texte":"Repos"}]},"textes":{"ouvert":"Ouvert jusqu'à {h}","ouvreAuj":"Ouvre aujourd'hui à {h}","ouvreDemain":"Ouvre demain à {h}","ouvreJour":"Ouvre {jour} à {h}","parkOuvert":"Le Park roule jusqu'à {h}"}}</script>
 <main id="contenu" tabindex="-1" data-page="park">
 <section class="page-park-tete" id="debut" data-tete>
   <div class="park-tete-texte">
@@ -129,9 +130,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur">
     <h2 class="titre" data-anime="lignes">Quand rouler ?</h2>
     <p class="intro" data-anime>Le Park ouvre toute l&#39;année le samedi après-midi. Accueil et snack dès 13 h, location de 14 h 30 à 18 h sur réservation.</p>
-    <ul class="horaires-cartes" data-anime="cascade">
-      <li class="horaire"><span>Samedi, toute l&#39;année</span><strong>14 h-18 h</strong></li><li class="horaire"><span>Accueil et snack</span><strong>dès 13 h</strong></li><li class="horaire"><span>Location</span><strong>14 h 30-18 h, sur réservation</strong></li>
-    </ul>
+    <ol class="semaine" data-anime="cascade" aria-label="La semaine MiniWheels">
+      <li class="jour" data-jour="1"><b>Lun</b><span>Repos</span><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour" data-jour="2"><b>Mar</b><span>Shop 9 h 30-19 h</span><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour jour--stage" data-jour="3"><b>Mer</b><span>Shop · stages un mercredi sur deux</span><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour" data-jour="4"><b>Jeu</b><span>Shop 9 h 30-19 h</span><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour" data-jour="5"><b>Ven</b><span>Shop 9 h 30-19 h</span><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour jour--park" data-jour="6"><b>Sam</b><span>Park 14 h-18 h</span><em>Shop le matin</em><i class="jour-auj">Aujourd&#39;hui</i></li><li class="jour" data-jour="0"><b>Dim</b><span>Repos</span><i class="jour-auj">Aujourd&#39;hui</i></li>
+    </ol>
+    <p class="semaine-detail" data-anime><span><b>Accueil et snack</b> : dès 13 h</span><span><b>Location</b> : 14 h 30-18 h, sur réservation</span></p>
     <div class="compte" style="margin-top:28px">
       <span class="compte-libelle">Départ dans · <span data-prochain-long>samedi</span></span>
       <span class="compte-cases" data-compte>
@@ -183,18 +185,18 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </div>
       <p data-anime><b>Compris :</b> Le briefing · La moto · L&#39;équipement pilote (sauf les bottes) · L&#39;assurance · L&#39;accès à la piste.</p>
       <p class="petit" data-anime>À apporter : chaussures montantes, pantalon, haut à manches longues.</p>
-      <figure class="media " data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:4 / 3">
+      <figure class="media " data-anime="rideau" style="--cadrage:50% 18%;aspect-ratio:4 / 3">
   <picture>
-    <img src="/assets/images/park-location-800.webp" srcset="/assets/images/park-location-480.webp 480w, /assets/images/park-location-640.webp 640w, /assets/images/park-location-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Jeune pilote casqué, lunettes relevées, prêt pour sa session" width="800" height="1000" loading="lazy" decoding="async">
+    <img src="/assets/images/etape-cest-parti-800.webp" srcset="/assets/images/etape-cest-parti-480.webp 480w, /assets/images/etape-cest-parti-640.webp 640w, /assets/images/etape-cest-parti-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Deux enfants casqués roulent côte à côte sur la piste éducative" width="800" height="1000" loading="lazy" decoding="async">
   </picture>
 </figure>
     </div>
-    <form class="calc" data-calc data-effet="calcul-session" novalidate
+    <form class="calc" data-calc novalidate
       data-confirme="Demande prête (simulation) : {n} session(s), {total}, samedi à {h}. Appelez le 02 37 64 04 88 pour confirmer." data-erreur-session="Ajoutez au moins une session." data-erreur-creneau="Choisissez un créneau.">
       <h3>Calculez votre session</h3>
       <div class="calc-ligne" data-calc-ligne="enfant" data-prix="15" data-duree="10">
         <span><b>Pit bike enfant</b></span>
-        <span class="pas"><button type="button" data-pas="-1" aria-label="Retirer une session : Pit bike enfant">−</button><output aria-live="polite" aria-label="Sessions : Pit bike enfant">0</output><button type="button" data-pas="1" aria-label="Ajouter une session : Pit bike enfant">+</button></span>
+        <span class="pas"><button type="button" data-pas="-1" aria-label="Retirer une session : Pit bike enfant">−</button><output aria-live="polite" aria-label="Sessions : Pit bike enfant">1</output><button type="button" data-pas="1" aria-label="Ajouter une session : Pit bike enfant">+</button></span>
         <small>15 € la session de 10 min</small>
       </div><div class="calc-ligne" data-calc-ligne="ado" data-prix="20" data-duree="15">
         <span><b>Pit bike ado et adulte</b></span>
@@ -202,7 +204,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <small>20 € la session de 15 min</small>
       </div>
       <label class="calc-case"><input type="checkbox" name="initiation" checked> Initiation offerte (première session encadrée par Séb)</label>
-      <div class="calc-total"><span>Total · <span data-calc-duree>0 min</span> de roulage</span><strong data-calc-total aria-live="polite">0 €</strong></div>
+      <div class="calc-total"><span>Total · <span data-calc-duree>10 min</span> de roulage</span><strong data-calc-total aria-live="polite">15 €</strong></div>
+      <div class="jauge" aria-hidden="true"><span class="jauge-libelle">Temps de roulage</span><span class="jauge-piste"><span class="jauge-pleine" data-jauge data-effet="calcul-session" style="--k:0.08333333333333333"></span><span class="jauge-moto" style="--k:0.08333333333333333"><svg class="moto" viewBox="0 0 64 44" aria-hidden="true">
+  <g class="roue" style="transform-origin:13px 32px"><circle cx="13" cy="32" r="9"/><path d="M13 23v18M4 32h18"/></g>
+  <g class="roue" style="transform-origin:51px 32px"><circle cx="51" cy="32" r="9"/><path d="M51 23v18M42 32h18"/></g>
+  <path class="cadre" d="M13 32 L26 19 L40 19 L51 32 M26 19 L22 11 M40 19 L45 9 L51 9"/>
+  <path class="selle" d="M23 17 L42 17 L38 23 L28 23 Z"/>
+</svg></span></span><span class="jauge-bornes"><span>0</span><span>1 h</span><span>2 h</span></span></div>
       <fieldset class="creneaux"><legend>Créneau souhaité samedi</legend>
         <label><input type="radio" name="creneau" value="14:30"><span>14 h 30</span></label><label><input type="radio" name="creneau" value="15:00"><span>15 h</span></label><label><input type="radio" name="creneau" value="15:30"><span>15 h 30</span></label><label><input type="radio" name="creneau" value="16:00"><span>16 h</span></label><label><input type="radio" name="creneau" value="16:30"><span>16 h 30</span></label><label><input type="radio" name="creneau" value="17:00"><span>17 h</span></label><label><input type="radio" name="creneau" value="17:30"><span>17 h 30</span></label>
       </fieldset>
@@ -240,9 +248,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div class="carte-fid"><h3>Fid&#39;Park</h3><p>Carte de fidélité gratuite : la 11e entrée est offerte. Valable un an, en carte ou dans l&#39;application FidMe.</p></div>
       </div>
     </div>
-    <figure class="media " data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+    <figure class="media " data-anime="rideau" style="--cadrage:50% 50%;aspect-ratio:3 / 2">
   <picture>
-    <img src="/assets/images/park-avec-ta-moto-800.webp" srcset="/assets/images/park-avec-ta-moto-480.webp 480w, /assets/images/park-avec-ta-moto-640.webp 640w, /assets/images/park-avec-ta-moto-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Un parent et son enfant casqué préparent la moto au paddock" width="800" height="1000" loading="lazy" decoding="async">
+    <img src="/assets/images/park-acces-pistes-800.webp" srcset="/assets/images/park-acces-pistes-480.webp 480w, /assets/images/park-acces-pistes-640.webp 640w, /assets/images/park-acces-pistes-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Jeune pilote sur sa propre pit bike devant le panneau Accès pistes du Park" width="800" height="533" loading="lazy" decoding="async">
   </picture>
 </figure>
   </div>

@@ -2,7 +2,7 @@
    les mesures et la bibliothèque d'effets posés par attributs dans les pages. Chaque effet propre porte data-effet :
    grille-depart (intro), compte-session, trace-pistes, pellicule, calcul-session, catalogue-tri, balises, etiquette,
    seb-geant, frise. */
-import { demarrer, versObjet, quand, rafraichir } from './socle/index.js?v=1';
+import { demarrer, versObjet, quand, rafraichir } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = () => window.ScrollTrigger;
@@ -65,9 +65,14 @@ function compteSession() {
     const cible = p.ouvert ? p.fin : p.debut, r = Math.max(0, Math.round((cible - now) / 1000));
     const j = Math.floor(r / 86400), h = Math.floor(r % 86400 / 3600), m = Math.floor(r % 3600 / 60), s = r % 60;
     if (champs) {
-      champs.j.textContent = String(j); champs.h.textContent = String(h).padStart(2, '0');
-      champs.m.textContent = String(m).padStart(2, '0'); champs.s.textContent = String(s).padStart(2, '0');
-      if (gsap && champs.s.getBoundingClientRect().bottom > 0 && champs.s.getBoundingClientRect().top < innerHeight) gsap.fromTo(champs.s, { yPercent: -18, opacity: .55 }, { yPercent: 0, opacity: 1, duration: .45, ease: 'back.out(3)' });
+      const v = { j: String(j), h: String(h).padStart(2, '0'), m: String(m).padStart(2, '0'), s: String(s).padStart(2, '0') };
+      const visible = champs.s.getBoundingClientRect().bottom > 0 && champs.s.getBoundingClientRect().top < innerHeight;
+      Object.keys(v).forEach((k) => {
+        if (champs[k].textContent === v[k]) return;
+        champs[k].textContent = v[k];
+        /* Tableau d'affichage : chaque chiffre qui change bascule. */
+        if (gsap && visible) gsap.fromTo(champs[k], { rotateX: -90, opacity: .4 }, { rotateX: 0, opacity: 1, duration: .42, ease: 'back.out(2.2)' });
+      });
     }
     court.forEach((el) => { el.textContent = p.ouvert ? 'en piste' : `dans ${j ? j + ' j ' : ''}${h} h ${String(m).padStart(2, '0')}`; });
   };
@@ -138,7 +143,7 @@ function ouvertureProjet(tl, t) {
     const lignes = $$('[data-tete] .h-ligne'), suite = $$('[data-tete] .h-suite');
     const a = () => {
       ouvertureJouee = true;
-      gsap.fromTo(lignes, { yPercent: 118, y: 0 }, { yPercent: 0, y: 0, duration: .85, stagger: .1, ease: 'power4.out' });
+      gsap.fromTo(lignes, { xPercent: -110, x: 0, yPercent: 0, y: 0, skewX: -18 }, { xPercent: 0, x: 0, yPercent: 0, y: 0, skewX: 0, duration: .7, stagger: .09, ease: 'power4.out', onComplete: () => document.documentElement.classList.add('traits-partis') });
       gsap.fromTo(suite, { y: 18, yPercent: 0, opacity: 0 }, { y: 0, yPercent: 0, opacity: 1, duration: .6, stagger: .08, delay: .25, ease: 'power3.out' });
       if (ici('.balises')) gsap.fromTo('.balises', { scaleX: 0 }, { scaleX: 1, duration: 1, delay: .2, ease: 'power3.inOut' });
       if (ici('.etiquette')) gsap.fromTo('.etiquette', { scale: 0, rotate: -60 }, { scale: 1, rotate: -12, duration: .9, delay: .35, ease: 'back.out(1.8)' });
@@ -154,13 +159,24 @@ function calculateur() {
   const f = $('[data-calc]'); if (!f) return;
   const total = $('[data-calc-total]', f), duree = $('[data-calc-duree]', f), message = $('[data-calc-message]', f);
   const lignes = $$('[data-calc-ligne]', f);
+  const jauge = { plein: $('[data-jauge]', f), piste: $('.jauge-piste', f), moto: $('.jauge-moto', f) };
+  if (jauge.moto) { jauge.roues = $$('.roue', jauge.moto); jauge.moto.style.transform = 'none'; }
   const params = new URLSearchParams(location.search);
+  lignes.forEach((l) => { $('output', l).value = $('output', l).textContent.trim() || '0'; });
   if (params.get('formule')) { const l = lignes.find((x) => x.dataset.calcLigne === params.get('formule')); if (l) $('output', l).value = '1'; }
-  let affiche = 0;
+  let affiche = +($('[data-calc-total]', f).textContent.replace(/\D/g, '') || 0);
   const calc = (anime = true) => {
     let eur = 0, min = 0;
     lignes.forEach((l) => { const n = +$('output', l).value; eur += n * +l.dataset.prix; min += n * +l.dataset.duree; $('output', l).textContent = n; });
     duree.textContent = `${min} min`;
+    if (jauge.plein) {
+      const k = Math.min(1, min / 120), w = jauge.piste.offsetWidth - jauge.moto.offsetWidth;
+      if (gsap) {
+        gsap.to(jauge.plein, { scaleX: k, duration: anime ? .6 : 0, ease: 'power3.out' });
+        gsap.to(jauge.moto, { x: k * w, duration: anime ? .6 : 0, ease: 'power3.out' });
+        gsap.to(jauge.roues, { rotate: `+=${anime ? 220 : 0}`, duration: .6, ease: 'power3.out' });
+      }
+    }
     const vers = eur, depuis = affiche; affiche = eur;
     if (!gsap || !anime) { total.textContent = `${vers} €`; return; }
     const o = { v: depuis };
@@ -192,17 +208,25 @@ function catalogue() {
   const cartes = $$('.vehicule', zone), filtres = $$('[data-famille-filtre]'), energie = $('[data-energie]'), tri = $('[data-tri]');
   const compte = $('[data-resultats]'), aucun = $('[data-aucun]'), grille = $('.grille-vehicules', zone);
   let famille = new URLSearchParams(location.search).get('famille') || 'tout';
+  let deplie = false;
+  const plus = $('[data-voir-plus]');
+  if (plus) plus.addEventListener('click', () => { deplie = true; appliquer(); const n = cartes.filter((c) => !c.hidden)[15]; if (n) { const a = $('a', n); if (a) a.focus({ preventScroll: true }); } });
   if (!filtres.some((b) => b.dataset.familleFiltre === famille)) famille = 'tout';
   const appliquer = (anime = true) => {
     const avant = new Map(cartes.map((c) => [c, c.getBoundingClientRect()]));
     const e = energie.value, t = tri.value;
     filtres.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.familleFiltre === famille)));
-    const visibles = cartes.filter((c) => (famille === 'tout' || c.dataset.famille === famille) && (e === 'tout' || c.dataset.energie === e));
+    let visibles = cartes.filter((c) => (famille === 'tout' || c.dataset.famille === famille) && (e === 'tout' || c.dataset.energie === e));
+    /* Vue « Tout » : 15 véhicules d'abord, puis « Voir les 50 autres ». */
+    const limite = !deplie && famille === 'tout' && e === 'tout' && visibles.length > 15;
+    if (plus) { plus.hidden = !limite; plus.textContent = plus.dataset.modele.replace('{n}', visibles.length - 15); }
+    const total = visibles.length;
+    if (limite) visibles = visibles.slice(0, 15);
     cartes.forEach((c) => { c.hidden = !visibles.includes(c); });
     const ordre = [...cartes].sort((a, b) => t === 'prix' ? a.dataset.prix - b.dataset.prix : t === 'prix-desc' ? b.dataset.prix - a.dataset.prix : t === 'nom' ? a.dataset.nom.localeCompare(b.dataset.nom, 'fr') : a.dataset.ordre - b.dataset.ordre);
     ordre.forEach((c) => grille.appendChild(c));
-    compte.textContent = compte.dataset.modele.replace('{n}', visibles.length);
-    aucun.hidden = visibles.length > 0;
+    compte.textContent = compte.dataset.modele.replace('{n}', total);
+    aucun.hidden = total > 0;
     const url = new URL(location.href);
     if (famille === 'tout') url.searchParams.delete('famille'); else url.searchParams.set('famille', famille);
     history.replaceState(history.state, '', url);
@@ -223,8 +247,62 @@ function catalogue() {
   energie.addEventListener('change', () => appliquer());
   tri.addEventListener('change', () => appliquer());
   grille.setAttribute('data-effet', 'catalogue-tri');
-  if (gsap && ST()) gsap.fromTo(grille, { y: 30 }, { y: 0, ease: 'none', scrollTrigger: { trigger: zone, start: 'top bottom', end: 'top 30%', scrub: 0.5 } });
+  if (gsap && ST()) gsap.fromTo(zone, { y: 40 }, { y: 0, ease: 'none', scrollTrigger: { trigger: zone, start: 'top bottom', end: 'top 30%', scrub: 0.5 } });
   appliquer(false);
+}
+
+/* ---------- Étapes : la petite moto roule de l'étape 1 au drapeau à damier ---------- */
+function motoProgres() {
+  const piste = $('.etapes-piste'); if (!piste || !gsap) return;
+  const moto = $('.etapes-moto', piste), plein = $('.etapes-trace-pleine', piste), roues = $$('.roue', moto), trace = $('.etapes-trace', piste);
+  let course = 0;
+  const mesurer = () => { course = Math.max(0, trace.offsetWidth - moto.offsetWidth + 10); };
+  const poser = (p) => {
+    p = Math.max(0, Math.min(1, p));
+    gsap.set(moto, { x: p * course });
+    gsap.set(plein, { scaleX: p });
+    gsap.set(roues, { rotate: p * course * 3.2 });
+  };
+  mesurer(); poser(0);
+  window.addEventListener('resize', () => { mesurer(); });
+  const defile = $('.etapes-defile');
+  if (matchMedia('(max-width: 760px)').matches && defile) {
+    /* Téléphone : la moto suit le glissement des cartes. */
+    let raf = 0;
+    defile.addEventListener('scroll', () => { if (raf) return; raf = requestAnimationFrame(() => { raf = 0; poser(defile.scrollLeft / Math.max(1, defile.scrollWidth - defile.clientWidth)); }); }, { passive: true });
+    if (ST()) ST().create({ trigger: piste, start: 'top 85%', once: true, onEnter: () => gsap.fromTo(moto, { x: -20 }, { x: 0, duration: .6, ease: 'back.out(2)' }) });
+    return;
+  }
+  if (ST()) ST().create({ trigger: piste.closest('section'), start: 'top 70%', end: 'bottom 75%', scrub: 0.6, onUpdate: (st) => poser(st.progress), onRefresh: mesurer });
+}
+
+/* ---------- Pistes : un pilote parcourt le profil de la piste affichée, en boucle quand elle est à l'écran ---------- */
+function pilotesProfil() {
+  const scene = $('.pistes-scene'); if (!scene || !gsap) return;
+  const suites = new Map();
+  $$('.piste-trace', scene).forEach((svg) => {
+    const path = $('path', svg), pilote = $('.pilote', svg); if (!path || !pilote) return;
+    const L = path.getTotalLength(), pts = [];
+    for (let i = 0; i <= 80; i++) { const q = path.getPointAtLength(L * i / 80); pts.push([q.x, q.y - 9]); }
+    const o = { t: 0 };
+    const tw = gsap.to(o, { t: 1, duration: 3.4, ease: 'none', repeat: -1, paused: true, onUpdate: () => {
+      const f = o.t * 80, i = Math.floor(f), r = f - i, a = pts[i], b = pts[Math.min(80, i + 1)];
+      pilote.setAttribute('transform', `translate(${a[0] + (b[0] - a[0]) * r} ${a[1] + (b[1] - a[1]) * r})`);
+    } });
+    pilote.setAttribute('transform', `translate(${pts[0][0]} ${pts[0][1]})`);
+    suites.set(svg, tw);
+  });
+  let visible = false;
+  const maj = () => suites.forEach((tw, svg) => { const actif = visible && !document.hidden && !svg.closest('[hidden]'); actif ? tw.play() : tw.pause(); });
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; maj(); }).observe(scene);
+  document.addEventListener('visibilitychange', maj);
+  $$('.piste-onglet').forEach((b) => b.addEventListener('click', () => setTimeout(maj, 0)));
+}
+
+/* ---------- Park : aujourd'hui dans la semaine ---------- */
+function semaine() {
+  const jour = new Date(maintenantParis()).getUTCDay();
+  const li = $(`.semaine [data-jour="${jour}"]`); if (li) li.classList.add('est-aujourdhui');
 }
 
 demarrer({
@@ -236,6 +314,9 @@ demarrer({
     ouverturesInterieures();
     calculateur();
     catalogue();
+    semaine();
+    motoProgres();
+    quand('pret', pilotesProfil);
     setInterval(statuts, 60000);
     /* Formulaire de contact prérempli depuis le catalogue (?modele=…). */
     const modele = new URLSearchParams(location.search).get('modele'), msg = $('#f-message');
@@ -258,7 +339,8 @@ demarrer({
     const lignes = $$('[data-tete] .h-ligne'), suite = $$('[data-tete] .h-suite');
     if (lignes.length) {
       ouvertureJouee = true;
-      tl.fromTo(lignes, { yPercent: 118, y: 0 }, { yPercent: 0, y: 0, duration: .6, stagger: .08, ease: 'power4.out' }, 1.15)
+      tl.fromTo(lignes, { xPercent: -110, x: 0, yPercent: 0, y: 0, skewX: -18 }, { xPercent: 0, x: 0, yPercent: 0, y: 0, skewX: 0, duration: .62, stagger: .09, ease: 'power4.out' }, 1.12)
+        .call(() => document.documentElement.classList.add('traits-partis'), null, 1.5)
         .fromTo(suite, { y: 18, yPercent: 0, opacity: 0 }, { y: 0, yPercent: 0, opacity: 1, duration: .45, stagger: .05 }, 1.3);
       if ($('.balises')) tl.fromTo('.balises', { scaleX: 0 }, { scaleX: 1, duration: .6, ease: 'power3.inOut' }, 1.2);
       if ($('.etiquette')) tl.fromTo('.etiquette', { scale: 0, rotate: -60 }, { scale: 1, rotate: -12, duration: .6, ease: 'back.out(1.8)' }, 1.25);
@@ -269,6 +351,7 @@ demarrer({
   etatFinal() {
     if (!gsap) return;
     gsap.set('[data-tete] .h-ligne, [data-tete] .h-suite, .seb-geant span', { clearProps: 'transform,opacity' });
+    document.documentElement.classList.add('traits-partis');
     gsap.set('.etiquette', { scale: 1, rotate: -12 });
     gsap.set('.balises', { scaleX: 1 });
   },
